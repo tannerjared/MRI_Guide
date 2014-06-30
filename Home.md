@@ -4,8 +4,7 @@
 ## Linux 
 
 1. Download Firefox 30 Archive
-### For 64-Bit Systems
-
+**For 64-Bit Systems**
 ```
 #!bash
 # cd /usr/local
