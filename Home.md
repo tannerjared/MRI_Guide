@@ -35,13 +35,13 @@ The [installation guide](http://www.mccauslandcenter.sc.edu/mricro/mricron/insta
 
 * Download the [latest version](http://www.mccauslandcenter.sc.edu/mricro/mricron/install.html). 
 * Unzip the downloaded file (which currently produces a folder call `mricron`).
-* Configure
+* Configure dcm2nii
 ```
 # mv /home/<username>/Downloads/mricron/ /usr/local/
 # mv /usr/local/mricron/dcm2nii /usr/local/bin/
 ```
 
-You can confirm that the program works by typing into the command terminal:
+You can confirm that the program works by typing `dcm2nii` into the command terminal and pressing enter:
 ```
 $ dcm2nii
 
@@ -69,8 +69,8 @@ OPTIONS:
 -x Reorient and crop 3D NIfTI images: Y,N = N
   You can also set defaults by editing /home/njhunsak/.dcm2nii/dcm2nii.ini
 EXAMPLE: dcm2nii -a y /Users/Joe/Documents/dcm/IM_0116
-
 ```
+
 # Multi-image Analysis GUI (MANGO)
 
 The [installation guide](http://ric.uthscsa.edu/mango/mango.html) can be found here.
