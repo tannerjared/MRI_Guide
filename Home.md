@@ -23,13 +23,6 @@
 
 ```
 
-Now start firefox using command line:
-
-```
-# firefox
-
-```
-
 # dcm2nii DICOM to NIfTI conversion
 
 The [installation guide](http://www.mccauslandcenter.sc.edu/mricro/mricron/install.html) can be found here.
