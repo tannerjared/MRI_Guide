@@ -1,5 +1,3 @@
-# Welcome
-
 [TOC]
 
 # dcm2nii DICOM to NIfTI conversion
