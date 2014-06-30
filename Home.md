@@ -2,11 +2,10 @@
 
 # Firefox
 ## Linux 
-### For 64-Bit Systems
 
 1. Download Firefox 30 Archive
-```
-# cd /usr/local
+### For 64-Bit Systems
+     # cd /usr/local
 # wget wget http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/30.0/linux-x86_64/en-US/firefox-30.0.tar.bz2
 ```
 2. Extract Archive
