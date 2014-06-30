@@ -1,5 +1,7 @@
 [TOC]
 
+Currently running Red Hat Enterprise Linux Server Release 6.2 (Santiago)
+
 # Firefox
 ## Linux 
 
@@ -26,6 +28,8 @@
 # dcm2nii DICOM to NIfTI conversion
 
 The [installation guide](http://www.mccauslandcenter.sc.edu/mricro/mricron/install.html) can be found here.
+
+## Linux
 
 # Multi-image Analysis GUI (MANGO)
 
