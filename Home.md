@@ -1,6 +1,8 @@
 [TOC]
 
-Currently running Red Hat Enterprise Linux Server Release 6.2 (Santiago)
+# Current OS Releases
+
+* Red Hat Enterprise Linux Server Release 6.2 (Santiago)
 
 # Firefox
 ## Linux 
