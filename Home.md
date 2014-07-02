@@ -8,7 +8,9 @@
 ## Linux 
 
 * Download Firefox 30 Archive
+
 ```
+#!bash
 # cd /usr/local
 # wget http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/30.0/linux-x86_64/en-US/firefox-30.0.tar.bz2
 
@@ -16,7 +18,8 @@
 
 * Extract Archive
 ```
-# tar xvjf firefox-30.0.tar.bz2
+#!bash
+\# tar xvjf firefox-30.0.tar.bz2
 
 ```
 
@@ -80,7 +83,7 @@ The [installation guide](http://ric.uthscsa.edu/mango/mango.html) can be found h
 ```
 # unzip /home/njhunsak/Downloads/mango_unix.zip -d /usr/local/
 ```
-* Configured Mango
+* Configure Mango
 ```
 # /usr/local/Mango/mango
 ```
@@ -91,3 +94,11 @@ The [installation guide](http://ric.uthscsa.edu/mango/mango.html) can be found h
 > Location should be: /usr/local
 
 > Click Install
+
+> You should have the following files located:
+```
+$ ls /usr/local/bin/
+applytransform  convert2des  genheader  mango    vols2series
+convert2avw     convert2nii  imageinfo  resizer
+convert2dcm     dcm2nii      makeroi    roi2nii
+```
