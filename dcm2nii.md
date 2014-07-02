@@ -4,5 +4,5 @@ DICOM files need to have the .dcm file extension at the end of the file for dcm2
 
 ```
 #!console
-find /path/to/DICOM/dirs/ -type f ! -name "*.*" -exec mv -v {} {}.dcm \;
+$ find /path/to/DICOM/dirs/ -type f ! -name "*.*" -exec mv -v {} {}.dcm \;
 ```
