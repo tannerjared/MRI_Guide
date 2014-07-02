@@ -17,6 +17,7 @@
 ```
 
 * Extract Archive
+
 ```
 #!console
 # tar xvjf firefox-30.0.tar.bz2
@@ -38,8 +39,11 @@ The [installation guide](http://www.mccauslandcenter.sc.edu/mricro/mricron/insta
 ## Linux
 
 * Download the [latest version](http://www.mccauslandcenter.sc.edu/mricro/mricron/install.html). 
+
 * Unzip the downloaded file (which currently produces a folder call `mricron`).
+
 * Configure dcm2nii
+
 ```
 #!console
 # mv /home/<username>/Downloads/mricron/ /usr/local/
@@ -47,6 +51,7 @@ The [installation guide](http://www.mccauslandcenter.sc.edu/mricro/mricron/insta
 ```
 
 You can confirm that the program works by typing `dcm2nii` into the command terminal and pressing enter:
+
 ```
 #!console
 $ dcm2nii
@@ -81,17 +86,24 @@ EXAMPLE: dcm2nii -a y /Users/Joe/Documents/dcm/IM_0116
 
 The [installation guide](http://ric.uthscsa.edu/mango/mango.html) can be found here.
 
+## Linux
+
 * Download the [latest version](http://ric.uthscsa.edu/mango/downloads/mango_unix.zip) here.
+
 * Unzip the downloaded file (which currently produces a folder call `mango`).
+
 ```
 #!console
 # unzip /home/njhunsak/Downloads/mango_unix.zip -d /usr/local/
 ```
+
 * Configure Mango
+
 ```
 #!console
 # /usr/local/Mango/mango
 ```
+
 > Click Accept
 
 > Go to Options > Install Utilities
@@ -100,7 +112,8 @@ The [installation guide](http://ric.uthscsa.edu/mango/mango.html) can be found h
 
 > Click Install
 
-> You should have the following files located:
+> You should have the following files:
+
 ```
 #!console
 $ ls /usr/local/bin/
