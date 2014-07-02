@@ -130,20 +130,20 @@ convert2dc      makeroi    roi2nii
 
 ```
 #!console
-# yum install unrar
+# unrar x /home/<username>/Downloads/R2014a_UNIX.rar /usr/local/matlab/
 ```
 
-If you have problems installing unrar:
+* If you have problems installing unrar:
 
 ```
 #!console
 # rpm -Uvh http://pkgs.repoforge.org/rpmforge-release/rpmforge-release-0.5.2-2.el6.rf.i686.rpm
 # yum -y --enablerepo=rpmforge install unrar
 ```
+* Change permissions on files before installing:
 
 ```
 #!console
-# unrar x /home/<username>/Downloads/R2014a_UNIX.rar /usr/local/matlab/
 # cd /usr/local/matlab/
 # chmod +x java/
 # chmod +x install
