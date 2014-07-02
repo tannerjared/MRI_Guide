@@ -106,5 +106,5 @@ The [installation guide](http://ric.uthscsa.edu/mango/mango.html) can be found h
 $ ls /usr/local/bin/
 applytransform  convert2des  genheader  mango    vols2series
 convert2avw     convert2nii  imageinfo  resizer
-convert2dcm     dcm2nii      makeroi    roi2nii
+convert2dc      makeroi    roi2nii
 ```
