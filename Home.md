@@ -75,4 +75,17 @@ EXAMPLE: dcm2nii -a y /Users/Joe/Documents/dcm/IM_0116
 
 The [installation guide](http://ric.uthscsa.edu/mango/mango.html) can be found here.
 
+* Download the [latest version](http://ric.uthscsa.edu/mango/downloads/mango_unix.zip) here.
+* Unzip the downloaded file (which currently produces a folder call `mango`).
+```
+# unzip /home/njhunsak/Downloads/mango_unix.zip -d /usr/local/
+```
+* Configured Mango
+```
+# /usr/local/Mango/mango
+```
 
+> Click Accept
+> Go to Options > Install Utilities
+> Location should be: /usr/local
+> Click Install
