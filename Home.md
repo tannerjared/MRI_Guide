@@ -94,7 +94,7 @@ The [installation guide](http://ric.uthscsa.edu/mango/mango.html) can be found h
 
 ```
 #!console
-# unzip /home/njhunsak/Downloads/mango_unix.zip -d /usr/local/
+# unzip /home/<username>/Downloads/mango_unix.zip -d /usr/local/
 ```
 
 * Configure Mango
@@ -141,3 +141,12 @@ If you have problems installing unrar:
 # yum -y --enablerepo=rpmforge install unrar
 ```
 
+```
+#!console
+# unrar x /home/<username>/Downloads/R2014a_UNIX.rar /usr/local/matlab/
+# cd /usr/local/matlab/
+# chmod +x java/
+# chmod +x install
+# chmod a+x sys/java/jre/glnxa64/jre/bin/
+# ./install
+```
