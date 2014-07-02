@@ -121,3 +121,23 @@ applytransform  convert2des  genheader  mango    vols2series
 convert2avw     convert2nii  imageinfo  resizer
 convert2dc      makeroi    roi2nii
 ```
+
+# MATLAB R2014a
+
+## Linux
+
+* Unzip the downloaded file:
+
+```
+#!console
+# yum install unrar
+```
+
+If you have problems installing unrar:
+
+```
+#!console
+# rpm -Uvh http://pkgs.repoforge.org/rpmforge-release/rpmforge-release-0.5.2-2.el6.rf.i686.rpm
+# yum -y --enablerepo=rpmforge install unrar
+```
+
