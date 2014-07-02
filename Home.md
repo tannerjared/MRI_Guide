@@ -10,7 +10,7 @@
 * Download Firefox 30 Archive
 
 ```
-#!bash
+#!console
 # cd /usr/local
 # wget http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/30.0/linux-x86_64/en-US/firefox-30.0.tar.bz2
 
@@ -18,14 +18,15 @@
 
 * Extract Archive
 ```
-#!bash
-\# tar xvjf firefox-30.0.tar.bz2
+#!console
+# tar xvjf firefox-30.0.tar.bz2
 
 ```
 
 * Configure Firefox
 
 ```
+#!console
 # ln -s /usr/local/firefox/firefox /usr/bin/firefox
 
 ```
@@ -40,12 +41,14 @@ The [installation guide](http://www.mccauslandcenter.sc.edu/mricro/mricron/insta
 * Unzip the downloaded file (which currently produces a folder call `mricron`).
 * Configure dcm2nii
 ```
+#!console
 # mv /home/<username>/Downloads/mricron/ /usr/local/
 # ln -s /usr/local/mricron/dcm2nii /usr/local/bin/
 ```
 
 You can confirm that the program works by typing `dcm2nii` into the command terminal and pressing enter:
 ```
+#!console
 $ dcm2nii
 
 Chris Rorden's dcm2nii :: 6 June 2013
@@ -81,10 +84,12 @@ The [installation guide](http://ric.uthscsa.edu/mango/mango.html) can be found h
 * Download the [latest version](http://ric.uthscsa.edu/mango/downloads/mango_unix.zip) here.
 * Unzip the downloaded file (which currently produces a folder call `mango`).
 ```
+#!console
 # unzip /home/njhunsak/Downloads/mango_unix.zip -d /usr/local/
 ```
 * Configure Mango
 ```
+#!console
 # /usr/local/Mango/mango
 ```
 > Click Accept
@@ -97,6 +102,7 @@ The [installation guide](http://ric.uthscsa.edu/mango/mango.html) can be found h
 
 > You should have the following files located:
 ```
+#!console
 $ ls /usr/local/bin/
 applytransform  convert2des  genheader  mango    vols2series
 convert2avw     convert2nii  imageinfo  resizer
