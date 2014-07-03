@@ -8,7 +8,7 @@ You may need to be logged in as root to install many of these programs, dependin
 
 * Red Hat Enterprise Linux Server Release 6.2 (Santiago)
 
-<br />
+</br>
 # Firefox
 
 **Linux**
