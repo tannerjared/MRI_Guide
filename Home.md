@@ -230,7 +230,9 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 # mkdir antsbin
 # cd antsbin
 # ccmake ../ANTs
-$ then go into cmake and type “c” and then “g”  then exit back to the
+
+$ go into cmake and type “c” and then “g”  then exit back to the
 terminal
+
 # make -j 4
 ```
