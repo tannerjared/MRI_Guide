@@ -335,6 +335,8 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 ---------------------------------------
 
+**Linux**
+
 * Download the latest version of ANTs:
 
 ```
