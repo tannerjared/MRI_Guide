@@ -105,7 +105,7 @@ The [installation guide](http://ric.uthscsa.edu/mango/mango.html) can be found h
 
 > Go to Options > Install Utilities
 
-> Location should be: /usr/local
+> Location should be: /usr/local/bin
 
 > Click Install
 
