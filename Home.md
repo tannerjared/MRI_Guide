@@ -1,21 +1,19 @@
-<<toc /2>>
-
-<<toc>>
-
-== Version Notes
+# Version Notes
 
 * Red Hat Enterprise Linux Server Release 6.2 (Santiago)
 
-== Firefox
-=== Linux 
+# Firefox
+## Linux 
 
-# Download Firefox 30 Archive
-{{{
+* Download Firefox 30 Archive
+
+```
 #!console
 # cd /usr/local
 # wget http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/30.0/linux-x86_64/en-US/firefox-30.0.tar.bz2
-}}}
-# Extract Archive
+```
+
+* Extract Archive
 
 ```
 #!console
