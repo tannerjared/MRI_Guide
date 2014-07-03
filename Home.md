@@ -28,7 +28,7 @@
 
 ```
 #!console
-# ln -s /usr/local/firefox/firefox /usr/bin/firefox
+# ln -s /usr/local/firefox/firefox /usr/local/bin/firefox
 
 ```
 
