@@ -232,7 +232,7 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 # ccmake ../ANTs
 ```
 
-** Go into cmake and type “c” and then “g”  then exit back to the
+    * Go into cmake and type “c” and then “g”  then exit back to the
 terminal
 
 ```
