@@ -123,6 +123,7 @@ convert2dc      makeroi    roi2nii
 ```
 
 You can confirm that the command-line utilities were installed correctly by typing:
+
 ```
 #!console
 $ mango
@@ -213,8 +214,15 @@ $ mango
 
 ```
 #!console
-# ARTHOME=/usr/local/art
-# export ARTHOME
+$ ARTHOME=/usr/local/art
+$ export ARTHOME
+```
+
+* You can confirm that the program was installed corretly by typing:
+
+```
+#!console
+$ acpcdetect
 ```
 
 # Advanced Normalization Tools
