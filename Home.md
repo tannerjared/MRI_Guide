@@ -197,6 +197,13 @@ $ git --version
 git version 1.7.1
 ```
 
+* If you need to install:
+
+```
+#!console
+# yum install git
+```
+
 ## CMAKE
 
 **Linux**
@@ -207,13 +214,6 @@ git version 1.7.1
 #!console
 # cd /usr/local/
 # wget http://www.cmake.org/files/v3.0/cmake-3.0.0.tar.gz
-```
-
-* If you need to install:
-
-```
-#!console
-# yum install git
 ```
 
 * Unzip the downloaded file:
