@@ -1,4 +1,6 @@
-[TOC]
+<<toc /2>>
+
+<<toc>>
 
 # Version Notes
 
