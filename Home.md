@@ -1,8 +1,6 @@
-<<toc 3 2>>
+[TOC]
 
-<<toc>>
-
-== Version Notes
+# Version Notes
 
 * Red Hat Enterprise Linux Server Release 6.2 (Santiago)
 
