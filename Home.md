@@ -232,10 +232,20 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 # ccmake ../ANTs
 ```
 
-Go into cmake and type “c” and then “g”  then exit back to the
+** Go into cmake and type “c” and then “g”  then exit back to the
 terminal
 
 ```
 #!console
 # make -j 4
 ```
+
+* Configure ANTs:
+
+```
+#!console
+# cp  /usr/local/ANTs/Scripts/*  /usr/local/antsbin/bin/
+$ ANTSPATH=/usr/local/antsbin/bin/
+$ PATH=${ANTSPATH}:${PATH}
+```
+ 
