@@ -162,6 +162,36 @@ $ mango
 # ./install
 ```
 
+> Choose Use a File Installation Key and click Next. 
+
+> If you agree to the licensing terms, choose Yes and click Next.
+
+> Choose I have the File Installation Key for my license and put in the Key from the Downloads area.
+
+> Click Next.
+
+> Keep the installation destination and click Next.
+
+> Select the products to install and click Next.
+
+> Choose the areas for program shortcuts and click Next.
+
+> Review the installation summary and click Install.
+
+> Additional installations may be required depending on the previous product selections. Follow the installation instructions.
+
+> Make certain the check mark is in for Activate MATLAB and click Next.
+
+> A new window will come up after a few moments. Choose Activate automatically using the Internet and click Next.
+
+> Log on to your MathWorks Account or choose to create an account. The Activation Key from the downloads area will be needed to create an account.
+
+> For the license, choose the TAH Designated Computer and click Next.
+
+> Click Confirm to send the information to MathWorks.
+ 
+> Activation is complete. Click Finish.
+
 # ACPC Detect
 
 * Download the [latest version](http://www.nitrc.org/frs/?group_id=90) here.
