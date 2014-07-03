@@ -108,7 +108,7 @@ The [installation guide](http://ric.uthscsa.edu/mango/mango.html) can be found h
 
 > Go to Options > Install Utilities
 
-> Location should be: /usr/local/bin
+> Location should be: /usr/local
 
 > Click Install
 
@@ -120,6 +120,12 @@ $ ls /usr/local/bin/
 applytransform  convert2des  genheader  mango    vols2series
 convert2avw     convert2nii  imageinfo  resizer
 convert2dc      makeroi    roi2nii
+```
+
+You can confirm that the command-line utilities were installed correctly by typing:
+```
+#!console
+$ mango
 ```
 
 # MATLAB R2014a
