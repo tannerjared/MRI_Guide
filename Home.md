@@ -36,6 +36,10 @@ You may need to be logged in as root to install many of these programs, dependin
 
 ```
 
+**Mac**
+
+**Windows**
+
 # dcm2nii DICOM to NIfTI conversion
 
 The [installation guide](http://www.mccauslandcenter.sc.edu/mricro/mricron/install.html) can be found here.
@@ -86,6 +90,10 @@ OPTIONS:
 EXAMPLE: dcm2nii -a y /Users/Joe/Documents/dcm/IM_0116
 ```
 
+**Mac**
+
+**Windows**
+
 # Multi-image Analysis GUI (MANGO)
 
 The [installation guide](http://ric.uthscsa.edu/mango/mango.html) can be found here.
@@ -132,6 +140,10 @@ You can confirm that the command-line utilities were installed correctly by typi
 #!console
 $ mango
 ```
+
+**Mac**
+
+**Windows**
 
 # MATLAB R2014a
 
@@ -197,7 +209,14 @@ $ mango
  
 > Activation is complete. Click Finish.
 
+
+**Mac**
+
+**Windows**
+
 # ACPC Detect
+
+**Linux**
 
 * Download the [latest version](http://www.nitrc.org/frs/?group_id=90) here.
 
@@ -229,6 +248,14 @@ $ export ARTHOME
 $ acpcdetect
 ```
 
+**Mac**
+
+Only available for Linux systems.
+
+**Windows**
+
+Only available for Linux systems.
+
 # Advanced Normalization Tools
 
 ANTs requires several programs to be installed first:
@@ -251,6 +278,10 @@ git version 1.7.1
 #!console
 # yum install git
 ```
+
+**Mac**
+
+**Windows**
 
 ## CMAKE
 
@@ -279,6 +310,10 @@ git version 1.7.1
 # ./configure --prefix=/usr/local && make && make install
 ```
 
+**Mac**
+
+**Windows**
+
 ## C++ Compiler
 
 **Linux**
@@ -293,6 +328,11 @@ Copyright (C) 2010 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 ```
+
+**Mac**
+
+**Windows**
+
 ---------------------------------------
 
 * Download the latest version of ANTs:
@@ -328,4 +368,7 @@ terminal
 $ ANTSPATH=/usr/local/antsbin/bin/
 $ PATH=${ANTSPATH}:${PATH}
 ```
- 
+
+**Mac**
+
+**Windows**
