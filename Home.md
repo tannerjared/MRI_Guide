@@ -1,9 +1,12 @@
+[TOC]
+
 # Version Notes
 
 * Red Hat Enterprise Linux Server Release 6.2 (Santiago)
 
 # Firefox
-## Linux 
+
+**Linux**
 
 * Download Firefox 30 Archive
 
@@ -33,7 +36,7 @@
 
 The [installation guide](http://www.mccauslandcenter.sc.edu/mricro/mricron/install.html) can be found here.
 
-## Linux
+**Linux**
 
 * Download the [latest version](http://www.mccauslandcenter.sc.edu/mricro/mricron/install.html). 
 
@@ -83,7 +86,7 @@ EXAMPLE: dcm2nii -a y /Users/Joe/Documents/dcm/IM_0116
 
 The [installation guide](http://ric.uthscsa.edu/mango/mango.html) can be found here.
 
-## Linux
+**Linux**
 
 * Download the [latest version](http://ric.uthscsa.edu/mango/downloads/mango_unix.zip) here.
 
@@ -121,7 +124,7 @@ convert2dc      makeroi    roi2nii
 
 # MATLAB R2014a
 
-## Linux
+**Linux**
 
 * Unzip the downloaded file:
 
@@ -157,7 +160,9 @@ convert2dc      makeroi    roi2nii
 
 ANTs requires several programs to be installed first:
 
-# GIT
+## GIT
+
+**Linux**
 
 You can check to see if you have git installed already on your system:
 
@@ -167,9 +172,9 @@ $ git --version
 git version 1.7.1
 ```
 
-# CMAKE
+## CMAKE
 
-## Linux
+**Linux**
 
 * Download the latest version:
 
@@ -192,4 +197,19 @@ git version 1.7.1
 #!console
 # cd cmake-3.0.0
 # ./configure --prefix=/usr/local && make && make install
+```
+
+## C++ Compiler
+
+**Linux**
+
+You can check to see if you have a GCC complier installed already on your system:
+
+```
+#!console
+$ gcc --version
+gcc (GCC) 4.4.6 20110731 (Red Hat 4.4.6-3)
+Copyright (C) 2010 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 ```
