@@ -213,3 +213,24 @@ Copyright (C) 2010 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 ```
+---------------------------------------
+
+* Download the latest version of ANTs:
+
+```
+#!console
+# cd /usr/local/
+# git clone git://github.com/stnava/ANTs.git
+```
+
+* Install ANTs:
+
+```
+#!console
+# mkdir antsbin
+# cd antsbin
+# ccmake ../ANTs
+$ then go into cmake and type “c” and then “g”  then exit back to the
+terminal
+# make -j 4
+```
