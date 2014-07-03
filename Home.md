@@ -156,6 +156,31 @@ convert2dc      makeroi    roi2nii
 # ./install
 ```
 
+# ACPC Detect
+
+* Download the [latest version](http://www.nitrc.org/frs/?group_id=90) here.
+
+* Unpack the package:
+
+```
+#!console
+# cd /usr/local/
+# mkdir art
+# cd art/
+# mv /home/<username>/Downloads/acpcdetect.tar.gz /usr/local/art/
+# gunzip acpcdetect.tar.gz
+# tar xvf acpcdetect.tar
+# mv /usr/local/art/acpcdetect /usr/local/bin/
+```
+
+* Set the environmental variables:
+
+```
+#!console
+# ARTHOME=/usr/local/art
+# export ARTHOME
+```
+
 # Advanced Normalization Tools
 
 ANTs requires several programs to be installed first:
