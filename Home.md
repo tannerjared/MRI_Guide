@@ -2,7 +2,7 @@
 
 # Version Notes
 
-* Red Hat Enterprise Linux Server Release 6.2 (Santiago)
+* Programs were installed on Red Hat Enterprise Linux Server Release 6.2 (Santiago)
 
 # Firefox
 
