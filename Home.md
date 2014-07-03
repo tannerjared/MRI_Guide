@@ -150,7 +150,7 @@ convert2dc      makeroi    roi2nii
 * Install:
 ```
 #!console
-# tar xzf cmake-3.0.0.tar.gz 
+# ./install
 ```
 
 # CMAKE
@@ -172,26 +172,10 @@ convert2dc      makeroi    roi2nii
 # tar xzf cmake-3.0.0.tar.gz
 ```
 
-* Configure:
+* Configure, compile, and install:
 
 ```
 #!console
 # cd cmake-3.0.0
-# ./configure --prefix=/opt/cmake
+# ./configure --prefix=/usr/local && make && make install
 ```
-
-* Compile:
-
-```
-#!console
-# make
-```
-
-* Install:
-
-```
-#!console
-# make install
-```
-
-  
