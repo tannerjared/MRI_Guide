@@ -148,5 +148,53 @@ convert2dc      makeroi    roi2nii
 # chmod +x java/
 # chmod +x install
 # chmod a+x sys/java/jre/glnxa64/jre/bin/
-# ./install
 ```
+
+* Install:
+```
+#!console
+# tar xzf cmake-3.0.0.tar.gz 
+```
+
+# CMAKE
+
+## Linux
+
+* Download the latest version:
+
+```
+#!console
+# cd /usr/local/
+# wget http://www.cmake.org/files/v3.0/cmake-3.0.0.tar.gz
+```
+
+* Unzip the downloaded file:
+
+```
+#!console
+# tar xzf cmake-3.0.0.tar.gz
+```
+
+* Configure:
+
+```
+#!console
+# cd cmake-3.0.0
+# ./configure --prefix=/opt/cmake
+```
+
+* Compile:
+
+```
+#!console
+# make
+```
+
+* Install:
+
+```
+#!console
+# make install
+```
+
+  
