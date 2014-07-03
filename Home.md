@@ -155,6 +155,17 @@ convert2dc      makeroi    roi2nii
 
 # Advanced Normalization Tools
 
+ANTs requires several programs to be installed first:
+
+# GIT
+
+You can check to see if you have git installed already on your system:
+
+```
+#!console
+$ git --version
+git version 1.7.1
+```
 
 # CMAKE
 
