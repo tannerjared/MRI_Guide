@@ -1,6 +1,10 @@
 [TOC]
 
-# Version Notes
+# Before You Begin
+
+You may need to be logged in as root to install many of these programs, depending on the permissions of the directory on which you are installing. The following are specifics about the operation system in which programs were installed: 
+
+**Version Notes**
 
 * Programs were installed on Red Hat Enterprise Linux Server Release 6.2 (Santiago)
 
