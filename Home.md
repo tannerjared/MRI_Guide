@@ -95,7 +95,7 @@ EXAMPLE: dcm2nii -a y /Users/Joe/Documents/dcm/IM_0116
 
 **Windows**
 
-* Download the [latest version] (http://www.nitrc.org/frs/download.php/5630/win.zip).
+* Download the [latest version](http://www.nitrc.org/frs/download.php/5630/win.zip).
 * Unzip the files to C:\Windows
 
 # Multi-image Analysis GUI (MANGO)
