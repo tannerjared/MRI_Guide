@@ -105,7 +105,9 @@ EXAMPLE: dcm2nii -a y /Users/Joe/Documents/dcm/IM_0116
 
 > Under System Variables select PATH and edit
 
->Enter ';C:\Windows\Downloaded Program Files\mricron'
+>Enter `;C:\Windows\Downloaded Program Files\mricron`
+
+* To ensure a proper download type `dcm2nii`
 
 # Multi-image Analysis GUI (MANGO)
 
