@@ -97,9 +97,9 @@ EXAMPLE: dcm2nii -a y /Users/Joe/Documents/dcm/IM_0116
 
 * Download the [latest version](http://www.nitrc.org/frs/download.php/5630/win.zip).
 
-* Unzip the files to C:\Windows\Downloaded Program Files (which produces a folder titled "mricron")
+* Unzip the files to C:\Windows\Downloaded Program Files (which produces a folder titled "mricron").
 
-*In order
+* Edit environment variables to open mricron files from command prompt.
 
 # Multi-image Analysis GUI (MANGO)
 
