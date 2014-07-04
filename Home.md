@@ -100,12 +100,11 @@ EXAMPLE: dcm2nii -a y /Users/Joe/Documents/dcm/IM_0116
 * Unzip the files to C:\Windows\Downloaded Program Files (which produces a folder titled "mricron").
 
 * Edit environment variables to open mricron files from command prompt.
->Open Control Panel under the start menu
->Open System and Security
->Open System
->Open Advanced system settings
->Open Environmental Variables
->Under System Variables select PATH and edit
+
+> Open Control Panel under the start menu > System and Security > System > Advanced system settings > Environmental Variables
+
+> Under System Variables select PATH and edit
+
 >Enter ';C:\Windows\Downloaded Program Files\mricron'
 
 # Multi-image Analysis GUI (MANGO)
