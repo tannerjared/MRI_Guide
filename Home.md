@@ -338,6 +338,9 @@ git version 1.7.1
 
 **Windows**
 
+*Download the [latest version](http://git-scm.com/download/win).
+
+
 ## C++ Compiler
 
 **Linux**
