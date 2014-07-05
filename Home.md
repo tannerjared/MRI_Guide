@@ -373,7 +373,7 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 **Windows**
 
-* Download the [latest version](http://jenkins.taulabs.org/distfiles/QtSdk-offline-win-x86-v1.2.1.exe).
+* Download the [latest version](http://download.qt-project.org/official_releases/online_installers/qt-opensource-windows-x86-1.6.0-4-online.exe).
 * Run the installer (for this version it was referred to as "QtSdk-offline-win-x86-v1.2.1" in my downloads).
 
 > The setup-Qt SDK screen should appear. Click *Next*.
