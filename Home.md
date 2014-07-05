@@ -41,6 +41,9 @@ You may need to be logged in as root to install many of these programs, dependin
 
 **Windows**
 
+* Download the [latest version](https://download.mozilla.org/?product=firefox-stub&os=win&lang=en-US).
+* Run Firefox Setup
+
 # dcm2nii DICOM to NIfTI conversion
 
 The [installation guide](http://www.mccauslandcenter.sc.edu/mricro/mricron/install.html) can be found here.
