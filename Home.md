@@ -341,6 +341,8 @@ git version 1.7.1
 
 **Windows**
 
+* Download the [latest version](http://www.cmake.org/files/v3.0/cmake-3.0.0.zip).
+
 ## C++ Compiler
 
 **Linux**
