@@ -373,6 +373,19 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 **Windows**
 
+* Download the [latest version](http://jenkins.taulabs.org/distfiles/QtSdk-offline-win-x86-v1.2.1.exe).
+* Run the installer (for this version it was referred to as "QtSdk-offline-win-x86-v1.2.1" in my downloads).
+
+> The setup-Qt SDK screen should appear. Click *Next*.
+
+> You will now specify the installation directory and select the type of installation. Be sure to select *Custom*. Click *Next*.
+
+>You will now have the option to specify which components to install. Make sure *MinGW 4.4* is marked under Miscellaneous and make sure that *QT Creator Documentation* is marked under Documentation. Click *Next*.
+
+> Signify that you have read the license agreement and click *Next*.
+
+
+
 ---------------------------------------
 
 **Linux**
