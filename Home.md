@@ -307,6 +307,9 @@ git version 1.7.1
 
 **Windows**
 
+* Download the [latest version](http://git-scm.com/download/win).
+
+
 ## CMAKE
 
 **Linux**
@@ -337,9 +340,6 @@ git version 1.7.1
 **Mac**
 
 **Windows**
-
-*Download the [latest version](http://git-scm.com/download/win).
-
 
 ## C++ Compiler
 
