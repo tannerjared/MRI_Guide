@@ -343,10 +343,15 @@ git version 1.7.1
 
 * Download the [latest version](http://www.cmake.org/files/v3.0/cmake-3.0.0-win32-x86.exe).
 * Run the CMake installer (for this version it was referred to as "cmake-3.0.0-win32-x86" in my downloads).
+
 > The welcome scree should open. Click *Next*.
+
 > It then shows the license agreement. Click *I Agree*.
+
 > Install options will appear. Select the Add *CMake to the system PATH for all users* and click next.
+
 > Now choose the location you'd like to install CMake.
+
 > Now click *Install*.
 
 ## C++ Compiler
