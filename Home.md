@@ -107,7 +107,7 @@ EXAMPLE: dcm2nii -a y /Users/Joe/Documents/dcm/IM_0116
 
 >Enter `;C:\Windows\Downloaded Program Files\mricron`
 
-* To ensure a proper download type `dcm2nii`
+* To ensure a proper download type `dcm2nii` into the command prompt and press enter. If it downloaded correctly you should see a similar output as the one listed above under the Linux version
 
 # Multi-image Analysis GUI (MANGO)
 
