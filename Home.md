@@ -160,6 +160,12 @@ $ mango
 
 **Windows**
 
+* Download the [latest version](http://ric.uthscsa.edu/mango/downloads/mango_windows.zip).
+* Extract the mango installer (It doesn't really matter where you extract it to, as long as you can find it later)
+* Run mango installer and when prompted to create a shortcut do so
+* Place the mango shortcut in a directory and add an environment variable leading to it under PATH (For example, if you placed mango in the "Downloaded Program Files" path you would add `;C:\Windows\Downloaded Program Files\mricron` to PATH)
+* To access mango from the command prompt type `start mango`
+
 # MATLAB R2014a
 
 **Linux**
