@@ -373,16 +373,10 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 **Windows**
 
-* Download the [latest version](http://download.qt-project.org/official_releases/online_installers/qt-opensource-windows-x86-1.6.0-4-online.exe).
-* Run the installer (for this version it was referred to as "QtSdk-offline-win-x86-v1.2.1" in my downloads).
+(Unfortunately, Windows doesn't come with a default C++ compiler. There are many ways to obtain a GCC compiler. Below I have outlined how to use MinGW to to obtain a GCC compiler that works for ANTs installation.)
 
-> The setup-Qt SDK screen should appear. Click *Next*.
-
-> You will now specify the installation directory and select the type of installation. Be sure to select *Custom*. Click *Next*.
-
->You will now have the option to specify which components to install. Make sure *MinGW 4.4* is marked under Miscellaneous and make sure that *QT Creator Documentation* is marked under Documentation. Click *Next*.
-
-> Signify that you have read the license agreement and click *Next*.
+* Download the [latest version](http://sourceforge.net/projects/mingw/files/latest/download?source=files).
+* 
 
 
 
