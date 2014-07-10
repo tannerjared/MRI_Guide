@@ -26,7 +26,6 @@ You may need to be logged in as root to install many of these programs, dependin
 ```
 #!console
 # tar xvjf firefox-30.0.tar.bz2
-
 ```
 
 * Configure Firefox
@@ -455,4 +454,51 @@ A PDF of the ITK manual can be found here: [http://www.itk.org/ItkSoftwareGuide.
 #!console
 # cd /usr/local/
 # git clone git://itk.org/ITK.git
+```
+
+* Install ITK:
+
+```
+#!console
+# mkdir ITK-build
+# cd ITK-build
+# ccmake ../ITK
+```
+
+* Configure ITK by pressing the "c" key. In order to speed up the build process, disable the compilation of the unit tests and examples. This is done with the variables `BUILD TESTING=OFF` and `BUILD EXAMPLES=OFF`. Each time you change a set of variables in CMake, it is necessary to proceed to another configuration step by hitting the "c" key.
+
+* When no new options appear in CMake, you can proceed to generate Makefiles by hitting the "g" key.
+
+
+**Mac**
+
+
+**Windows**
+
+
+---------------------------------------
+
+**Linux**
+
+* Download the latest version of Convert3D:
+
+```
+#!console
+# cd /usr/local/
+# wget http://sourceforge.net/projects/c3d/files/latest/download
+```
+
+* Extract Archive
+
+```
+#!console
+# tar xvzf c3d-nightly-Linux-x86_64.tar.gz
+```
+
+* Configure Convert3D:
+
+```
+#!console
+# cd /usr/local/c3d-1.0.0-Linux-x86_64/bin/
+# ln -s -t /usr/local/bin/ c2d c3d c3d_affine_tool c3d_gui c4d 
 ```
