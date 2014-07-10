@@ -354,6 +354,7 @@ git version 1.7.1
 
 > Now click *Install*.
 
+
 ## C++ Compiler
 
 **Linux**
@@ -376,9 +377,6 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 (Unfortunately, Windows doesn't come with a default C++ compiler. There are many ways to obtain a GCC compiler. Below I have outlined how to use MinGW to to obtain a GCC compiler that works for ANTs installation.)
 
 * Download the [latest version](http://sourceforge.net/projects/mingw/files/latest/download?source=files).
-* 
-
-
 
 ---------------------------------------
 
@@ -421,3 +419,40 @@ $ PATH=${ANTSPATH}:${PATH}
 **Mac**
 
 **Windows**
+
+# Convert3D
+
+Convert3D requires several programs to be installed first:
+
+## CMAKE
+
+**Linux**
+
+You can check to see if you have git installed already on your system:
+
+```
+#!console
+$ cmake --version
+cmake version 3.0.0
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+```
+
+**Mac**
+
+**Linux**
+
+
+## ITK
+
+A PDF of the ITK manual can be found here: (http://www.itk.org/ItkSoftwareGuide.pdf)[http://www.itk.org/ItkSoftwareGuide.pdf]
+
+**Linux**
+
+* Download the latest version of ITK:
+
+```
+#!console
+# cd /usr/local/
+# git clone git://itk.org/ITK.git
+```
