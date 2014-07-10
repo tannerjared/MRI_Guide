@@ -499,6 +499,5 @@ A PDF of the ITK manual can be found here: [http://www.itk.org/ItkSoftwareGuide.
 
 ```
 #!console
-# cd /usr/local/c3d-1.0.0-Linux-x86_64/bin/
-# ln -s -t /usr/local/bin/ c2d c3d c3d_affine_tool c3d_gui c4d 
+# mv -i /usr/local/c3d-1.0.0-Linux-x86_64/bin/* /usr/local
 ```
