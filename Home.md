@@ -428,7 +428,7 @@ Convert3D requires several programs to be installed first:
 
 **Linux**
 
-You can check to see if you have git installed already on your system:
+You can check to see if you have cmake installed already on your system:
 
 ```
 #!console
@@ -445,7 +445,7 @@ CMake suite maintained and supported by Kitware (kitware.com/cmake).
 
 ## ITK
 
-A PDF of the ITK manual can be found here: (http://www.itk.org/ItkSoftwareGuide.pdf)[http://www.itk.org/ItkSoftwareGuide.pdf]
+A PDF of the ITK manual can be found here: [http://www.itk.org/ItkSoftwareGuide.pdf](http://www.itk.org/ItkSoftwareGuide.pdf)
 
 **Linux**
 
