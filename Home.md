@@ -43,6 +43,53 @@ You may need to be logged in as root to install many of these programs, dependin
 * Download the [latest version](https://download.mozilla.org/?product=firefox-stub&os=win&lang=en-US).
 * Run Firefox Setup
 
+# DICOM toolkit (DCMTK)
+
+Installation instructions can be found here: [http://support.dcmtk.org/docs/file_install.html](http://support.dcmtk.org/docs/file_install.html)
+
+**Linux**
+
+* Download the latest version of dcmtk:
+
+```
+#!console
+# cd /usr/local/
+# wget ftp://dicom.offis.de/pub/dicom/offis/software/dcmtk/dcmtk360/dcmtk-3.6.0.tar.gz
+```
+
+* Extract Archive
+
+```
+#!console
+# tar xvzf dcmtk-3.6.0.tar.gz
+```
+
+* Configure:
+
+```
+#!console
+# cd dcmtk-3.6.0
+# ./configure
+```
+* Build the libraries and executables:
+
+```
+#!console
+# make all
+```
+
+* Install the executables and some support files (data dictionary):
+
+```
+#!console
+# make install
+```
+
+**Mac**
+
+**Windows**
+
+
 # dcm2nii DICOM to NIfTI conversion
 
 The [installation guide](http://www.mccauslandcenter.sc.edu/mricro/mricron/install.html) can be found here.
@@ -110,6 +157,7 @@ EXAMPLE: dcm2nii -a y /Users/Joe/Documents/dcm/IM_0116
 >Enter `;C:\Windows\Downloaded Program Files\mricron`
 
 * To ensure a proper download type `dcm2nii` into the command prompt and press enter. If it downloaded correctly you should see a similar output as the one listed above under the Linux version
+
 
 # Multi-image Analysis GUI (MANGO)
 
@@ -500,55 +548,6 @@ A PDF of the ITK manual can be found here: [http://www.itk.org/ItkSoftwareGuide.
 ```
 #!console
 # mv -i /usr/local/c3d-1.0.0-Linux-x86_64/bin/* /usr/local
-```
-
-
-**Mac**
-
-
-**Windows**
-
-
-# DICOM toolkit (DCMTK)
-
-Installation instructions can be found here: [http://support.dcmtk.org/docs/file_install.html](http://support.dcmtk.org/docs/file_install.html)
-
-**Linux**
-
-* Download the latest version of dcmtk:
-
-```
-#!console
-# cd /usr/local/
-# wget ftp://dicom.offis.de/pub/dicom/offis/software/dcmtk/dcmtk360/dcmtk-3.6.0.tar.gz
-```
-
-* Extract Archive
-
-```
-#!console
-# tar xvzf dcmtk-3.6.0.tar.gz
-```
-
-* Configure:
-
-```
-#!console
-# cd dcmtk-3.6.0
-# ./configure
-```
-* Build the libraries and executables:
-
-```
-#!console
-# make all
-```
-
-* Install the executables and some support files (data dictionary):
-
-```
-#!console
-# make install
 ```
 
 
