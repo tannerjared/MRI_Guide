@@ -501,3 +501,58 @@ A PDF of the ITK manual can be found here: [http://www.itk.org/ItkSoftwareGuide.
 #!console
 # mv -i /usr/local/c3d-1.0.0-Linux-x86_64/bin/* /usr/local
 ```
+
+
+**Mac**
+
+
+**Windows**
+
+
+# DICOM toolkit (DCMTK)
+
+Installation instructions can be found here: [http://support.dcmtk.org/docs/file_install.html](http://support.dcmtk.org/docs/file_install.html)
+
+**Linux**
+
+* Download the latest version of dcmtk:
+
+```
+#!console
+# cd /usr/local/
+# wget ftp://dicom.offis.de/pub/dicom/offis/software/dcmtk/dcmtk360/dcmtk-3.6.0.tar.gz
+```
+
+* Extract Archive
+
+```
+#!console
+# tar xvzf dcmtk-3.6.0.tar.gz
+```
+
+* Configure:
+
+```
+#!console
+# cd dcmtk-3.6.0
+# ./configure
+```
+* Build the libraries and executables:
+
+```
+#!console
+# make all
+```
+
+* Install the executables and some support files (data dictionary):
+
+```
+#!console
+# make install
+```
+
+
+**Mac**
+
+
+**Windows**
