@@ -523,6 +523,9 @@ A PDF of the ITK manual can be found here: [http://www.itk.org/ItkSoftwareGuide.
 
 **Windows**
 
+* Download the [latest version](http://sourceforge.net/projects/itk/files/itk/4.5/InsightToolkit-4.5.2.zip/download)
+
+* Extract ITK
 
 ---------------------------------------
 
