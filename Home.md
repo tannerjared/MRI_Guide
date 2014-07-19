@@ -425,6 +425,16 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 * Download the [latest version](http://sourceforge.net/projects/mingw/files/latest/download?source=files).
 
+* Select the appropriate files in the MinGW Installation Manager
+
+> mpc (dev and dll)
+> mingw-runtime (dev and dll)
+> w32api
+> Required runtime libraries for GCC:
+>> mpc (dev and dll)
+>> 
+
+
 ---------------------------------------
 
 **Linux**
