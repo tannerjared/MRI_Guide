@@ -401,6 +401,8 @@ git version 1.7.1
 
 > Now click *Install*.
 
+* Go to the *Installation* tab and select *Apply Changes*
+
 
 ## C++ Compiler
 
@@ -432,7 +434,11 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 > mingw32-gcc-g++
 
+* Download [Python](https://www.python.org/ftp/python/2.7.8/python-2.7.8.msi)
 
+* Run the Python Setup and accept the default settings
+
+* Download [Doxygen](http://sourceforge.net/projects/doxygen/files/latest/download)
 
 ---------------------------------------
 
