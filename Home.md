@@ -427,7 +427,7 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 * Select the appropriate files in the MinGW Installation Manager
 
-> mpc (dev and dll)
+> binutils (bin and dev)
 
 > mingw-runtime (dev and dll)
 
