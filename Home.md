@@ -428,11 +428,29 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 * Select the appropriate files in the MinGW Installation Manager
 
 > mpc (dev and dll)
+
 > mingw-runtime (dev and dll)
+
 > w32api
+
 > Required runtime libraries for GCC:
+
 >> mpc (dev and dll)
->> 
+
+>> mpfr (dev and dll)
+
+>> gmp (dev and dll)
+
+>> pthreads (dev and dll)
+
+>> iconv (dev and dll)
+
+>> zlib
+
+>> gettext
+
+> gcc-core (bin and dev and dll)
+
 
 
 ---------------------------------------
