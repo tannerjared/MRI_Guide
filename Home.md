@@ -425,31 +425,12 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 * Download the [latest version](http://sourceforge.net/projects/mingw/files/latest/download?source=files).
 
-* Select the appropriate files in the MinGW Installation Manager
+* Select the appropriate files in the MinGW Installation Manager under Basic Setup:
+> mingw-developer-toolkit
 
-> binutils (bin and dev)
+> mingw32-base
 
-> mingw-runtime (dev and dll)
-
-> w32api
-
-> Required runtime libraries for GCC:
-
->> mpc (dev and dll)
-
->> mpfr (dev and dll)
-
->> gmp (dev and dll)
-
->> pthreads (dev and dll)
-
->> iconv (dev and dll)
-
->> zlib
-
->> gettext
-
-> gcc-core (bin and dev and dll)
+> mingw32-gcc-g++
 
 
 
