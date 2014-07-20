@@ -440,7 +440,7 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 * Download [Doxygen](http://sourceforge.net/projects/doxygen/files/latest/download)
 
-* Download [Tcl](http://sourceforge.net/projects/tcl/?source=dlp)
+* Download [Tcl](http://www.activestate.com/activetcl/downloads/thank-you?dl=http://downloads.activestate.com/ActiveTcl/releases/8.6.1.0/ActiveTcl8.6.1.0.297577-win32-ix86-threaded.exe)
 
 
 ---------------------------------------
