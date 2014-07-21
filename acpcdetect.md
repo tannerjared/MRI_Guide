@@ -4,7 +4,7 @@ The acpcdetect program is a great program for aligning the anterior commissure a
 
 As well as making sure the brain isn't tilted in along the coronal plane or transverse plane. In other words, the interhemispheric fissure should be straight in the coronal and transverse view:
 
-![](http://classconnection.s3.amazonaws.com/985/flashcards/1077985/jpg/81326744185093.jpg)
+![](http://classconnection.s3.amazonaws.com/985/flashcards/1077985/jpg/81326744185093.jpg =300px)
 
 ## Before you begin
 
