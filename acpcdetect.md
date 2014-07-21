@@ -7,7 +7,9 @@ How to Process MRI Images:
 
 ---------------------------------------
 
-# acpcdetect
+[TOC]
+
+---------------------------------------
 
 The acpcdetect program is a great program for aligning the anterior commissure and posterior commissure along the same horizontal line in sagittal view:
 
@@ -17,7 +19,7 @@ As well as making sure the brain isn't tilted in along the coronal plane or tran
 
 ![](http://classconnection.s3.amazonaws.com/985/flashcards/1077985/jpg/81326744185093.jpg =300px)
 
-## Before you begin
+# Before you begin
 
 You will need to set the environmental variables when you want to use the program:
 
@@ -27,7 +29,7 @@ $ ARTHOME=/usr/local/art
 $ export ARTHOME
 ```
 
-## Using acpcdetect for the first time
+# Using acpcdetect for the first time
 
 To run the program, you should be able to type in a new Terminal window to see the available options:
 
@@ -69,7 +71,7 @@ Outputs:
 <input volume>_ACPC.txt: Stores the detected AC/PC coordinates and the estimated mid-sagittal plane
 ```
 
-## AC-PC aligning T1 image
+# AC-PC aligning T1 image
 
 This program works on T1 images in the NIfTI format. The simplest code to use is:
 
