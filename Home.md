@@ -1,3 +1,7 @@
+[Install Programs](Home)
+
+---------------------------------------
+
 [TOC]
 
 # Before You Begin
