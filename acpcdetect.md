@@ -1,3 +1,12 @@
+How to Process MRI Images:
+
+1. [Install Programs](Home)
+2. Preprocessing T1 images
+     * [Convert DICOM to NIfTI](dcm2nii)
+     * [Align anterior commissure and posterior commisure](acpcdetect)
+
+---------------------------------------
+
 The acpcdetect program is a great program for aligning the anterior commissure and posterior commissure along the same horizontal line in sagittal view:
 
 ![](http://classconnection.s3.amazonaws.com/925/flashcards/1329925/png/2011-08-13_23271313318867635-1425D8484BE3E3AD7B8.png)
