@@ -82,7 +82,7 @@ $ acpcdetect -M -o ~/<subjDir>/acpc.nii -i ~/<subjDir>/cot1.nii
 
 **Why adjust the FOV center?**
 
-When dealing with smaller brains or brains of various sizes, if you make the center of the field of view (FOV) at the anterior commissure, you often mistakenly remove part of the occipital lobe, because the anterior commissure is so far forward / anterior. Instead, you want to move the center of the FOV backwards and easiest way to standardize that is the place the center of the FOV at the midway point between the anterior commissure and the posterior commissure.
+When dealing with smaller brains or brains of various sizes, if you make the center of the field of view (FOV) at the anterior commissure, you often mistakenly remove part of the occipital lobe, because the anterior commissure is so far forward / anterior. Instead, you want to move the center of the FOV backwards and the easiest way to standardize that is to place the center of the FOV at the midway point between the anterior commissure and the posterior commissure.
 
 ### Note
 
