@@ -2,6 +2,14 @@
 
 The dcm2nii program converts DICOM files from your scanner into the NIfTI format that's used by many programs like: FSL, SPM, ANTs, etc. The NIfTI image format standard is the common standard used in scientific image processing, because the file is compact, simple, and versatile.
 
+## Before you Begin
+
+Organizing your files can take a lot of time and effort, but assuring that your files are organized properly will save you a lot of time and allow you to easily batch process many participants at once. Standard organization involves have a data directory and under that data directory you will have a folder for each participant and finally under each participant all the files will be placed. For example the participant folder, `1222--03-23-09` is located under a main practice directory. Within the participant directory are all their DICOM folders organized by scan sequence:
+
+![Screenshot.png](https://bitbucket.org/repo/pAjpdx/images/2724483552-Screenshot.png)
+
+## Using dcm2nii for the first time
+
 To run the program, you should be able to type in a new Terminal window to see the available options:
 
 ```
@@ -32,6 +40,9 @@ OPTIONS:
   You can also set defaults by editing /home/njhunsak/.dcm2nii/dcm2nii.ini
 EXAMPLE: dcm2nii -a y /Users/Joe/Documents/dcm/IM_0116
 ``` 
+
+## Converting all the DICOM images in participant directory
+
 There are many options for you to use but here's the basic command you can use for your images:
 
 ```
@@ -39,11 +50,28 @@ There are many options for you to use but here's the basic command you can use f
 $ dcm2nii -a y -g n -r n -x n -o ~/<subjDir>/ ~/<subjDir>/*
 ```
 
+The `*` at the end of the input directory tells the program to process everything in the participant directory. If you don't place the `*` the program will give you an error:
+
+```
+#!console
+$ dcm2nii -a -g n -r n -x n -o ~/<subjDir>/ ~/<subjDir>/
+Chris Rorden's dcm2nii :: 6 June 2013
+reading preferences file /home/njhunsak/.dcm2nii/dcm2nii.ini
+Data will be exported to /home/njhunsak/Desktop/1222--03-23-09/
+An unhandled exception occurred at $000000000047F0DD :
+EAccessViolation : Access violation
+  $000000000047F0DD
+  $000000000040E71A
+  $000000000041F7E8
+  $00000000004211C5
+```
+
+
 **Notes**
 
 DICOM files need to have the .dcm file extension at the end of the file for dcm2nii to run properly. If you need to batch find files that do not have this extension and add the extension use the following code:
 
 ```
 #!console
-$ find /path/to/DICOM/dirs/ -type f ! -name "*.*" -exec mv -v {} {}.dcm \;
+$ find /path/to/DICOM/directories/ -type f ! -name "*.*" -exec mv -v {} {}.dcm \;
 ```
