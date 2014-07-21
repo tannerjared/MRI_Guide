@@ -57,3 +57,20 @@ Outputs:
 <input volume>_ACPC_axial.ppm: Axial view of the detected AC/PC locations
 <input volume>_ACPC.txt: Stores the detected AC/PC coordinates and the estimated mid-sagittal plane
 ```
+
+## AC-PC aligning T1 image
+
+This program works on T1 images in the NIfTI format. The simplest code to use is:
+
+```
+#!console
+$ acpcdetect -M -o ~/<subjDir>/acpc.nii -i ~/<subjDir>/cot1.nii
+```
+
+**Why adjust the FOV center?***
+
+When dealing with smaller brains or brains of various sizes, if you make the center of the field of view (FOV) at the anterior commissure, you often mistakenly remove part of the occipital lobe, because the anterior commissure is so far forward / anterior. Instead, you want to move the center of the FOV backwards and easiest way to standardize that is the place the center of the FOV at the midway point between the anterior commissure and the posterior commissure.
+
+### Note
+
+The acpcdetect program will not be able to use zipped NIfTI files (e.g., .nii.gz), so all methods up to this point leave the files in NIfTI format and not zipped NIfTI format.
