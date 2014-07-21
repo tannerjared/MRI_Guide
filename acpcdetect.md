@@ -67,7 +67,7 @@ This program works on T1 images in the NIfTI format. The simplest code to use is
 $ acpcdetect -M -o ~/<subjDir>/acpc.nii -i ~/<subjDir>/cot1.nii
 ```
 
-**Why adjust the FOV center?***
+**Why adjust the FOV center?**
 
 When dealing with smaller brains or brains of various sizes, if you make the center of the field of view (FOV) at the anterior commissure, you often mistakenly remove part of the occipital lobe, because the anterior commissure is so far forward / anterior. Instead, you want to move the center of the FOV backwards and easiest way to standardize that is the place the center of the FOV at the midway point between the anterior commissure and the posterior commissure.
 
