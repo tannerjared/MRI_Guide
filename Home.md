@@ -1,4 +1,5 @@
 How to Process MRI Images:
+
 1. [Install Programs](Home)
 2. Preprocessing T1 images
      * [Convert DICOM to NIfTI](dcm2nii)
