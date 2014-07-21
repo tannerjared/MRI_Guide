@@ -7,17 +7,19 @@ How to Process MRI Images:
 
 ---------------------------------------
 
-# dcm2nii
+[toc]
+
+---------------------------------------
 
 The dcm2nii program converts DICOM files from your scanner into the NIfTI format that's used by many programs like: FSL, SPM, ANTs, etc. The NIfTI image format standard is the common standard used in scientific image processing, because the file is compact, simple, and versatile.
 
-## Before you Begin
+# Before you Begin
 
 Organizing your files can take a lot of time and effort, but assuring that your files are organized properly will save you a lot of time and allow you to easily batch process many participants at once. Standard organization involves having a central data directory and under that data directory you will have a folder for each participant and finally under each participant all the files will be placed. For example the participant folder, `1222--03-23-09` is located under a main practice directory. Within the participant directory are all their DICOM folders organized by scan sequence:
 
 ![Screenshot.png](https://bitbucket.org/repo/pAjpdx/images/2724483552-Screenshot.png)
 
-## Using dcm2nii for the first time
+# Using dcm2nii for the first time
 
 To run the program, you should be able to type in a new Terminal window to see the available options:
 
@@ -50,7 +52,7 @@ OPTIONS:
 EXAMPLE: dcm2nii -a y /Users/Joe/Documents/dcm/IM_0116
 ``` 
 
-## Converting all the DICOM images in participant directory
+# Converting all the DICOM images in participant directory
 
 There are many options for you to use but here's the basic command you can use for your images:
 
@@ -75,7 +77,7 @@ EAccessViolation : Access violation
   $00000000004211C5
 ```
 
-## Cropping and reorienting images
+# Cropping and reorienting images
 
 You can easily combine these two steps at once, but if for some reason you needed to go back and reprocess your NIfTI image, the dcm2nii program can. For this example, we will go back and crop and make sure the NIfTI image is in standard orientation:
 
