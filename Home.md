@@ -9,6 +9,8 @@ How to Process MRI Images:
 
 [TOC]
 
+---------------------------------------
+
 # Before You Begin
 
 You may need to be logged in as root to install many of these programs, depending on the permissions of the directory on which you are installing. The following are specifics about the operation system in which programs were installed: 
