@@ -4,7 +4,7 @@ The dcm2nii program converts DICOM files from your scanner into the NIfTI format
 
 ## Before you Begin
 
-Organizing your files can take a lot of time and effort, but assuring that your files are organized properly will save you a lot of time and allow you to easily batch process many participants at once. Standard organization involves have a data directory and under that data directory you will have a folder for each participant and finally under each participant all the files will be placed. For example the participant folder, `1222--03-23-09` is located under a main practice directory. Within the participant directory are all their DICOM folders organized by scan sequence:
+Organizing your files can take a lot of time and effort, but assuring that your files are organized properly will save you a lot of time and allow you to easily batch process many participants at once. Standard organization involves having a central data directory and under that data directory you will have a folder for each participant and finally under each participant all the files will be placed. For example the participant folder, `1222--03-23-09` is located under a main practice directory. Within the participant directory are all their DICOM folders organized by scan sequence:
 
 ![Screenshot.png](https://bitbucket.org/repo/pAjpdx/images/2724483552-Screenshot.png)
 
@@ -66,6 +66,22 @@ EAccessViolation : Access violation
   $00000000004211C5
 ```
 
+## Cropping and reorienting images
+
+You can easily combine these two steps at once, but if for some reason you needed to go back and reprocess your NIfTI image, the dcm2nii program can. For this example, we will go back and crop and make sure the NIfTI image is in standard orientation:
+
+```
+#!console
+$ dcm2nii -g n -x y -o ~/<subjDir>/ ~/<subjDir>/t1.nii
+```
+
+Why do you reorient the image?
+
+> The NIfTI format stores spatial transforms so that software can determine the oreintation of the image. This means that MRIcron can display the image with an intuitive orientation. However, many programs ignore these transforms, and display the images as they are saved to disk (e.g. FSLview, MRIcro) - this means that a sagittally acquired scan appears very differently from an axially acquired scan. In fact, the three spatial dimensions (left-right, anterior-posterior, superior-inferior) can be saved in 48 different orthogonal orientations. A new copy of the image is created with the prefix 'o'.
+
+Why crop the image?
+
+> After reorienting, dcm2nii will attempt to 'autocrop' T1-weighted anatomical images (images with a Echo Time [TE] of less than 20ms). A new copy of the image is created with the prefix 'c' that attempts to remove excess air surrounding the individual as well as parts of the neck below the cerebellum. This excess neck can disrupt normalization of images (as the template images do not have similar neck regions). This new image has a slightly different NIfTI transform - the origin is adjusted to compensate for the removed portions of the image. 
 
 **Notes**
 
