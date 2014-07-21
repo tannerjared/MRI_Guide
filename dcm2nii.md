@@ -75,11 +75,11 @@ You can easily combine these two steps at once, but if for some reason you neede
 $ dcm2nii -g n -x y -o ~/<subjDir>/ ~/<subjDir>/t1.nii
 ```
 
-Why do you reorient the image?
+### Why reorient the image?
 
 > The NIfTI format stores spatial transforms so that software can determine the oreintation of the image. This means that MRIcron can display the image with an intuitive orientation. However, many programs ignore these transforms, and display the images as they are saved to disk (e.g. FSLview, MRIcro) - this means that a sagittally acquired scan appears very differently from an axially acquired scan. In fact, the three spatial dimensions (left-right, anterior-posterior, superior-inferior) can be saved in 48 different orthogonal orientations. A new copy of the image is created with the prefix 'o'.
 
-Why crop the image?
+### Why crop the image?
 
 > After reorienting, dcm2nii will attempt to 'autocrop' T1-weighted anatomical images (images with a Echo Time [TE] of less than 20ms). A new copy of the image is created with the prefix 'c' that attempts to remove excess air surrounding the individual as well as parts of the neck below the cerebellum. This excess neck can disrupt normalization of images (as the template images do not have similar neck regions). This new image has a slightly different NIfTI transform - the origin is adjusted to compensate for the removed portions of the image. 
 
