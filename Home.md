@@ -455,6 +455,8 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 * Download [SWIG](http://sourceforge.net/projects/swig/files/swigwin/swigwin-3.0.2/swigwin-3.0.2.zip/download?use_mirror=iweb)
 
+* You must now add SWIG to the environment variable PATH. (For example, if you installed SWIG as its own folder on the C drive you would add `C:\swigwin-3.0.2` to the PATH)
+
 ---------------------------------------
 
 **Linux**
