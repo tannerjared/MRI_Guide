@@ -453,8 +453,7 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 * Download [Doxygen](http://sourceforge.net/projects/doxygen/files/latest/download)
 
-* Download [Tcl](http://www.activestate.com/activetcl/downloads/thank-you?dl=http://downloads.activestate.com/ActiveTcl/releases/8.6.1.0/ActiveTcl8.6.1.0.297577-win32-ix86-threaded.exe)
-
+* Download [SWIG](http://sourceforge.net/projects/swig/files/swigwin/swigwin-3.0.2/swigwin-3.0.2.zip/download?use_mirror=iweb)
 
 ---------------------------------------
 
