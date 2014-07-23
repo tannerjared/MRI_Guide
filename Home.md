@@ -457,6 +457,8 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 * You must now add SWIG to the environment variable PATH. (For example, if you installed SWIG as its own folder on the C drive you would add `C:\swigwin-3.0.2` to the PATH)
 
+* Download [Ruby](http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-1.9.3-p545.exe?direct)
+
 ---------------------------------------
 
 **Linux**
