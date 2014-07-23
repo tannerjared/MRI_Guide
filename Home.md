@@ -20,6 +20,7 @@ You may need to be logged in as root to install many of these programs, dependin
 **Version Notes**
 
 * Red Hat Enterprise Linux Server Release 6.2 (Santiago)
+* Windows 7 (If you are using Windows it may be easier to log in as the Administrator for all of these downloads)
 
 
 # Firefox
