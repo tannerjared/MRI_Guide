@@ -15,6 +15,8 @@ Table of Contents:
 
 ---------------------------------------
 
+[The full guide can be found here.](http://lifehacker.com/5633909/who-needs-a-mouse-learn-to-use-the-command-line-for-almost-anything)
+
 # What is the command line?
 
 The command-line interface, sometimes referred to as the CLI, is a tool into which you can type text commands to perform specific tasks as opposed to using the mouse to point and click on menus and buttons. Since you can directly control the computer by typing, many tasks can be performed more quickly, and some tasks can be automated with special commands that loop through and perform the same action on many files—saving you, potentially, loads of time in the process.
@@ -59,4 +61,9 @@ You can also navigate to absolute paths. Again, if I were in /path/to/ and I wan
 #!console
 $ cd /another/path
 ```
+To swap directories to the previous working directory, the '-' (hyphen) shortcut is handy to have on hand. For example, if you were in the /first/folder/path/ directory and then switched over to /etc/ to make a configuration change, you might not want to type in the full path to switch back. You can quickly switch back to the previous working directory with this command:
 
+```
+#!console
+$ cd -
+```
