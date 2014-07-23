@@ -4,6 +4,7 @@ How to Process MRI Images:
 2. Preprocessing T1 images
      * [Convert DICOM to NIfTI](dcm2nii)
      * [Align anterior commissure and posterior commisure](acpcdetect)
+     * [Correct intensity nonuniformities (bias field)](N4BiasFieldCorrection)
 
 ---------------------------------------
 
@@ -12,6 +13,8 @@ Table of Contents:
 [TOC]
 
 ---------------------------------------
+
+# Before You Begi
 
 The dcm2nii program converts DICOM files from your scanner into the NIfTI format that's used by many programs like: FSL, SPM, ANTs, etc. The NIfTI image format standard is the common standard used in scientific image processing, because the file is compact, simple, and versatile.
 
