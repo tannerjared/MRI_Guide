@@ -67,3 +67,106 @@ To swap directories to the previous working directory, the '-' (hyphen) shortcut
 #!console
 $ cd -
 ```
+
+## Creating or removing folders
+
+To create a new folder, you can simply use the `mkdir <foldername>` command. You can then remove any folder with the `rmdir <foldername>` command—as long as the folder is empty. If there are files in the folder, you'll have to delete those files before you can remove the folder.
+
+## Creating and removing files
+
+You can use the `touch <filename>` command to create a new, blank file, and then use the `rm <filename>` command to delete files:
+
+```
+#!console
+$ rm filename
+```
+
+You can quickly remove all files in a directory by using the '*' (asterisk) wildcard—another simple tool that will come in very handy during your time in the command line. For example, if you're in a folder and want to delete every file inside that folder, just type:
+
+```
+#!console
+$ rm *
+```
+
+If you want to delete a list of files and folders, including all files from subdirectories, without prompting you for every single entry, you can use the -r option for recursive, and the -f option for force. This command will wipe out every instance of a matching filename pattern (note the slightly different use of the wildcard) from the current directory and below:
+
+```
+#!console
+$ rm -rf filename.*
+```
+
+# Beyond the basics
+
+The following commands will be extremely useful to know when trying to run a whole set of participants at once. These commands go beyond the basic command lines.
+
+## Running a script in the current folder
+
+If you have an application or shell script in the current folder, you can't simply type the name of the command and expect it to start. You'll need to add a ./ to the beginning of the command in order to start it. Why? Because in the Bash shell, the current directory, or "." folder, is not included in the system path. So to launch scriptname.sh in the current folder, you'll need to use:
+
+```
+#!console
+$ ./scriptname.sh
+```
+
+## Find files
+
+You can use the very powerful `find` command to search for files on your system. For instance, if you wanted to find all files with .txt in the name that were modified in the last 5 days, you would use this command:
+
+```
+#!console
+$ find . -name "*.txt" -mtime 5
+```
+
+The `grep` command can be used to quickly find text within files, even searching through subdirectories. For instance, if you wanted to search through all files in the current directory and below it for "text string", you could use this command:
+
+```
+#!console
+grep -ir "text string" *
+```
+
+## Looping over a set of files
+
+If you want to loop through a set of filenames and perform an action on each one, you can use the `for` command to loop through a set of files. For instance, to loop through all the .txt files in the current directory and display them on the console, you could use:
+
+```
+#!console
+$ for f in *.txt
+> do
+> echo $f
+> done
+```
+
+You can also combine the find command and the loop action to find specific files and then perform an action:
+
+```
+#!console
+$ for i in $(find . -name "*.txt" -mtime 5)
+> do
+> echo $i
+> done
+```
+
+## Using history
+
+You can use the `history` command to show a list of all the recently used commands, or the up/down arrows to loop through them. The **Ctrl+R** shortcut key will start a search mode where you can type the first few characters of a command to search through your recent history.
+
+## Using bash shortcut keys
+
+There are a number of very useful shortcut keys you can use in the bash shell, and it pays to master them all. Here's a couple to get you started:
+
+* Tab: Auto-complete files and folder names
+* Ctrl + A: Go to the beginning of the line you are currently typing on
+* Ctrl + E: Go to the end of the line you are currently typing on
+* Ctrl + L: Clears the Screen, similar to the clear command
+* Ctrl + U: Clears the line before the cursor position. If you are at the end of the line, clears the entire line.
+* Ctrl + H: Same as backspace
+* Ctrl + R: Let’s you search through previously used commands
+* Ctrl + C: Kill whatever you are running
+* Ctrl + D: Exit the current shell
+* Ctrl + Z: Puts whatever you are running into a suspended background process. fg restores it.
+* Ctrl + W: Delete the word before the cursor
+* Ctrl + K: Clear the line after the cursor
+* Ctrl + T: Swap the last two characters before the cursor
+* Esc + T: Swap the last two words before the cursor
+* Alt + F: Move cursor forward one word on the current line
+* Alt + B: Move cursor backward one word on the current line
