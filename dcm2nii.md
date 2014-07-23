@@ -14,8 +14,6 @@ Table of Contents:
 
 ---------------------------------------
 
-# Before You Begi
-
 The dcm2nii program converts DICOM files from your scanner into the NIfTI format that's used by many programs like: FSL, SPM, ANTs, etc. The NIfTI image format standard is the common standard used in scientific image processing, because the file is compact, simple, and versatile.
 
 # Before you Begin
