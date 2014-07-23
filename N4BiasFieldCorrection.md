@@ -116,7 +116,7 @@ OPTIONS:
           <VALUES>: 1
 ```
 
-# Bias Field Correction
+# Bias field correction
 
 Correcting the bias field can be time consuming on the computer. One way to mitigate the computer processing time is to run the program several times on the same image from starting very coarse and moving in more finely:
 
@@ -126,3 +126,7 @@ $ N4BiasFieldCorrection -d 3 -i ~/<subjDir>/acpc.nii -o ~/<subjDir>/n4.nii.gz -s
 $ N4BiasFieldCorrection -d 3 -i ~/<subjDir>/n4.nii.gz -o ~/<subjDir>/n4.nii.gz -s 4 -b [200] -c [50x50x50x50,0.000001]
 $ N4BiasFieldCorrection -d 3 -i ~/<subjDir>/n4.nii.gz -o ~/<subjDir>/n4.nii.gz -s 2 -b [200] -c [50x50x50x50,0.000001]
 ```
+
+### Note
+
+This is the first step in the pipeline where I move from using just NIfTI files to zipped NIfTI (.nii.gz) files. Moving forward, some pipelines do not always accept NIfTI format and demand zipped NIfTI (.nii.gz). Although this isn't always going to be the case, using zipped NIfTI format has been the solution.
