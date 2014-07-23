@@ -494,7 +494,7 @@ terminal
 ```
 #!console
 # cp  /usr/local/ANTs/Scripts/*  /usr/local/antsbin/bin/
-$ ANTSPATH=/usr/local/antsbin/bin/
+$ export ANTSPATH=/usr/local/antsbin/bin/
 $ PATH=${ANTSPATH}:${PATH}
 ```
 
