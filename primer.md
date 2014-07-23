@@ -146,11 +146,11 @@ $ for i in $(find . -name "*.txt" -mtime 5)
 > done
 ```
 
-## Using history
+# Using history
 
 You can use the `history` command to show a list of all the recently used commands, or the up/down arrows to loop through them. The **Ctrl+R** shortcut key will start a search mode where you can type the first few characters of a command to search through your recent history.
 
-## Using bash shortcut keys
+# Using bash shortcut keys
 
 There are a number of very useful shortcut keys you can use in the bash shell, and it pays to master them all. Here's a couple to get you started:
 
