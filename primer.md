@@ -29,12 +29,34 @@ When you run your terminal application (Cygwin on Windows, Terminal on Mac and L
 
 ## List files
 
-First, let's display a list of files inside the active folder. For this task, you'll need to use the *ls* command. You can pass a number of parameters to the command to display extra details or change the sorting. For instance, if I add `-l` to the end of my ls command, I'll see a detailed listing; `-t` will sort the results by file time; `-S` will sort by file size; and `-r` will reverse the sorting. You could use a combination of these together, like this command, which will show all files sorted by file size with the largest files at the bottom:
+First, let's display a list of files inside the active folder. For this task, you'll need to use the `ls` command. You can pass a number of parameters to the command to display extra details or change the sorting. For instance, if I add `-l` to the end of my ls command, I'll see a detailed listing; `-t` will sort the results by file time; `-S` will sort by file size; and `-r` will reverse the sorting. You could use a combination of these together, like this command, which will show all files sorted by file size with the largest files at the bottom:
 
 ```
 #!console
 $ ls -lSr
 ```
 
-If you use the –a option, you can see hidden files, and you'll also notice something else in the listing: there are two entries for "." and ".." at the beginning of the list. These represent the current folder—the "." folder—and the parent folder—the ".." folder.
+If you use the `–a` option, you can see hidden files, and you'll also notice something else in the listing: there are two entries for "." and ".." at the beginning of the list. These represent the current folder—the "." folder—and the parent folder—the ".." folder.
+
+## Change directories
+
+You can change between directories using the `cd` command, and using what we just learned about the ".." folder, you can use the following command to switch to the directory directly above the current one:
+
+```
+#!console
+$ cd ..
+```
+You can navigate to either full or relative paths. For example, the command above navigates to a relative path—one above the current folder. If you're in /path/to/ and you want to navigate to the folder stuff inside that folder, you can simply type:
+
+```
+#!console
+$ cd stuff
+```
+
+You can also navigate to absolute paths. Again, if I were in /path/to/ and I want to navigate to /another/path/, I would simply type:
+
+```
+#!console
+$ cd /another/path
+```
 
