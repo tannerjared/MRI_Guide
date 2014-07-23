@@ -121,7 +121,7 @@ The `grep` command can be used to quickly find text within files, even searching
 
 ```
 #!console
-grep -ir "text string" *
+$ grep -ir "text string" *
 ```
 
 ## Looping over a set of files
