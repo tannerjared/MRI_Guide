@@ -115,3 +115,14 @@ OPTIONS:
           Print the help menu. 
           <VALUES>: 1
 ```
+
+# Bias Field Correction
+
+Correcting the bias field can be time consuming on the computer. One way to mitigate the computer processing time is to run the program several times on the same image from starting very coarse and moving in more finely:
+
+```
+#!console
+$ N4BiasFieldCorrection -d 3 -i ~/<subjDir>/acpc.nii -o ~/<subjDir>/n4.nii.gz -s 8 -b [200] -c [50x50x50x50,0.000001]
+$ N4BiasFieldCorrection -d 3 -i ~/<subjDir>/n4.nii.gz -o ~/<subjDir>/n4.nii.gz -s 4 -b [200] -c [50x50x50x50,0.000001]
+$ N4BiasFieldCorrection -d 3 -i ~/<subjDir>/n4.nii.gz -o ~/<subjDir>/n4.nii.gz -s 2 -b [200] -c [50x50x50x50,0.000001]
+```
