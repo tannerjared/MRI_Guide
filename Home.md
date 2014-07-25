@@ -442,28 +442,7 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 **Windows**
 
-(Unfortunately, Windows doesn't come with a default C++ compiler. There are many ways to obtain a GCC compiler. Below I have outlined how to use MinGW to to obtain a GCC compiler that works for ANTs installation.)
-
-* Download the [latest version](http://sourceforge.net/projects/mingw/files/latest/download?source=files).
-
-* Select the appropriate files in the MinGW Installation Manager under Basic Setup:
-> mingw-developer-toolkit
-
-> mingw32-base
-
-> mingw32-gcc-g++
-
-* Download [Python](https://www.python.org/ftp/python/2.7.8/python-2.7.8.msi)
-
-* Run the Python Setup and accept the default settings
-
-* Download [Doxygen](http://sourceforge.net/projects/doxygen/files/latest/download)
-
-* Download [SWIG](http://sourceforge.net/projects/swig/files/swigwin/swigwin-3.0.2/swigwin-3.0.2.zip/download?use_mirror=iweb)
-
-* You must now add SWIG to the environment variable PATH. (For example, if you installed SWIG as its own folder on the C drive you would add `C:\swigwin-3.0.2` to the PATH)
-
-* Download [Ruby](http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-1.9.3-p545.exe?direct)
+(Unfortunately, Windows doesn't come with a default C++ compiler. There are many ways to obtain a GCC compiler. You may also find that your windows computer doesn't come with many other programs that are important for running the cmake process. This is the sensible place to stop downloading things in Windows if you value your sanity. Otherwise you will need to make sure you have Ruby, Python, SWIG, and possibly some other programs.)
 
 ---------------------------------------
 
@@ -562,10 +541,6 @@ A PDF of the ITK manual can be found here: [http://www.itk.org/ItkSoftwareGuide.
 
 
 **Windows**
-
-* Download the [latest version](http://sourceforge.net/projects/itk/files/itk/4.5/InsightToolkit-4.5.2.zip/download)
-
-* Extract ITK
 
 ---------------------------------------
 
