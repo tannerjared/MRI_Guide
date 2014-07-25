@@ -24,6 +24,9 @@ You may need to be logged in as root to install many of these programs, dependin
 * Red Hat Enterprise Linux Server Release 6.2 (Santiago)
 * Windows 7 (If you are using Windows it may be easier to log in as the Administrator for all of these downloads)
 
+**Windows Users**
+
+For those of you who are using Windows I would strongly encourage you not to. While some of these programs (MANGO, dcmi2nii, mricron, and some executive functions of ANTS) can be installed onto Windows easily, you will quickly find barrier between programs. The scientific community likes to run things on linux. While Mac has been known to be accomodating for linux type programs, Windows would rather kill you and your entire family before letting you fully install some of these programs. Because Windows isn't designed for running many of these it will slow your computer down drastically. Beneath you will find installation instructions for Windows up untill my computer became to slow to use. If you are interested in having these programs on your own computer I would suggest a free installation of linux. [Here](http://www.ubuntu.com/download/server/install-ubuntu-server) you will find instructions on downloading Ubuntu, a free linux operating system. It's quite easy and if you aren't fully commited to using just Linux you can partition your drive, which allows you to run Linux or Windows upon restarting your computer each time.
 
 # Firefox
 
