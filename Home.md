@@ -23,23 +23,24 @@ You may need to be logged in as root to install many of these programs, dependin
 
 * Mac OS X Lion (10.7)
      * You should install Xcode first before beginning any of these other tasks. Depending on your OS version, [Xcode 4.6 was installed](https://developer.apple.com/downloads/index.action#)
+     * In order to have access to root user you have to directly enable the option. [For instructions refer to this page here](http://support.apple.com/kb/ht1528)
 * Red Hat Enterprise Linux Server Release 6.2 (Santiago)
 * Windows 7 (If you are using Windows it may be easier to log in as the Administrator for all of these downloads)
 
-**Windows Users**
+**Attention Windows Users**
 
-For those of you who are using Windows I would strongly encourage you not to. While some of these programs (MANGO, dcmi2nii, mricron, and some executive functions of ANTS) can be installed onto Windows easily, you will quickly find barriers between programs. The scientific community likes to run things on linux. While Mac has been known to be accomodating for linux type programs, Windows would rather kill you and your entire family before letting you fully install some of these programs. Because Windows isn't designed for running many of these it will slow your computer down drastically. Beneath you will find installation instructions for Windows up untill my computer became too slow to use. If you are interested in having these programs on your own computer I would suggest a free installation of linux. [Here](http://www.ubuntu.com/download/server/install-ubuntu-server) you will find instructions on downloading Ubuntu, a free linux operating system. It's quite easy and if you aren't fully commited to using just Linux you can partition your drive, which allows you to run Linux or Windows upon restarting your computer each time.
+For those of you who are using Windows I would strongly encourage you not to. While some of these programs (MANGO, dcmi2nii, mricron, and some executive functions of ANTS) can be installed onto Windows easily, you will quickly find barriers between programs. The scientific community likes to run things on Linux. While Mac has been known to be accomodating for Linux type programs, Windows would rather kill you and your entire family before letting you fully install some of these programs. Because Windows isn't designed for running many of these it will slow your computer down drastically. Beneath you will find installation instructions for Windows up untill my computer became too slow to use. If you are interested in having these programs on your own computer I would suggest a free installation of Linux. [Here](http://www.ubuntu.com/download/server/install-ubuntu-server) you will find instructions on downloading Ubuntu, a free Linux operating system. It's quite easy and if you aren't fully commited to using just Linux you can partition your drive, which allows you to run Linux or Windows upon restarting your computer each time.
 
 # Firefox
 
-**Linux**
+### Linux
 
 * Download Firefox 30 Archive
 
 ```
 #!console
 # cd /usr/local
-# wget http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/30.0/linux-x86_64/en-US/firefox-30.0.tar.bz2
+# wget http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/30.0/Linux-x86_64/en-US/firefox-30.0.tar.bz2
 ```
 
 * Extract Archive
@@ -68,7 +69,7 @@ For those of you who are using Windows I would strongly encourage you not to. Wh
 
 Installation instructions can be found here: [http://support.dcmtk.org/docs/file_install.html](http://support.dcmtk.org/docs/file_install.html)
 
-**Linux**
+### Linux
 
 * Download the latest version of dcmtk:
 
@@ -115,7 +116,7 @@ Installation instructions can be found here: [http://support.dcmtk.org/docs/file
 
 The [installation guide](http://www.mccauslandcenter.sc.edu/mricro/mricron/install.html) can be found here.
 
-**Linux**
+### Linux
 
 * Download the [latest version](http://www.mccauslandcenter.sc.edu/mricro/mricron/install.html). 
 
@@ -208,7 +209,7 @@ $ sudo ln -s /Applications/osx/dcm2nii /usr/bin/
 
 The [installation guide](http://ric.uthscsa.edu/mango/mango.html) can be found here.
 
-**Linux**
+### Linux
 
 * Download the [latest version](http://ric.uthscsa.edu/mango/downloads/mango_unix.zip) here.
 
@@ -280,7 +281,7 @@ $ rmdir /Users/<username>/bin
 
 # MATLAB R2014a
 
-**Linux**
+### Linux
 
 * Unzip the downloaded file:
 
@@ -349,7 +350,7 @@ $ rmdir /Users/<username>/bin
 
 # ACPC Detect
 
-**Linux**
+### Linux
 
 * Download the [latest version](http://www.nitrc.org/frs/?group_id=90) here.
 
@@ -395,7 +396,7 @@ ANTs requires several programs to be installed first:
 
 ## GIT
 
-**Linux**
+### Linux
 
 You can check to see if you have git installed already on your system:
 
@@ -426,7 +427,7 @@ git version 1.7.1
 
 ## CMAKE
 
-**Linux**
+### Linux
 
 * Download the latest version:
 
@@ -482,7 +483,7 @@ git version 1.7.1
 
 ## C++ Compiler
 
-**Linux**
+### Linux
 
 You can check to see if you have a GCC complier installed already on your system:
 
@@ -506,7 +507,7 @@ Open you Xcode.app and go to Xcode > Preferences > Downloads. Click to make sure
 
 ---------------------------------------
 
-**Linux**
+### Linux
 
 * Download the latest version of ANTs:
 
@@ -586,7 +587,7 @@ Convert3D requires several programs to be installed first:
 
 ## CMAKE
 
-**Linux**
+### Linux
 
 You can check to see if you have cmake installed already on your system:
 
@@ -611,14 +612,14 @@ CMake suite maintained and supported by Kitware (kitware.com/cmake).
 ```
 
 
-**Linux**
+### Linux
 
 
 ## ITK
 
 A PDF of the ITK manual can be found here: [http://www.itk.org/ItkSoftwareGuide.pdf](http://www.itk.org/ItkSoftwareGuide.pdf)
 
-**Linux**
+### Linux
 
 * Download the latest version of ITK:
 
@@ -679,7 +680,7 @@ A PDF of the ITK manual can be found here: [http://www.itk.org/ItkSoftwareGuide.
 
 ---------------------------------------
 
-**Linux**
+### Linux
 
 * Download the latest version of Convert3D:
 
