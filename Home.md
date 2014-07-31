@@ -31,6 +31,7 @@ You may need to be logged in as root to install many of these programs, dependin
 
 For those of you who are using Windows I would strongly encourage you not to. While some of these programs (MANGO, dcmi2nii, mricron, and some executive functions of ANTS) can be installed onto Windows easily, you will quickly find barriers between programs. The scientific community likes to run things on Linux. While Mac has been known to be accomodating for Linux type programs, Windows would rather kill you and your entire family before letting you fully install some of these programs. Because Windows isn't designed for running many of these it will slow your computer down drastically. Beneath you will find installation instructions for Windows up untill my computer became too slow to use. If you are interested in having these programs on your own computer I would suggest a free installation of Linux. [Here](http://www.ubuntu.com/download/server/install-ubuntu-server) you will find instructions on downloading Ubuntu, a free Linux operating system. It's quite easy and if you aren't fully commited to using just Linux you can partition your drive, which allows you to run Linux or Windows upon restarting your computer each time.
 
+---------------------------------------
 # Firefox
 
 ## Linux
@@ -58,14 +59,17 @@ For those of you who are using Windows I would strongly encourage you not to. Wh
 
 ```
 
-**Mac**
+## Mac
 
-**Windows**
+* Download the [latest version](https://www.mozilla.org/en-US/firefox/new/)
+* Run Firefox setup
+
+## Windows
 
 * Download the [latest version](https://download.mozilla.org/?product=firefox-stub&os=win&lang=en-US).
-
 * Run Firefox Setup
 
+---------------------------------------
 # DICOM toolkit (DCMTK)
 
 Installation instructions can be found here: [http://support.dcmtk.org/docs/file_install.html](http://support.dcmtk.org/docs/file_install.html)
@@ -108,11 +112,11 @@ Installation instructions can be found here: [http://support.dcmtk.org/docs/file
 # make install
 ```
 
-**Mac**
+## Mac
 
-**Windows**
+## Windows
 
-
+---------------------------------------
 # dcm2nii DICOM to NIfTI conversion
 
 The [installation guide](http://www.mccauslandcenter.sc.edu/mricro/mricron/install.html) can be found here.
@@ -131,39 +135,7 @@ The [installation guide](http://www.mccauslandcenter.sc.edu/mricro/mricron/insta
 # ln -s /usr/local/mricron/dcm2nii /usr/local/bin/
 ```
 
-You can confirm that the program works by typing `dcm2nii` into the command terminal and pressing enter:
-
-```
-#!console
-$ dcm2nii
-
-Chris Rorden's dcm2nii :: 6 June 2013
-reading preferences file /home/njhunsak/.dcm2nii/dcm2nii.ini
-Either drag and drop or specify command line options:
-  dcm2nii <options> <sourcenames>
-OPTIONS:
--4 Create 4D volumes, else DTI/fMRI saved as many 3D volumes: Y,N = Y
--a Anonymize [remove identifying information]: Y,N = Y
--b load settings from specified inifile, e.g. '-b C:\set\t1.ini'  
--c Collapse input folders: Y,N = Y
--d Date in filename [filename.dcm -> 20061230122032.nii]: Y,N = Y
--e events (series/acq) in filename [filename.dcm -> s002a003.nii]: Y,N = Y
--f Source filename [e.g. filename.par -> filename.nii]: Y,N = N
--g gzip output, filename.nii.gz [ignored if '-n n']: Y,N = Y
--i ID  in filename [filename.dcm -> johndoe.nii]: Y,N = N
--m manually prompt user to specify output format [NIfTI input only]: Y,N = Y
--n output .nii file [if no, create .hdr/.img pair]: Y,N = Y
--o Output Directory, e.g. 'C:\TEMP' (if unspecified, source directory is used)
--p Protocol in filename [filename.dcm -> TFE_T1.nii]: Y,N = Y
--r Reorient image to nearest orthogonal: Y,N 
--s SPM2/Analyze not SPM5/NIfTI [ignored if '-n y']: Y,N = N
--v Convert every image in the directory: Y,N = Y
--x Reorient and crop 3D NIfTI images: Y,N = N
-  You can also set defaults by editing /home/njhunsak/.dcm2nii/dcm2nii.ini
-EXAMPLE: dcm2nii -a y /Users/Joe/Documents/dcm/IM_0116
-```
-
-**Mac**
+## Mac
 
 * Download the [latest version](http://www.nitrc.org/frs/download.php/5628/osx.zip).
 
@@ -171,25 +143,21 @@ EXAMPLE: dcm2nii -a y /Users/Joe/Documents/dcm/IM_0116
 
 * Move (drag and drop) the `osx` folder into your Applications directory.
 
-* Configure dcm2nii
-
-You can either launch the program directly from the terminal by typing the following:
+* You can either launch the program directly from the terminal by typing the following:
 
 ```
 #!console
 $ /Applications/osx/dcm2nii
 ```
 
-But if you want to be able to just type dcm2nii into your Terminal window, you can configure the program:
+* If you want to be able to just type dcm2nii into your Terminal window, you can configure the program:
 
 ```
 #!console
 $ sudo ln -s /Applications/osx/dcm2nii /usr/bin/
 ```
 
-* To ensure a proper download type `dcm2nii` into the command prompt and press enter. If it downloaded correctly you should see a similar output as the one listed above under the Linux version.
-
-**Windows**
+## Windows
 
 * Download the [latest version](http://www.nitrc.org/frs/download.php/5630/win.zip).
 
@@ -203,12 +171,10 @@ $ sudo ln -s /Applications/osx/dcm2nii /usr/bin/
 
 > Enter `;C:\Windows\Downloaded Program Files\mricron`
 
-* To ensure a proper download type `dcm2nii` into the command prompt and press enter. If it downloaded correctly you should see a similar output as the one listed above under the Linux version
-
-
+---------------------------------------
 # Multi-image Analysis GUI (MANGO)
 
-The [installation guide](http://ric.uthscsa.edu/mango/mango.html) can be found here.
+The [installation guide](http://ric.uthscsa.edu/mango/mango.html) can be found here. You can either download the latest version (v3.2.1) or previous versions. The current version (v3.2.x) does not seem to run quite like is has in the past, so we are currently using version 3.1.x.
 
 ## Linux
 
@@ -253,13 +219,13 @@ You can confirm that the command-line utilities were installed correctly by typi
 $ mango
 ```
 
-**Mac**
+## Mac
 
-* You can either download the latest version (v3.2.1) or previous versions. The current version (v3.2.x) does not seem to run quite like is has in the past, so we are currently using version 3.1.x. You can find the downloads page [here](http://ric.uthscsa.edu/mango/mango.html).
+* You can find the downloads page [here](http://ric.uthscsa.edu/mango/mango.html).
 
 * Open (double-click) the `mango installer.pkg` to install the program.
 
-* If you want to install command-line options, open the Mango.app and go to Options > Install Utilities… Click Install. The program automatically installs the folder at /Users/<username>/bin/, but you need to move those files in that directory to /usr/bin:
+* If you want to install command-line options, open the Mango.app and go to Options > Install Utilities… and then click Install. The program automatically installs the folder at /Users/<username>/bin/, but you need to move those files in that directory to /usr/bin:
 
 ```
 #!
@@ -267,9 +233,9 @@ $ sudo mv /Users/<username>/bin/* /usr/bin/
 $ rmdir /Users/<username>/bin
 ```
 
-**Windows**
+## Windows
 
-* Download the [latest version](http://ric.uthscsa.edu/mango/downloads/mango_windows.zip).
+* You can find the downloads page [here](http://ric.uthscsa.edu/mango/mango.html).
 
 * Extract the mango installer (It doesn't really matter where you extract it to, as long as you can find it later)
 
@@ -279,7 +245,7 @@ $ rmdir /Users/<username>/bin
 
 * To access mango from the command prompt type `start mango`
 
-
+---------------------------------------
 # MATLAB R2014a
 
 ## Linux
@@ -344,11 +310,11 @@ $ rmdir /Users/<username>/bin
  
 > Activation is complete. Click Finish.
 
+## Mac
 
-**Mac**
+## Windows
 
-**Windows**
-
+---------------------------------------
 # ACPC Detect
 
 ## Linux
@@ -383,19 +349,16 @@ $ export ARTHOME
 $ acpcdetect
 ```
 
-**Mac**
+## Mac
 
 Only available for Linux systems.
 
-**Windows**
+## Windows
 
 Only available for Linux systems.
 
-# Advanced Normalization Tools
-
-ANTs requires several programs to be installed first:
-
-## GIT
+---------------------------------------
+# GIT
 
 ## Linux
 
@@ -414,19 +377,18 @@ git version 1.7.1
 # yum install git
 ```
 
-**Mac**
+## Mac
 
 * Download the [installer](http://sourceforge.net/projects/git-osx-installer/)
 
-* Open (double click) the dmg file and then click on the pkg file the run the installer.
+* Open (double click) the dmg file and then click on the pkg file to run the installer.
 
-
-**Windows**
+## Windows
 
 * Download the [latest version](http://git-scm.com/download/win).
 
-
-## CMAKE
+---------------------------------------
+# CMAKE
 
 ## Linux
 
@@ -453,18 +415,17 @@ git version 1.7.1
 # ./configure --prefix=/usr/local && make && make install
 ```
 
-**Mac**
+## Mac
 
 * Download the dmg file from [here](http://www.cmake.org/cmake/resources/software.html)
 
 * Open the dmg file to run the installer.
 
-* You should only have to drag and drop the application into the Application folder. 
+* You should only have to drag and drop the app into the Application folder. 
 
 * Open the CMake.app and go to Tools > Install For Command Line Use. You will need to make sure you have admin permissions.
 
-
-**Windows**
+## Windows
 
 * Download the [latest version](http://www.cmake.org/files/v3.0/cmake-3.0.0-win32-x86.exe).
 * Run the CMake installer (for this version it was referred to as "cmake-3.0.0-win32-x86" in my downloads).
@@ -481,7 +442,6 @@ git version 1.7.1
 
 * Go to the *Installation* tab and select *Apply Changes*
 
-
 ## C++ Compiler
 
 ## Linux
@@ -497,16 +457,19 @@ This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 ```
 
-**Mac**
+## Mac
 
 Open you Xcode.app and go to Xcode > Preferences > Downloads. Click to make sure you have the command line toolbox installed.
 
 
-**Windows**
+## Windows
 
 (Unfortunately, Windows doesn't come with a default C++ compiler. There are many ways to obtain a GCC compiler. You may also find that your windows computer doesn't come with many other programs that are important for running the cmake process. This is the sensible place to stop downloading things in Windows if you value your sanity. Otherwise you will need to make sure you have Ruby, Python, SWIG, and possibly some other programs.)
 
 ---------------------------------------
+# Advanced Normalization Tools
+
+ANTs requires several programs to be installed first: git, cmake, and C++ compiler (see above).
 
 ## Linux
 
@@ -544,7 +507,7 @@ $ export ANTSPATH=/usr/local/antsbin/bin/
 $ PATH=${ANTSPATH}:${PATH}
 ```
 
-**Mac**
+## Mac
 
 * Download the latest version of ANTs:
 
@@ -580,43 +543,10 @@ $ export ANTSPATH=/usr/local/antsbin/bin/
 $ PATH=${ANTSPATH}:${PATH}
 ```
 
-**Windows**
+## Windows
 
-# Convert3D
-
-Convert3D requires several programs to be installed first:
-
-## CMAKE
-
-## Linux
-
-You can check to see if you have cmake installed already on your system:
-
-```
-#!console
-$ cmake --version
-cmake version 3.0.0
-
-CMake suite maintained and supported by Kitware (kitware.com/cmake).
-```
-
-**Mac**
-
-You can check to see if you have cmake installed already on your system:
-
-```
-#!console
-$ cmake --version
-cmake version 3.0.0
-
-CMake suite maintained and supported by Kitware (kitware.com/cmake).
-```
-
-
-## Linux
-
-
-## ITK
+---------------------------------------
+# ITK
 
 A PDF of the ITK manual can be found here: [http://www.itk.org/ItkSoftwareGuide.pdf](http://www.itk.org/ItkSoftwareGuide.pdf)
 
@@ -648,7 +578,7 @@ A PDF of the ITK manual can be found here: [http://www.itk.org/ItkSoftwareGuide.
 # make
 ```
 
-**Mac**
+## Mac
 
 * Download the latest version of ITK:
 
@@ -677,9 +607,17 @@ A PDF of the ITK manual can be found here: [http://www.itk.org/ItkSoftwareGuide.
 ```
 
 
-**Windows**
+## Windows
 
 ---------------------------------------
+# Convert3D
+
+Convert3D requires several programs to be installed first: cmake and ITK. You can double check that cmake was installed:
+
+```
+#!console
+$ cmake --version
+```
 
 ## Linux
 
@@ -705,8 +643,16 @@ A PDF of the ITK manual can be found here: [http://www.itk.org/ItkSoftwareGuide.
 # mv -i /usr/local/c3d-1.0.0-Linux-x86_64/bin/* /usr/local
 ```
 
+## Mac
 
-**Mac**
+* Download the latest version of Convert3D:
 
+```
+#!console
+# cd /usr/local/
+# wget http://sourceforge.net/projects/c3d/files/latest/download
+```
 
-**Windows**
+* Run the installer
+
+## Windows
