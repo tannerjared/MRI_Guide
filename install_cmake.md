@@ -51,7 +51,7 @@ How to Process MRI Images:
 
 # Mac
 
-* Download the dmg file from [here](http://www.cmake.org/cmake/resources/software.html)
+* Download the dmg file from [here](http://www.cmake.org/cmake/resources/software.html).
 
 * Open the dmg file to run the installer.
 
