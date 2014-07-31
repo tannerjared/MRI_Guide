@@ -643,7 +643,7 @@ A PDF of the ITK manual can be found here: [http://www.itk.org/ItkSoftwareGuide.
 
 ```
 #!console
-# make -j 4
+# make
 ```
 
 **Mac**
@@ -671,7 +671,7 @@ A PDF of the ITK manual can be found here: [http://www.itk.org/ItkSoftwareGuide.
 
 ```
 #!console
-# make -j 4
+# make
 ```
 
 
