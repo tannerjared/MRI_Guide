@@ -544,6 +544,40 @@ $ PATH=${ANTSPATH}:${PATH}
 
 **Mac**
 
+* Download the latest version of ANTs:
+
+```
+#!console
+# cd /usr/local/
+# git clone git://github.com/stnava/ANTs.git
+```
+
+* Install ANTs:
+
+```
+#!console
+# mkdir antsbin
+# cd antsbin
+# ccmake ../ANTs
+```
+
+* Go into cmake and type “c” and then “g”  then exit back to the
+terminal
+
+```
+#!console
+# make -j 4
+```
+
+* Configure ANTs:
+
+```
+#!console
+# cp  /usr/local/ANTs/Scripts/*  /usr/local/antsbin/bin/
+$ export ANTSPATH=/usr/local/antsbin/bin/
+$ PATH=${ANTSPATH}:${PATH}
+
+
 **Windows**
 
 # Convert3D
