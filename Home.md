@@ -161,6 +161,23 @@ EXAMPLE: dcm2nii -a y /Users/Joe/Documents/dcm/IM_0116
 
 **Mac**
 
+* Download the [latest version](http://www.nitrc.org/frs/download.php/5628/osx.zip).
+
+* The zip file should automatically unzip and create a folder labeled `osx` in your Downloads folder or wherever your files automatically download.
+
+* Move (drag and drop) the `osx` folder into your Applications directory.
+
+* You can either launch the program directly from the terminal by typing the following:
+```
+#!console
+$ /Applications/osx/dcm2nii
+```
+But if you want to be able to just type dcm2nii into your Terminal window, you can confirm the program:
+```
+#!console
+$ sudo ln -s /Applications/osx/dcm2nii /usr/bin/
+```
+
 **Windows**
 
 * Download the [latest version](http://www.nitrc.org/frs/download.php/5630/win.zip).
@@ -173,7 +190,7 @@ EXAMPLE: dcm2nii -a y /Users/Joe/Documents/dcm/IM_0116
 
 > Under System Variables select PATH and edit
 
->Enter `;C:\Windows\Downloaded Program Files\mricron`
+> Enter `;C:\Windows\Downloaded Program Files\mricron`
 
 * To ensure a proper download type `dcm2nii` into the command prompt and press enter. If it downloaded correctly you should see a similar output as the one listed above under the Linux version
 
