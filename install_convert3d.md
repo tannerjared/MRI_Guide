@@ -9,6 +9,8 @@ How to Process MRI Images:
 
 ---------------------------------------
 
+Operation System:
+
 [TOC]
 
 ---------------------------------------
@@ -20,7 +22,7 @@ Convert3D requires several programs to be installed first: [cmake](install_cmake
 $ cmake --version
 ```
 
-## Linux
+# Linux
 
 * Download the latest version of Convert3D:
 
@@ -44,7 +46,7 @@ $ cmake --version
 # mv -i /usr/local/c3d-1.0.0-Linux-x86_64/bin/* /usr/local
 ```
 
-## Mac
+# Mac
 
 * Download the latest version of Convert3D:
 
@@ -56,4 +58,4 @@ $ cmake --version
 
 * Run the installer
 
-## Windows
+# Windows
