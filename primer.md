@@ -200,3 +200,43 @@ There are a number of very useful shortcut keys you can use in the bash shell, a
 * Esc + T: Swap the last two words before the cursor
 * Alt + F: Move cursor forward one word on the current line
 * Alt + B: Move cursor backward one word on the current line
+
+# Environment Variables and User Permissions
+
+## User permissions
+
+Read this page https://help.ubuntu.com/community/FilePermissions
+
+The basic message is that in Ubuntu you need to do
+
+```
+#!console
+$ sudo chmod ugo+rwx <mango>
+```
+To get files to be accessible to everyone.
+
+In other Linux environments you don't need the `sudo` command.
+
+## Changing the environment
+
+When we talk about environment variables in coding we refer to a unique set of functions and code that effect how programs are run beyond what is simply part of the typical operating system.
+
+An example of one you will most likely run into here is:
+
+```
+#!console
+$ ARTHOME=/usr/local/art
+$ export ARTHOME
+```
+If you type this into the command line these values will be active for the remainder of that session (the time that specific command line is open). However, if you want to add an environment variable permanently you need to create a file that contains it. It may be helpful to use one document to store all of your environment variables for you MRI projects. In order to do this you can use the `vi` command.
+
+When you use this command you'll want to type the name of the command following it. We'll make a file for the acpcdetect program using the above variables.
+
+```
+#!console
+$ vi .acpcdetect
+```
+You'll then see a bunch of "~" lining the left side of the screen. This means you're in Vim editor, where you edit and make environment variables. Vim has two modes, insert and command. To go to command press the esc key. To enter insert mode press "i". Now just type the ARTHOME variables above. When you're done press "zz". If you want more details on how to control Vim you can go [here](http://ss64.com/vi.html).
+
+
+
