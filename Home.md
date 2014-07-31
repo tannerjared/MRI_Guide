@@ -22,7 +22,7 @@ You may need to be logged in as root to install many of these programs, dependin
 **Version Notes**
 
 * Mac OS X Lion (10.7)
-     ** You should install Xcode first before beginning any of these other tasks. Depending on your OS version, [Xcode 4.6 was installed](https://developer.apple.com/downloads/index.action#)
+     * You should install Xcode first before beginning any of these other tasks. Depending on your OS version, [Xcode 4.6 was installed](https://developer.apple.com/downloads/index.action#)
 * Red Hat Enterprise Linux Server Release 6.2 (Santiago)
 * Windows 7 (If you are using Windows it may be easier to log in as the Administrator for all of these downloads)
 
