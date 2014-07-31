@@ -251,13 +251,30 @@ $ mango
 
 **Mac**
 
+* You can either download the latest version (v3.2.1) or previous versions. The current version (v3.2.x) does not seem to run quite like is has in the past, so we are currently using version 3.1.x. You can find the downloads page [here](http://ric.uthscsa.edu/mango/mango.html).
+
+* Open (double-click) the `mango installer.pkg` to install the program.
+
+* If you want to install command-line options, open the Mango.app and go to Options > Install Utilities… Click Install. The program automatically installs the folder at /Users/<username>/bin/, but you need to move those files in that directory to /usr/bin:
+
+```
+#!
+$ sudo mv /Users/<username>/bin/* /usr/bin/
+$ rmdir /Users/<username>/bin
+```
+
 **Windows**
 
 * Download the [latest version](http://ric.uthscsa.edu/mango/downloads/mango_windows.zip).
+
 * Extract the mango installer (It doesn't really matter where you extract it to, as long as you can find it later)
+
 * Run mango installer and when prompted to create a shortcut do so
+
 * Place the mango shortcut in a directory and add an environment variable leading to it under PATH (For example, if you placed mango in the "Downloaded Program Files" path you would add `;C:\Windows\Downloaded Program Files` to PATH)
+
 * To access mango from the command prompt type `start mango`
+
 
 # MATLAB R2014a
 
