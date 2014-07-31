@@ -561,8 +561,8 @@ $ PATH=${ANTSPATH}:${PATH}
 # ccmake ../ANTs
 ```
 
-* Go into cmake and type “c” and then “g”  then exit back to the
-terminal
+* Go into cmake and type “c” and then “g”  to exit back to the
+terminal:
 
 ```
 #!console
@@ -600,6 +600,17 @@ CMake suite maintained and supported by Kitware (kitware.com/cmake).
 
 **Mac**
 
+You can check to see if you have cmake installed already on your system:
+
+```
+#!console
+$ cmake --version
+cmake version 3.0.0
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+```
+
+
 **Linux**
 
 
@@ -630,8 +641,38 @@ A PDF of the ITK manual can be found here: [http://www.itk.org/ItkSoftwareGuide.
 
 * When no new options appear in CMake, you can proceed to generate Makefiles by hitting the "g" key.
 
+```
+#!console
+# make -j 4
+```
 
 **Mac**
+
+* Download the latest version of ITK:
+
+```
+#!console
+# cd /usr/local/
+# git clone git://itk.org/ITK.git
+```
+
+* Install ITK:
+
+```
+#!console
+# mkdir ITK-build
+# cd ITK-build
+# ccmake ../ITK
+```
+
+* Configure ITK by pressing the "c" key. In order to speed up the build process, disable the compilation of the unit tests and examples. This is done with the variables `BUILD TESTING=OFF` and `BUILD EXAMPLES=OFF`. Each time you change a set of variables in CMake, it is necessary to proceed to another configuration step by hitting the "c" key.
+
+* When no new options appear in CMake, you can proceed to generate Makefiles by hitting the "g" key.
+
+```
+#!console
+# make -j 4
+```
 
 
 **Windows**
