@@ -167,12 +167,17 @@ EXAMPLE: dcm2nii -a y /Users/Joe/Documents/dcm/IM_0116
 
 * Move (drag and drop) the `osx` folder into your Applications directory.
 
-* You can either launch the program directly from the terminal by typing the following:
+* Configure dcm2nii
+
+You can either launch the program directly from the terminal by typing the following:
+
 ```
 #!console
 $ /Applications/osx/dcm2nii
 ```
-But if you want to be able to just type dcm2nii into your Terminal window, you can confirm the program:
+
+But if you want to be able to just type dcm2nii into your Terminal window, you can configure the program:
+
 ```
 #!console
 $ sudo ln -s /Applications/osx/dcm2nii /usr/bin/
