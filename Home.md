@@ -183,6 +183,8 @@ But if you want to be able to just type dcm2nii into your Terminal window, you c
 $ sudo ln -s /Applications/osx/dcm2nii /usr/bin/
 ```
 
+* To ensure a proper download type `dcm2nii` into the command prompt and press enter. If it downloaded correctly you should see a similar output as the one listed above under the Linux version.
+
 **Windows**
 
 * Download the [latest version](http://www.nitrc.org/frs/download.php/5630/win.zip).
