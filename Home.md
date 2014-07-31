@@ -442,7 +442,7 @@ git version 1.7.1
 
 * Go to the *Installation* tab and select *Apply Changes*
 
-## C++ Compiler
+# C++ Compiler
 
 ## Linux
 
