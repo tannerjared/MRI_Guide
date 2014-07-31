@@ -576,7 +576,7 @@ terminal
 # cp  /usr/local/ANTs/Scripts/*  /usr/local/antsbin/bin/
 $ export ANTSPATH=/usr/local/antsbin/bin/
 $ PATH=${ANTSPATH}:${PATH}
-
+```
 
 **Windows**
 
