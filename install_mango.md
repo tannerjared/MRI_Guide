@@ -9,9 +9,18 @@ How to Process MRI Images:
 
 ---------------------------------------
 
-Operation System:
-
-[TOC]
+* [Firefox](install_firefox)
+* [DICOM Toolkit](install_dcmtk)
+* [dcm2nii DICOM to NIfTI conversion](install_dcm2nii)
+* [Multi-image Analysis GUI (MANGO)](install_mango)
+* [MATLAB R2014a](install_matlabR2014a)
+* [ACPC Detect](install_acpcdetect)
+* [Git](install_git)
+* [CMake](install_cmake)
+* [C++ Compiler](install_gcc)
+* [Advanced Normalization Tools](install_ants)
+* [ITK](install_itk)
+* [Convert3D](install_convert3d)
 
 ---------------------------------------
 
