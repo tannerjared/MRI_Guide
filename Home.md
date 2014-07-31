@@ -33,7 +33,7 @@ For those of you who are using Windows I would strongly encourage you not to. Wh
 
 # Firefox
 
-### Linux
+## Linux
 
 * Download Firefox 30 Archive
 
@@ -63,13 +63,14 @@ For those of you who are using Windows I would strongly encourage you not to. Wh
 **Windows**
 
 * Download the [latest version](https://download.mozilla.org/?product=firefox-stub&os=win&lang=en-US).
+
 * Run Firefox Setup
 
 # DICOM toolkit (DCMTK)
 
 Installation instructions can be found here: [http://support.dcmtk.org/docs/file_install.html](http://support.dcmtk.org/docs/file_install.html)
 
-### Linux
+## Linux
 
 * Download the latest version of dcmtk:
 
@@ -116,7 +117,7 @@ Installation instructions can be found here: [http://support.dcmtk.org/docs/file
 
 The [installation guide](http://www.mccauslandcenter.sc.edu/mricro/mricron/install.html) can be found here.
 
-### Linux
+## Linux
 
 * Download the [latest version](http://www.mccauslandcenter.sc.edu/mricro/mricron/install.html). 
 
@@ -209,7 +210,7 @@ $ sudo ln -s /Applications/osx/dcm2nii /usr/bin/
 
 The [installation guide](http://ric.uthscsa.edu/mango/mango.html) can be found here.
 
-### Linux
+## Linux
 
 * Download the [latest version](http://ric.uthscsa.edu/mango/downloads/mango_unix.zip) here.
 
@@ -281,7 +282,7 @@ $ rmdir /Users/<username>/bin
 
 # MATLAB R2014a
 
-### Linux
+## Linux
 
 * Unzip the downloaded file:
 
@@ -350,7 +351,7 @@ $ rmdir /Users/<username>/bin
 
 # ACPC Detect
 
-### Linux
+## Linux
 
 * Download the [latest version](http://www.nitrc.org/frs/?group_id=90) here.
 
@@ -396,7 +397,7 @@ ANTs requires several programs to be installed first:
 
 ## GIT
 
-### Linux
+## Linux
 
 You can check to see if you have git installed already on your system:
 
@@ -427,7 +428,7 @@ git version 1.7.1
 
 ## CMAKE
 
-### Linux
+## Linux
 
 * Download the latest version:
 
@@ -483,7 +484,7 @@ git version 1.7.1
 
 ## C++ Compiler
 
-### Linux
+## Linux
 
 You can check to see if you have a GCC complier installed already on your system:
 
@@ -507,7 +508,7 @@ Open you Xcode.app and go to Xcode > Preferences > Downloads. Click to make sure
 
 ---------------------------------------
 
-### Linux
+## Linux
 
 * Download the latest version of ANTs:
 
@@ -587,7 +588,7 @@ Convert3D requires several programs to be installed first:
 
 ## CMAKE
 
-### Linux
+## Linux
 
 You can check to see if you have cmake installed already on your system:
 
@@ -612,14 +613,14 @@ CMake suite maintained and supported by Kitware (kitware.com/cmake).
 ```
 
 
-### Linux
+## Linux
 
 
 ## ITK
 
 A PDF of the ITK manual can be found here: [http://www.itk.org/ItkSoftwareGuide.pdf](http://www.itk.org/ItkSoftwareGuide.pdf)
 
-### Linux
+## Linux
 
 * Download the latest version of ITK:
 
@@ -680,7 +681,7 @@ A PDF of the ITK manual can be found here: [http://www.itk.org/ItkSoftwareGuide.
 
 ---------------------------------------
 
-### Linux
+## Linux
 
 * Download the latest version of Convert3D:
 
