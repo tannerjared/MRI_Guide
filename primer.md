@@ -217,7 +217,7 @@ To get files to be accessible to everyone.
 
 In other Linux environments you don't need the `sudo` command.
 
-## Changing the environment
+## The Vim editor
 
 When we talk about environment variables in coding we refer to a unique set of functions and code that effect how programs are run beyond what is simply part of the typical operating system.
 
