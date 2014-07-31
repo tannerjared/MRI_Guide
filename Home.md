@@ -457,7 +457,9 @@ git version 1.7.1
 
 * Open the dmg file to run the installer.
 
-* You should only have to drag and drop the application into the Application folder.
+* You should only have to drag and drop the application into the Application folder. 
+
+* Open the CMake.app and go to Tools > Install For Command Line Use. You will need to make sure you have admin permissions.
 
 
 **Windows**
