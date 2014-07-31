@@ -49,7 +49,7 @@ $ ARTHOME=/usr/local/art
 $ export ARTHOME
 ```
 
-* You can confirm that the program was installed corretly by typing:
+* You can confirm that the program was installed correctly by typing:
 
 ```
 #!console
