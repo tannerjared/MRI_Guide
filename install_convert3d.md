@@ -6,6 +6,7 @@ How to Process MRI Images:
      * [Convert DICOM to NIfTI](dcm2nii)
      * [Align anterior commissure and posterior commisure](acpcdetect)
      * [Correct intensity nonuniformities (bias field)](N4BiasFieldCorrection)
+     * [Brain Extraction and Tissue Segmentation](antscorticalthickness)
 
 ---------------------------------------
 
