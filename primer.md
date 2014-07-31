@@ -124,6 +124,35 @@ The `grep` command can be used to quickly find text within files, even searching
 #!console
 $ grep -ir "text string" *
 ```
+##Loops
+
+A loop is a block of code that proliferates a process over a series of values until certain conditions are met. This can be very useful in quickly performing a common process on a series of files all at once.
+
+A basic format for a loop command is:
+
+```
+#!console
+$ for <argument> in <value>
+> do
+> <process executed>
+> done
+```
+
+To help you understand loops better we'll go through a couple examples of how they can be used.
+
+Uncompressing a series of .tar.gz files in your "Downloads" folder
+
+```
+#!console
+$ FILES=/home/username/Downloads/*.tar.gz 
+$ for file in $FILES
+> do
+> tar xvzf $file
+> done
+```
+In the statement "FILES=/home/username/Downloads/*.tar.gz" the variable "FILES" is assigned the list of files in directory (folder) "/home/username/Downloads/", whose name ends with ".tar.gz". The "*" (wild card character) stands for any sequence of characters. 
+
+In the for-statement "file" is used as the name of the loop variable, which is assigned each of the file names in the list assigned to "FILES". The body of the for-loop (the statements between the "do" and the "done") is executed once for each file name. 
 
 ## Looping over a set of files
 
