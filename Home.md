@@ -451,6 +451,13 @@ git version 1.7.1
 
 **Mac**
 
+* Download the dmg file from [here](http://www.cmake.org/cmake/resources/software.html)
+
+* Open the dmg file to run the installer.
+
+* You should only have to drag and drop the application into the Application folder.
+
+
 **Windows**
 
 * Download the [latest version](http://www.cmake.org/files/v3.0/cmake-3.0.0-win32-x86.exe).
