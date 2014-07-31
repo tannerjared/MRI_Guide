@@ -412,6 +412,11 @@ git version 1.7.1
 
 **Mac**
 
+* Download the [installer](http://sourceforge.net/projects/git-osx-installer/)
+
+* Open (double click) the dmg file and then click on the pkg file the run the installer.
+
+
 **Windows**
 
 * Download the [latest version](http://git-scm.com/download/win).
