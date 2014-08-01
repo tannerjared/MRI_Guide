@@ -238,5 +238,7 @@ $ vi .acpcdetect
 ```
 You'll then see a bunch of "~" lining the left side of the screen. This means you're in Vim editor, where you edit and make environment variables. Vim has two modes, insert and command. To go to command press the esc key. To enter insert mode press "i". Now just type the ARTHOME variables above. When you're done press "zz". If you want more details on how to control Vim you can go [here](http://ss64.com/vi.html).
 
+## .sh Files
 
+You can also create a file with the chunk of coding you want and apply ".sh" to the end. If you make such a file in the bin directory you only need to type ` source nameoffile.sh` to activate those environment variables in a sessions. This can be far easier than having to retype environment variables in for every session.
 
