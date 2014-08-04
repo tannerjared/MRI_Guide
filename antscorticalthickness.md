@@ -172,5 +172,6 @@ $ antsCorticalThickness.sh -d 3 -a ~/<subjDir>/n4.nii.gz -o <prefix> \
 ```        
                                          
 ### Note
+* Whatever you type in place of <prefix> will be at the front of each file that it makes. If you're running the command line from a different file than where you want the output you need to put the desired directory in front of the prefix. (example: `/scans/subject/output` would replace <prefix>)
 
-Using this script is super helpful if you ever want to run shape analyses on cortical labels acquired from FreeSurfer. If you have a FreeSurfer dataset and this output from this script, you can run [MindBoggle](http://mindboggle.info/users/README.html).
+* Using this script is super helpful if you ever want to run shape analyses on cortical labels acquired from FreeSurfer. If you have a FreeSurfer dataset and this output from this script, you can run [MindBoggle](http://mindboggle.info/users/README.html).
