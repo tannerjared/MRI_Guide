@@ -70,7 +70,7 @@ The `*` at the end of the input directory tells the program to process everythin
 
 ```
 #!console
-$ dcm2nii -a -g n -r n -x n -o ~/<subjDir>/ ~/<subjDir>/
+$ dcm2nii -a y -g n -r n -x n -o ~/<subjDir>/ ~/<subjDir>/
 Chris Rorden's dcm2nii :: 6 June 2013
 reading preferences file /home/njhunsak/.dcm2nii/dcm2nii.ini
 Data will be exported to /home/njhunsak/Desktop/1222--03-23-09/
