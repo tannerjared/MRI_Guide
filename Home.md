@@ -18,7 +18,7 @@ You may need to be logged in as root to install many of these programs, dependin
 
 * Mac OS X Lion (10.7)
      * You should install Xcode first before beginning any of these other tasks. Depending on your OS version, [Xcode 4.6 was installed](https://developer.apple.com/downloads/index.action#)
-     * In order to have access to root user you have to directly enable the option. [For instructions refer to this page here](http://support.apple.com/kb/ht1528)
+     * In order to have access to root user you have to directly enable the option, [for instructions refer to this page here](http://support.apple.com/kb/ht1528).
 * Red Hat Enterprise Linux Server Release 6.2 (Santiago)
 * Windows 7 (If you are using Windows it may be easier to log in as the Administrator for all of these downloads)
 
