@@ -158,17 +158,18 @@ Optional arguments:
 
 # ANTs Cortical Thickness
 
-This process takes hours to run on a typical computer, so make sure you are able to press go and then not touch the computer until it has finished running. You will want to run in test / debug mode first by adding to your command-line `-z 0`.
+This process takes hours to run on a typical computer, so make sure you are able to press go and then not touch the computer until it has finished running. You will want to run in test / debug mode first by adding to your command-line `-z 1`.
 
 ```
 #!console
-$ antsCorticalThickness.sh -d 3 -a ~/<subjDir>/n4.nii.gz -o <prefix> \
+$ antsCorticalThickness.sh -d 3 -a ~/<subjDir>/n4.nii.gz \
   -e OASIS-30_Atropos_template/T_template0.nii.gz \
   -t OASIS-30_Atropos_template/T_template0_BrainCerebellum.nii.gz \
   -m OASIS-30_Atropos_template/T_template0_BrainCerebellumProbabilityMask.nii.gz \
   -f OASIS-30_Atropos_template/T_template0_BrainCerebellumExtractionMask.nii.gz \
   -p OASIS-30_Atropos_template/Priors2/priors%d.nii.gz \
-  -q 1
+  -q 1 \
+  -o <prefix>
 ```        
                                          
 ### Note
