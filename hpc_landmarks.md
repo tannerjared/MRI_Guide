@@ -10,4 +10,10 @@ How to Process MRI Images:
 4. Hippocampus Segmentation
      * [Placing Landmarks](hpc_landmarks)
 
+---------------------------------------
+
+Table of Contents:
+
 [TOC]
+
+---------------------------------------
