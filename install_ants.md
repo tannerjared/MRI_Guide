@@ -7,6 +7,8 @@ How to Process MRI Images:
      * [Align anterior commissure and posterior commisure](acpcdetect)
      * [Correct intensity nonuniformities (bias field)](N4BiasFieldCorrection)
      * [Brain Extraction and Tissue Segmentation](antscorticalthickness)
+4. Hippocampus Segmentation
+     * [Placing Landmarks](hpc_landmarks)kness)
 
 ---------------------------------------
 
