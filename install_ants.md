@@ -8,7 +8,7 @@ How to Process MRI Images:
      * [Correct intensity nonuniformities (bias field)](N4BiasFieldCorrection)
      * [Brain Extraction and Tissue Segmentation](antscorticalthickness)
 4. Hippocampus Segmentation
-     * [Placing Landmarks](hpc_landmarks)kness)
+     * [Placing Landmarks](hpc_landmarks)
 
 ---------------------------------------
 
