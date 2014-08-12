@@ -164,7 +164,9 @@ This process takes hours to run on a typical computer, so make sure you are able
 
 ```
 #!console
-$ antsCorticalThickness.sh -d 3 -a ~/<subjDir>/n4.nii.gz \
+$ cd ~/preprocessing-t1-example/1222_032309/
+$ antsCorticalThickness.sh -d 3 \
+  -a n4.nii.gz \
   -e OASIS-30_Atropos_template/T_template0.nii.gz \
   -t OASIS-30_Atropos_template/T_template0_BrainCerebellum.nii.gz \
   -m OASIS-30_Atropos_template/T_template0_BrainCerebellumProbabilityMask.nii.gz \
