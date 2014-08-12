@@ -65,14 +65,14 @@ There are many options for you to use but here's the basic command you can use f
 
 ```
 #!console
-$ dcm2nii -a y -g n -r n -x n -o ~/<subjDir>/ ~/<subjDir>/*
+$ dcm2nii -a y -g n -r n -x n -o ~/preprocessing-t1-example/1222_032309/ ~/preprocessing-t1-example/1222_032309/*
 ```
 
 The `*` at the end of the input directory tells the program to process everything in the participant directory. If you don't place the `*` the program will give you an error:
 
 ```
 #!console
-$ dcm2nii -a y -g n -r n -x n -o ~/<subjDir>/ ~/<subjDir>/
+$ dcm2nii -a y -g n -r n -x n -o ~/preprocessing-t1-example/1222_032309/ ~/preprocessing-t1-example/1222_032309/
 Chris Rorden's dcm2nii :: 6 June 2013
 reading preferences file /home/njhunsak/.dcm2nii/dcm2nii.ini
 Data will be exported to /home/njhunsak/Desktop/1222--03-23-09/
@@ -90,7 +90,7 @@ You can easily combine these two steps at once, but if for some reason you neede
 
 ```
 #!console
-$ dcm2nii -g n -x y -o ~/<subjDir>/ ~/<subjDir>/t1.nii
+$ dcm2nii -g n -x y -o ~/preprocessing-t1-example/1222_032309/ ~/preprocessing-t1-example/1222_032309/t1.nii
 ```
 
 **Why reorient the image?**
