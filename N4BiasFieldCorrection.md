@@ -126,9 +126,9 @@ Correcting the bias field can be time consuming on the computer. One way to miti
 
 ```
 #!console
-$ N4BiasFieldCorrection -d 3 -i ~/<subjDir>/acpc.nii -o ~/<subjDir>/n4.nii.gz -s 8 -b [200] -c [50x50x50x50,0.000001]
-$ N4BiasFieldCorrection -d 3 -i ~/<subjDir>/n4.nii.gz -o ~/<subjDir>/n4.nii.gz -s 4 -b [200] -c [50x50x50x50,0.000001]
-$ N4BiasFieldCorrection -d 3 -i ~/<subjDir>/n4.nii.gz -o ~/<subjDir>/n4.nii.gz -s 2 -b [200] -c [50x50x50x50,0.000001]
+$ N4BiasFieldCorrection -d 3 -i ~/preprocessing-t1-example/1222_032309/acpc.nii -o ~/preprocessing-t1-example/1222_032309/n4.nii.gz -s 8 -b [200] -c [50x50x50x50,0.000001]
+$ N4BiasFieldCorrection -d 3 -i ~/preprocessing-t1-example/1222_032309/n4.nii.gz -o ~/preprocessing-t1-example/1222_032309/n4.nii.gz -s 4 -b [200] -c [50x50x50x50,0.000001]
+$ N4BiasFieldCorrection -d 3 -i ~/preprocessing-t1-example/1222_032309/n4.nii.gz -o ~/preprocessing-t1-example/1222_032309/n4.nii.gz -s 2 -b [200] -c [50x50x50x50,0.000001]
 ```
 
 ### Note
