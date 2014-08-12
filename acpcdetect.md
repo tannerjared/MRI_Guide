@@ -84,7 +84,7 @@ This program works on T1 images in the NIfTI format. The simplest code to use is
 
 ```
 #!console
-$ acpcdetect -M -o ~/<subjDir>/acpc.nii -i ~/<subjDir>/cot1.nii
+$ acpcdetect -M -o ~/preprocessing-t1-example/1222_032309/acpc.nii -i ~/preprocessing-t1-example/1222_032309/cot1.nii
 ```
 
 **Why adjust the FOV center?**
