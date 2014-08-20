@@ -1,6 +1,6 @@
 How to Process MRI Images:
 
-1. [Beginner's Guide to Command-Line Interface](primer)
+1. [Beginner's Guide to Command-Line Interface](begin_primer)
 2. [Install Programs](Home)
 3. Preprocessing T1 images
      * [Download example files](https://bitbucket.org/njhunsaker/preprocessing-t1-example)
