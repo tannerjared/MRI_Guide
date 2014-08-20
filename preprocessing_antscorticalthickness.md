@@ -228,7 +228,7 @@ To do this in batch form:
 
 ```
 #!console
-$ for i in $(find ~/data -type d -name "antsCorticalThickness"); do
+$ for i in $(find ~/preprocessing-t1-example/ -type d -name "antsCorticalThickness"); do
 > subjDir=$(dirname $i)
 > cp $i/BrainExtractionBrain.nii.gz ${subjDir}/brain.nii.gz
 > cp $i/BrainExtractionMask.nii.gz ${subjDir}/mask.nii.gz
