@@ -22,16 +22,6 @@ Table of Contents:
 
 MR Images are often acquired at different voxel sizes. The MR sequence can be different after scanner upgrades or changes can be made the sequence itself. Voxel sizes can also be different in the 3-planes (non-isotropic). Unless you are very very lucky to be working with a pristine dataset with all images acquired on the same scanner, using the same sequence, you will need to account for these differences, by normalizing across all images. There are inherent drawbacks that occur when you reslice your images, but these effects mostly impact fMRI and DTI data, not structural T1. The drawbacks are associated with the interpolation (algorithmic guessing) of how to combine or split voxels and what intensity value to attribute to them. For example, if you are trying to spilt a voxel into two voxels right at a border between gray and white matter, how are you to know the intensity levels of the two new voxels? The take home message is don't reslice your data unless you have to and limit reslicing to structural images, avoid reslicing fMRI data.
 
-# Before you begin
-
-You will need to set the environmental variables when you want to use the program:
-
-```
-#!console
-$ export ANTSPATH=/usr/local/antsbin/bin/
-$ PATH=${ANTSPATH}:${PATH}
-```
-
 # Using Convert3D for the first time
 
 To run the program, you should be able to type in a new Terminal window to see the available options:
