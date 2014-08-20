@@ -7,3 +7,7 @@ SPM does provide a tissue segmentation protocol. The follow instructions will te
 * Select the `PET & VBM` option:
 
 ![Screen Shot 2014-08-20 at 9.00.19 AM.png](https://bitbucket.org/repo/pAjpdx/images/1498431423-Screen%20Shot%202014-08-20%20at%209.00.19%20AM.png)
+
+* Select the `Segmentation` option:
+
+![Screen Shot 2014-08-20 at 9.00.54 AM.png](https://bitbucket.org/repo/pAjpdx/images/1239730559-Screen%20Shot%202014-08-20%20at%209.00.54%20AM.png)
