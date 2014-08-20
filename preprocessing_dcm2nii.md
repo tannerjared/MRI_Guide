@@ -7,6 +7,7 @@ How to Process MRI Images:
      * [Convert DICOM to NIfTI](preprocessing_dcm2nii)
      * [Align anterior commissure and posterior commisure](preprocessing_acpcdetect)
      * [Correct intensity nonuniformities (bias field)](preprocessing_N4BiasFieldCorrection)
+     * [Reslice images to isotropic voxel size 1](preprocessing_reslice)
      * [Brain Extraction and Tissue Segmentation](preprocessing_antscorticalthickness)
 4. Hippocampus Segmentation
      * [Placing Landmarks](hpc_landmarks)
@@ -19,7 +20,7 @@ Table of Contents:
 
 ---------------------------------------
 
-The preprocessing_dcm2nii program converts DICOM files from your scanner into the NIfTI format that's used by many programs like: FSL, SPM, ANTs, etc. The NIfTI image format standard is the common standard used in scientific image processing, because the file is compact, simple, and versatile.
+The dcm2nii program converts DICOM files from your scanner into the NIfTI format that's used by many programs like: FSL, SPM, ANTs, etc. The NIfTI image format standard is the common standard used in scientific image processing, because the file is compact, simple, and versatile.
 
 # Before you Begin
 
@@ -33,11 +34,11 @@ To run the program, you should be able to type in a new Terminal window to see t
 
 ```
 #!console
-$ preprocessing_dcm2nii
-Chris Rorden's preprocessing_dcm2nii :: 6 June 2013
-reading preferences file /home/njhunsak/.preprocessing_dcm2nii/preprocessing_dcm2nii.ini
+$ dcm2nii
+Chris Rorden's dcm2nii :: 6 June 2013
+reading preferences file /home/njhunsak/.dcm2nii/dcm2nii.ini
 Either drag and drop or specify command line options:
-  preprocessing_dcm2nii <options> <sourcenames>
+  dcm2nii <options> <sourcenames>
 OPTIONS:
 -4 Create 4D volumes, else DTI/fMRI saved as many 3D volumes: Y,N = Y
 -a Anonymize [remove identifying information]: Y,N = Y
@@ -56,8 +57,8 @@ OPTIONS:
 -s SPM2/Analyze not SPM5/NIfTI [ignored if '-n y']: Y,N = N
 -v Convert every image in the directory: Y,N = Y
 -x Reorient and crop 3D NIfTI images: Y,N = N
-  You can also set defaults by editing /home/njhunsak/.preprocessing_dcm2nii/preprocessing_dcm2nii.ini
-EXAMPLE: preprocessing_dcm2nii -a y /Users/Joe/Documents/dcm/IM_0116
+  You can also set defaults by editing /home/njhunsak/.dcm2nii/dcm2nii.ini
+EXAMPLE: dcm2nii -a y /Users/Joe/Documents/dcm/IM_0116
 ``` 
 
 # Converting all the DICOM images in participant directory
@@ -66,16 +67,16 @@ There are many options for you to use but here's the basic command you can use f
 
 ```
 #!console
-$ preprocessing_dcm2nii -a y -g n -r n -x n -o ~/preprocessing-t1-example/1222_032309/ ~/preprocessing-t1-example/1222_032309/*
+$ dcm2nii -a y -g n -r n -x n -o ~/preprocessing-t1-example/1222_032309/ ~/preprocessing-t1-example/1222_032309/*
 ```
 
 The `*` at the end of the input directory tells the program to process everything in the participant directory. If you don't place the `*` the program will give you an error:
 
 ```
 #!console
-$ preprocessing_dcm2nii -a y -g n -r n -x n -o ~/preprocessing-t1-example/1222_032309/ ~/preprocessing-t1-example/1222_032309/
+$ dcm2nii -a y -g n -r n -x n -o ~/preprocessing-t1-example/1222_032309/ ~/preprocessing-t1-example/1222_032309/
 Chris Rorden's preprocessing_dcm2nii :: 6 June 2013
-reading preferences file /home/njhunsak/.preprocessing_dcm2nii/preprocessing_dcm2nii.ini
+reading preferences file /home/njhunsak/.dcm2nii/dcm2nii.ini
 Data will be exported to /home/njhunsak/Desktop/1222--03-23-09/
 An unhandled exception occurred at $000000000047F0DD :
 EAccessViolation : Access violation
@@ -91,7 +92,7 @@ You can easily combine these two steps at once, but if for some reason you neede
 
 ```
 #!console
-$ preprocessing_dcm2nii -g n -x y -o ~/preprocessing-t1-example/1222_032309/ ~/preprocessing-t1-example/1222_032309/t1.nii
+$ dcm2nii -g n -x y -o ~/preprocessing-t1-example/1222_032309/ ~/preprocessing-t1-example/1222_032309/t1.nii
 ```
 
 **Why reorient the image?**
@@ -100,11 +101,11 @@ $ preprocessing_dcm2nii -g n -x y -o ~/preprocessing-t1-example/1222_032309/ ~/p
 
 **Why crop the image?**
 
-> After reorienting, preprocessing_dcm2nii will attempt to 'autocrop' T1-weighted anatomical images (images with a Echo Time [TE] of less than 20ms). A new copy of the image is created with the prefix 'c' that attempts to remove excess air surrounding the individual as well as parts of the neck below the cerebellum. This excess neck can disrupt normalization of images (as the template images do not have similar neck regions). This new image has a slightly different NIfTI transform - the origin is adjusted to compensate for the removed portions of the image. 
+> After reorienting, dcm2nii will attempt to 'autocrop' T1-weighted anatomical images (images with a Echo Time [TE] of less than 20ms). A new copy of the image is created with the prefix 'c' that attempts to remove excess air surrounding the individual as well as parts of the neck below the cerebellum. This excess neck can disrupt normalization of images (as the template images do not have similar neck regions). This new image has a slightly different NIfTI transform - the origin is adjusted to compensate for the removed portions of the image. 
 
 ### Notes
 
-DICOM files need to have the .dcm file extension at the end of the file for preprocessing_dcm2nii to run properly. If you need to batch find files that do not have this extension and add the extension use the following code:
+DICOM files need to have the .dcm file extension at the end of the file for dcm2nii to run properly. If you need to batch find files that do not have this extension and add the extension use the following code:
 
 ```
 #!console

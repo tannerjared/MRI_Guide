@@ -7,6 +7,7 @@ How to Process MRI Images:
      * [Convert DICOM to NIfTI](preprocessing_dcm2nii)
      * [Align anterior commissure and posterior commisure](preprocessing_acpcdetect)
      * [Correct intensity nonuniformities (bias field)](preprocessing_N4BiasFieldCorrection)
+     * [Reslice images to isotropic voxel size 1](preprocessing_reslice)
      * [Brain Extraction and Tissue Segmentation](preprocessing_antscorticalthickness)
 4. Hippocampus Segmentation
      * [Placing Landmarks](hpc_landmarks)
@@ -33,16 +34,16 @@ $ export ANTSPATH=/usr/local/antsbin/bin/
 $ PATH=${ANTSPATH}:${PATH}
 ```
 
-# Using preprocessing_N4BiasFieldCorrection for the first time
+# Using N4BiasFieldCorrection for the first time
 
 To run the program, you should be able to type in a new Terminal window to see the available options:
 
 ```
 #!console
-$ preprocessing_N4BiasFieldCorrection --help
+$ N4BiasFieldCorrection --help
 
 COMMAND: 
-     preprocessing_N4BiasFieldCorrection
+     N4BiasFieldCorrection
           N4 is a variant of the popular N3 (nonparameteric nonuniform normalization) 
           retrospective bias correction algorithm. Based on the assumption that the 
           corruption of the low frequency bias field can be modeled as a convolution of 
@@ -127,9 +128,9 @@ Correcting the bias field can be time consuming on the computer. One way to miti
 
 ```
 #!console
-$ preprocessing_N4BiasFieldCorrection -d 3 -i ~/preprocessing-t1-example/1222_032309/acpc.nii -o ~/preprocessing-t1-example/1222_032309/n4.nii.gz -s 8 -b [200] -c [50x50x50x50,0.000001]
-$ preprocessing_N4BiasFieldCorrection -d 3 -i ~/preprocessing-t1-example/1222_032309/n4.nii.gz -o ~/preprocessing-t1-example/1222_032309/n4.nii.gz -s 4 -b [200] -c [50x50x50x50,0.000001]
-$ preprocessing_N4BiasFieldCorrection -d 3 -i ~/preprocessing-t1-example/1222_032309/n4.nii.gz -o ~/preprocessing-t1-example/1222_032309/n4.nii.gz -s 2 -b [200] -c [50x50x50x50,0.000001]
+$ N4BiasFieldCorrection -d 3 -i ~/preprocessing-t1-example/1222_032309/acpc.nii -o ~/preprocessing-t1-example/1222_032309/n4.nii.gz -s 8 -b [200] -c [50x50x50x50,0.000001]
+$ N4BiasFieldCorrection -d 3 -i ~/preprocessing-t1-example/1222_032309/n4.nii.gz -o ~/preprocessing-t1-example/1222_032309/n4.nii.gz -s 4 -b [200] -c [50x50x50x50,0.000001]
+$ N4BiasFieldCorrection -d 3 -i ~/preprocessing-t1-example/1222_032309/n4.nii.gz -o ~/preprocessing-t1-example/1222_032309/n4.nii.gz -s 2 -b [200] -c [50x50x50x50,0.000001]
 ```
 
 ### Note

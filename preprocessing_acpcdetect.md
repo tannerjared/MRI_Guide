@@ -7,6 +7,7 @@ How to Process MRI Images:
      * [Convert DICOM to NIfTI](preprocessing_dcm2nii)
      * [Align anterior commissure and posterior commisure](preprocessing_acpcdetect)
      * [Correct intensity nonuniformities (bias field)](preprocessing_N4BiasFieldCorrection)
+     * [Reslice images to isotropic voxel size 1](preprocessing_reslice)
      * [Brain Extraction and Tissue Segmentation](preprocessing_antscorticalthickness)
 4. Hippocampus Segmentation
      * [Placing Landmarks](hpc_landmarks)
@@ -19,7 +20,7 @@ Table of Contents:
 
 ---------------------------------------
 
-The preprocessing_acpcdetect program is a great program for aligning the anterior commissure and posterior commissure along the same horizontal line in sagittal view:
+The acpcdetect program is a great program for aligning the anterior commissure and posterior commissure along the same horizontal line in sagittal view:
 
 ![](http://classconnection.s3.amazonaws.com/925/flashcards/1329925/png/2011-08-13_23271313318867635-1425D8484BE3E3AD7B8.png)
 
@@ -37,14 +38,14 @@ $ ARTHOME=/usr/local/art
 $ export ARTHOME
 ```
 
-# Using preprocessing_acpcdetect for the first time
+# Using acpcdetect for the first time
 
 To run the program, you should be able to type in a new Terminal window to see the available options:
 
 ```
 #!console
-$ preprocessing_acpcdetect --help
-Usage: preprocessing_acpcdetect [-V/-version -h/-help -v/-verbose -m/-model <model> -rvsps <r> -rac <r> -rpc <r>]
+$ acpcdetect --help
+Usage: acpcdetect [-V/-version -h/-help -v/-verbose -m/-model <model> -rvsps <r> -rac <r> -rpc <r>]
 [-O/-orient <code> -D -M] [-o/-output <output volume> -oo <output orientation code>]
 [-onx <int> -ony <int> -onz <int> -odx <float> -ody <float> -odz <float> -sform -qform -noppm -notxt]
 [-AC <int> <int> <int>] [-T <filename>]
@@ -85,7 +86,7 @@ This program works on T1 images in the NIfTI format. The simplest code to use is
 
 ```
 #!console
-$ preprocessing_acpcdetect -M -o ~/preprocessing-t1-example/1222_032309/acpc.nii -i ~/preprocessing-t1-example/1222_032309/cot1.nii
+$ acpcdetect -M -o ~/preprocessing-t1-example/1222_032309/acpc.nii -i ~/preprocessing-t1-example/1222_032309/cot1.nii
 ```
 
 **Why adjust the FOV center?**
@@ -94,4 +95,4 @@ When dealing with smaller brains or brains of various sizes, if you make the cen
 
 ### Note
 
-The preprocessing_acpcdetect program will not be able to use zipped NIfTI files (e.g., .nii.gz), so all methods up to this point leave the files in NIfTI format and not zipped NIfTI format.
+The acpcdetect program will not be able to use zipped NIfTI files (e.g., .nii.gz), so all methods up to this point leave the files in NIfTI format and not zipped NIfTI format.
