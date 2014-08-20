@@ -175,8 +175,66 @@ $ antsCorticalThickness.sh -d 3 \
   -f OASIS-30_Atropos_template/T_template0_BrainCerebellumExtractionMask.nii.gz \
   -p OASIS-30_Atropos_template/Priors2/priors%d.nii.gz \
   -q 1 \
-  -o <prefix>
+  -o antsCorticalThickness/
 ```        
+
+## What you end up with
+
+There's a long list of files after the script runs:
+
+```
+#!console
+$ ls 
+BrainExtractionBrain.nii.gz
+BrainExtractionMask.nii.gz
+BrainNormalizedToTemplate.nii.gz
+BrainSegmentation0N4.nii.gz
+BrainSegmentationConvergence.txt
+BrainSegmentation.nii.gz
+BrainSegmentationPosteriors1.nii.gz
+BrainSegmentationPosteriors2.nii.gz
+BrainSegmentationPosteriors3.nii.gz
+BrainSegmentationPosteriors4.nii.gz
+BrainSegmentationPosteriors5.nii.gz
+BrainSegmentationPosteriors6.nii.gz
+BrainSegmentationPriorInverseWarped.nii.gz
+BrainSegmentationTiledMosaic.png
+brainvols.csv
+CorticalThickness.nii.gz
+CorticalThicknessNormalizedToTemplate.nii.gz
+CorticalThicknessTiledMosaic.png
+ExtractedBrain0N4.nii.gz
+ExtractedTemplateBrain.nii.gz
+RegistrationTemplateBrainMask.nii.gz
+SubjectToTemplate0GenericAffine.mat
+SubjectToTemplate1Warp.nii.gz
+SubjectToTemplateInverseWarped.nii.gz
+SubjectToTemplateLogJacobian.nii.gz
+TemplateToSubject0Warp.nii.gz
+TemplateToSubject1GenericAffine.mat
+```
+
+To make things easier, I will copy the important files into my main participant directory:
+
+```
+#!console
+$ cd ~/preprocessing-t1-example/1222_032309/
+$ cp antsCorticalThickness/BrainExtractionBrain.nii.gz brain.nii.gz
+$ cp antsCorticalThickness/BrainExtractionMask.nii.gz mask.nii.gz
+$ cp antsCorticalThickness/BrainSegmentation.nii.gz tissue_segmentation.nii.gz
+```
+
+To do this in batch form:
+
+```
+#!console
+$ for i in $(find ~/data -type d -name "antsCorticalThickness"); do
+> subjDir=$(dirname $i)
+> cp $i/BrainExtractionBrain.nii.gz ${subjDir}/brain.nii.gz
+> cp $i/BrainExtractionMask.nii.gz ${subjDir}/mask.nii.gz
+> cp $i/BrainSegmentation.nii.gz ${subjDir}/tissue_segmentation.nii.gz
+> done
+```
                                          
 ### Note
 
