@@ -4,10 +4,10 @@ How to Process MRI Images:
 2. [Install Programs](Home)
 3. Preprocessing T1 images
      * [Download example files](https://bitbucket.org/njhunsaker/preprocessing-t1-example)
-     * [Convert DICOM to NIfTI](dcm2nii)
-     * [Align anterior commissure and posterior commisure](acpcdetect)
-     * [Correct intensity nonuniformities (bias field)](N4BiasFieldCorrection)
-     * [Brain Extraction and Tissue Segmentation](antscorticalthickness)
+     * [Convert DICOM to NIfTI](preprocessing_dcm2nii)
+     * [Align anterior commissure and posterior commisure](preprocessing_acpcdetect)
+     * [Correct intensity nonuniformities (bias field)](preprocessing_N4BiasFieldCorrection)
+     * [Brain Extraction and Tissue Segmentation](preprocessing_antscorticalthickness)
 4. Hippocampus Segmentation
      * [Placing Landmarks](hpc_landmarks)
 
@@ -233,11 +233,11 @@ $ export ARTHOME
 ```
 If you type this into the command line these values will be active for the remainder of that session (the time that specific command line is open). However, if you want to add an environment variable permanently you need to create a file that contains it. It may be helpful to use one document to store all of your environment variables for you MRI projects. In order to do this you can use the `vi` command.
 
-When you use this command you'll want to type the name of the command following it. We'll make a file for the acpcdetect program using the above variables.
+When you use this command you'll want to type the name of the command following it. We'll make a file for the preprocessing_acpcdetect program using the above variables.
 
 ```
 #!console
-$ vi .acpcdetect
+$ vi .preprocessing_acpcdetect
 ```
 You'll then see a bunch of "~" lining the left side of the screen. This means you're in Vim editor, where you edit and make environment variables. Vim has two modes, insert and command. To go to command press the esc key. To enter insert mode press "i". Now just type the ARTHOME variables above. When you're done press "zz". If you want more details on how to control Vim you can go [here](http://ss64.com/vi.html).
 

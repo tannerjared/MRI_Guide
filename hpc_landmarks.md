@@ -4,10 +4,10 @@ How to Process MRI Images:
 2. [Install Programs](Home)
 3. Preprocessing T1 images
      * [Download example files](https://bitbucket.org/njhunsaker/preprocessing-t1-example)
-     * [Convert DICOM to NIfTI](dcm2nii)
-     * [Align anterior commissure and posterior commisure](acpcdetect)
-     * [Correct intensity nonuniformities (bias field)](N4BiasFieldCorrection)
-     * [Brain Extraction and Tissue Segmentation](antscorticalthickness)
+     * [Convert DICOM to NIfTI](preprocessing_dcm2nii)
+     * [Align anterior commissure and posterior commisure](preprocessing_acpcdetect)
+     * [Correct intensity nonuniformities (bias field)](preprocessing_N4BiasFieldCorrection)
+     * [Brain Extraction and Tissue Segmentation](preprocessing_antscorticalthickness)
 4. Hippocampus Segmentation
      * [Placing Landmarks](hpc_landmarks)
 
