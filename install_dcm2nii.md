@@ -16,10 +16,10 @@ How to Process MRI Images:
 
 * [Firefox](install_firefox)
 * [DICOM Toolkit](install_dcmtk)
-* [preprocessing_dcm2nii DICOM to NIfTI conversion](install_preprocessing_dcm2nii)
+* [dcm2nii DICOM to NIfTI conversion](install_dcm2nii)
 * [Multi-image Analysis GUI (MANGO)](install_mango)
 * [MATLAB R2014a](install_matlabR2014a)
-* [ACPC Detect](install_preprocessing_acpcdetect)
+* [ACPC Detect](install_acpcdetect)
 * [Git](install_git)
 * [CMake](install_cmake)
 * [C++ Compiler](install_gcc)
@@ -37,12 +37,12 @@ The [installation guide](http://www.mccauslandcenter.sc.edu/mricro/mricron/insta
 
 * Unzip the downloaded file (which currently produces a folder call `mricron`).
 
-* Configure preprocessing_dcm2nii
+* Configure dcm2nii
 
 ```
 #!console
 # mv /home/<username>/Downloads/mricron/ /usr/local/
-# ln -s /usr/local/mricron/preprocessing_dcm2nii /usr/local/bin/
+# ln -s /usr/local/mricron/dcm2nii /usr/local/bin/
 ```
 
 # Mac
@@ -57,14 +57,14 @@ The [installation guide](http://www.mccauslandcenter.sc.edu/mricro/mricron/insta
 
 ```
 #!console
-$ /Applications/osx/preprocessing_dcm2nii
+$ /Applications/osx/dcm2nii
 ```
 
-* If you want to be able to just type preprocessing_dcm2nii into your Terminal window, you can configure the program:
+* If you want to be able to just type dcm2nii into your Terminal window, you can configure the program:
 
 ```
 #!console
-$ sudo ln -s /Applications/osx/preprocessing_dcm2nii /usr/bin/
+$ sudo ln -s /Applications/osx/dcm2nii /usr/bin/
 ```
 
 # Windows

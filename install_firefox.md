@@ -16,10 +16,10 @@ How to Process MRI Images:
 
 * [Firefox](install_firefox)
 * [DICOM Toolkit](install_dcmtk)
-* [preprocessing_dcm2nii DICOM to NIfTI conversion](install_preprocessing_dcm2nii)
+* [dcm2nii DICOM to NIfTI conversion](install_dcm2nii)
 * [Multi-image Analysis GUI (MANGO)](install_mango)
 * [MATLAB R2014a](install_matlabR2014a)
-* [ACPC Detect](install_preprocessing_acpcdetect)
+* [ACPC Detect](install_acpcdetect)
 * [Git](install_git)
 * [CMake](install_cmake)
 * [C++ Compiler](install_gcc)
