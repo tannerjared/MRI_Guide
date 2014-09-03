@@ -40,10 +40,10 @@ How to Process MRI Images:
 # cd /usr/local/
 # mkdir art
 # cd art/
-# mv /home/<username>/Downloads/preprocessing_acpcdetect.tar.gz /usr/local/art/
-# gunzip preprocessing_acpcdetect.tar.gz
-# tar xvf preprocessing_acpcdetect.tar
-# mv /usr/local/art/preprocessing_acpcdetect /usr/local/bin/
+# mv /home/<username>/Downloads/acpcdetect.tar.gz /usr/local/art/
+# gunzip acpcdetect.tar.gz
+# tar xvf acpcdetect.tar
+# mv /usr/local/art/acpcdetect /usr/local/bin/
 ```
 
 * Set the environmental variables:
@@ -58,7 +58,7 @@ $ export ARTHOME
 
 ```
 #!console
-$ preprocessing_acpcdetect
+$ acpcdetect
 ```
 
 # Mac
