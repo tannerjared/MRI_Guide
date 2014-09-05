@@ -64,6 +64,13 @@ How to Process MRI Images:
 
 * Open the CMake.app and go to Tools > Install For Command Line Use. You will need to make sure you have admin permissions.
 
+* If you get errors, open up the CMake application from terminal:
+
+```
+#!console
+$ sudo /Applications/CMake.app/Contents/MacOS/CMake
+```
+
 # Windows
 
 * Download the [latest version](http://www.cmake.org/files/v3.0/cmake-3.0.0-win32-x86.exe).
