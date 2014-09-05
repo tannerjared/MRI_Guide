@@ -46,7 +46,7 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 Open you Xcode.app and go to Xcode > Preferences > Downloads. Click to make sure you have the command line toolbox installed.
 
-* If you don't see the library to install, you are probably running a different version of Mac OS X. For Mac OS X Mavericks, type the following in your terminal:
+If you don't see the library to install, you are probably running a different version of Mac OS X. For Mac OS X Mavericks, type the following in your terminal:
 
 ```
 #!console
