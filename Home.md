@@ -2,7 +2,7 @@ How to Process MRI Images:
 
 1. [Beginner's Guide to Command-Line Interface](begin_primer)
 2. [How to Install Programs](Home)
-    * [Install Programs on Fulton Supercomputing Lab](fsl)
+     * [Fulton Supercomputing Lab Instructions](fsl)
 3. Preprocessing T1 images
      * [Download example files](https://bitbucket.org/njhunsaker/preprocessing-t1-example)
      * [Convert DICOM to NIfTI](preprocessing_dcm2nii)
