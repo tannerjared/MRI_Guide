@@ -118,12 +118,12 @@ $ vi CMakeLists.txt
 
 To edit the text, press "a". You will need to change the following:
 
-> TARGET_LINK_LIBRARIES(sa ITKNumerics ITKIO ITKStatistics)
+> TARGET_LINK_LIBRARIES(sa ITKNumerics ITKIO ITKStatistics)    
 > TARGET_LINK_LIBRARIES(bl ITKNumerics ITKIO ITKStatistics)
 
 To:
 
-> TARGET_LINK_LIBRARIES(sa ${ITK_LIBRARIES})
+> TARGET_LINK_LIBRARIES(sa ${ITK_LIBRARIES})    
 > TARGET_LINK_LIBRARIES(bl ${ITK_LIBRARIES})
 
 When you are done editing your file, press the "esc" key. To save the file, press ":w" and to quit out of your text editor enter ":q".
