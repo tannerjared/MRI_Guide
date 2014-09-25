@@ -1,13 +1,13 @@
 How to Process MRI Images:
 
 1. [Beginner's Guide to Command-Line Interface](begin_primer)
-2. [Install Programs](Home)
+2. [How to Install Programs](Home)
 3. Preprocessing T1 images
      * [Download example files](https://bitbucket.org/njhunsaker/preprocessing-t1-example)
      * [Convert DICOM to NIfTI](preprocessing_dcm2nii)
      * [Align anterior commissure and posterior commisure](preprocessing_acpcdetect)
      * [Correct intensity nonuniformities (bias field)](preprocessing_N4BiasFieldCorrection)
-     * [Reslice images to isotropic voxel size 1](preprocessing_reslice)
+     * [Resample images to isotropic voxel size 1](preprocessing_resample)
      * [Brain Extraction and Tissue Segmentation](preprocessing_antscorticalthickness)
 4. Hippocampus Segmentation
      * [Placing Landmarks](hpc_landmarks)
