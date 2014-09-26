@@ -14,6 +14,8 @@ How to Process MRI Images:
 4. Hippocampus Segmentation
      * [Placing Landmarks](hpc_landmarks)
 
+[Reading Materials and Lecture Slides](manuals_slides)
+
 ---------------------------------------
 
 Table of Contents:
