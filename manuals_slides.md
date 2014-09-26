@@ -13,6 +13,7 @@ How to Process MRI Images:
      * [Brain Extraction and Tissue Segmentation](preprocessing_antscorticalthickness)
 4. Hippocampus Segmentation
      * [Placing Landmarks](hpc_landmarks)
+
 [Reading Materials and Lecture Slides] (manuals_slides)
 ---------------------------------------
 
