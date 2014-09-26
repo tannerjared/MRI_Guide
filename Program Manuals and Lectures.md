@@ -44,4 +44,4 @@ Examples
 
 * [ANTs Brain Extraction Example](https://github.com/ntustison/antsBrainExtractionExample)
 
-*[ANTs Cortical Thickness Example](https://github.com/ntustison/antsCorticalThicknessExample)
+* [ANTs Cortical Thickness Example](https://github.com/ntustison/antsCorticalThicknessExample)
