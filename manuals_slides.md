@@ -18,7 +18,19 @@ How to Process MRI Images:
 
 ---------------------------------------
 
+Lessons
+
+* [Preprocessing Slides](https://bitbucket.org/njhunsaker/byu-mri-guide/downloads/20140924_Preprocessing_Lecture.pdf)
+
+* [Preprocessing T1 Weighted Images](https://bitbucket.org/njhunsaker/byu-mri-guide/downloads/code_20140924.pdf)
+
+* [Semi-Automated Hippocampus Tracing](https://bitbucket.org/njhunsaker/byu-mri-guide/downloads/20141001_worksheet.pdf)
+
+* [Dice's Coefficient and Label Statistics](https://bitbucket.org/njhunsaker/byu-mri-guide/downloads/20141003_worksheet.pdf)
+
 Reference Manuals
+
+* [Unix Tutorial](https://bitbucket.org/njhunsaker/byu-mri-guide/downloads/20140917_Unix_Tutorial.pdf)
 
 * [dcm2nii](http://www.mccauslandcenter.sc.edu/mricro/mricron/dcm2nii.html)
 
@@ -29,6 +41,10 @@ Reference Manuals
 * [acpcdetect](https://www.nitrc.org/docman/view.php/90/917/acpcdetect.pdf)
 
 Further Readings
+
+* [SegAdapter](https://bitbucket.org/njhunsaker/byu-mri-guide/downloads/20141001_SegAdapter.pdf)
+
+* [Hippocampus Segmentation](https://bitbucket.org/njhunsaker/byu-mri-guide/downloads/20141001_Hippocampus.pdf)
 
 * [Segmentation](http://sourceforge.net/projects/advants/files/Documentation/atropos.pdf/download)
 
@@ -41,6 +57,8 @@ Further Readings
 * [Automatic Detection of AC/PC](http://dx.doi.org/10.1016/j.neuroimage.2009.02.030)
 
 Examples
+
+* [Hippocampus Protocol](https://bitbucket.org/njhunsaker/byu-mri-guide/downloads/Mango%20Protocol.pptx)
 
 * [ANTs Atropos and N4 Example](https://github.com/ntustison/antsAtroposN4Example)
 
