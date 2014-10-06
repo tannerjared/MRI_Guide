@@ -28,6 +28,8 @@ Lessons
 
 * [Dice's Coefficient and Label Statistics](https://bitbucket.org/njhunsaker/byu-mri-guide/downloads/20141003_worksheet.pdf)
 
+* [Morphometry](https://bitbucket.org/njhunsaker/byu-mri-guide/downloads/20141008_worksheet.pdf)
+
 Reference Manuals
 
 * [Unix Tutorial](https://bitbucket.org/njhunsaker/byu-mri-guide/downloads/20140917_Unix_Tutorial.pdf)
