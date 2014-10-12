@@ -34,6 +34,8 @@ Reference Manuals
 
 * [Unix Tutorial](https://bitbucket.org/njhunsaker/byu-mri-guide/downloads/20140917_Unix_Tutorial.pdf)
 
+* [A-z Inex of Bash Command Line](http://ss64.com/bash/)
+
 * [dcm2nii](http://www.mccauslandcenter.sc.edu/mricro/mricron/dcm2nii.html)
 
 * [Convert3D](http://www.itksnap.org/pmwiki/pmwiki.php?n=Convert3D.Documentation)
