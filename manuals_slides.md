@@ -44,6 +44,8 @@ Reference Manuals
 
 * [acpcdetect](https://www.nitrc.org/docman/view.php/90/917/acpcdetect.pdf)
 
+* [FSL](http://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FslOverview)
+
 Further Readings
 
 * [SegAdapter](https://bitbucket.org/njhunsaker/byu-mri-guide/downloads/20141001_SegAdapter.pdf)
