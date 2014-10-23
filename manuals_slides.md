@@ -32,6 +32,10 @@ Lessons
 
 * [Statistical Analyses with SPM8](https://bitbucket.org/njhunsaker/byu-mri-guide/downloads/Statistical%20Analysis%20with%20SPM%20and%20matlab.pdf)
 
+* [Morphometry Part 1](https://bitbucket.org/njhunsaker/byu-mri-guide/downloads/20141008_MorphometryPt1.pdf)
+
+* [Morphometry Part 2](https://bitbucket.org/njhunsaker/byu-mri-guide/downloads/20141015_MorphometryPt2.pdf)
+
 Reference Manuals
 
 * [Unix Tutorial](https://bitbucket.org/njhunsaker/byu-mri-guide/downloads/20140917_Unix_Tutorial.pdf)
