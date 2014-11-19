@@ -159,8 +159,9 @@ Under your bin directory, download the latest version of acpcdetect:
 ```
 #!console
 $ mkdir art
+$ cd art
 $ wget http://www.nitrc.org/frs/download.php/6494/acpcdetect.tar.gz
-$ tar xvzf acpcdetect.tar.gz 
+$ tar -xvzf acpcdetect.tar.gz 
 ```
 
 You need to set your $ARTHOME environment variable in all scripts:
