@@ -83,10 +83,3 @@ done
 Write a statistic method and result section comparing controls versus severe TBI participants. Here's some example text you can use to draft your results section:
 
 > Data were analyzed using Statistical Parametric Mapping 8 software (SPM8) running on MATLAB 2013b. Jacobian maps were smoothed with an 8-mm isotropic full-width at half maximum (FWHM) Gaussian kernel in order to improve signal-to-noise ratio. Using these smooth Jacobian maps, we performed voxel-wise statistical analysis between groups using a two-sample T-test in order to identify changes in brain regions. SPM t-contrast maps were generated using a threshold of p < 0.001. Significance levels for the t statistic were controlled by the false discovery rate (FDR) for multiple comparisons and we report clusters that exceeded a threshold of 100 voxels and correct cluster level at p < 0.05. Anatomical localization of the cerebral areas was defined by an expericed observer, using the MNI atlas. Table x presents the regions of significant regional reduction in severe TBI participants compared to controls. Compared to controls, the severe TBI group showed significant regional reduction in the parietal lobe, [...] (see Figure x). Table y presents the regions of significant regional expansion in severe TBI participants compared to controls. Compared to controls, the severe TBI group showed significant regional enlargement of the lateral ventricles, [...] (see Figure y).
-
-Table x: Regional reduction in TBI compared to controls
-
---------------------------------|-------------|---------------|----------------|
-Brain Area                      | Cluster (k) | Voxel Z score | MNI Coordinate |
---------------------------------|-------------|---------------|-----------|
-Splenium of the Corpus Callosum | 61          | 5.31 | 4, -40, 19 |
