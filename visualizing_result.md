@@ -44,7 +44,7 @@ rm temp*.txt
 
 To run your new bash script type:
 
-```bash
+```
 sh <nameofscript>.sh <txtfiletobemodified>.txt
 ```
 
@@ -52,7 +52,7 @@ sh <nameofscript>.sh <txtfiletobemodified>.txt
 
 Be sure you have the following packages installed. You only need to do this once on your computer:
 
-```{r,eval=FALSE}
+```
 install.packages(c("gdata","ggplot2"))
 ```
 
