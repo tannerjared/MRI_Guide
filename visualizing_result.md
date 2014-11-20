@@ -78,7 +78,7 @@ qplot(factor(Group),mean,data=data,geom=c("boxplot","jitter"),colour=Group,main=
 dev.off()
 ```
 
-```{r,echo=FALSE,tidy=TRUE,tidy.opts=list(width.cutoff=70)}
+```
 library(ggplot2)
 setwd('~/Desktop/spm-part-2/grp_covariate_age')
 data=read.csv('spmT_0001_cluster_0001_modified.csv')
