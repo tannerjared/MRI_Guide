@@ -22,7 +22,7 @@ Lessons
 
 * [Preprocessing Slides](https://bitbucket.org/njhunsaker/byu-mri-guide/downloads/20140924_Preprocessing_Lecture.pdf)
 
-* [Preprocessing T1 Weighted Images](https://bitbucket.org/njhunsaker/byu-mri-guide/downloads/code_20140924.pdf)
+* [Preprocessing T1 Weighted Images](preprocessing_t1_weighted_images)
 
 * [Semi-Automated Hippocampus Tracing](https://bitbucket.org/njhunsaker/byu-mri-guide/downloads/20141001_worksheet.pdf)
 
