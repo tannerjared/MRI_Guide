@@ -1,6 +1,6 @@
 # Extract data from SPM clusters
 
-```bash
+```
 cd ~/Desktop/spm-part-2/grp_covariate_age/
 for var in $(find ~/Desktop/spm-part-2/ -type f -name "*.nii"); do
   c3d -verbose \
