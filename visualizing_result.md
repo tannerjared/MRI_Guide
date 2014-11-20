@@ -56,7 +56,7 @@ Be sure you have the following packages installed. You only need to do this once
 install.packages(c("gdata","ggplot2"))
 ```
 
-```{r,warning=FALSE,message=FALSE,tidy=TRUE,tidy.opts=list(width.cutoff=70)}
+```
 library(gdata)
 setwd('~/Desktop/spm-part-2/')
 demographic=read.xls('demographic.xls')
@@ -68,7 +68,7 @@ demographic=read.xls('demographic.xls')
 
 Then you can graph your data:
 
-```{r,eval=FALSE,tidy=TRUE,tidy.opts=list(width.cutoff=70)}
+```
 library(ggplot2)
 setwd('~/Desktop/spm-part-2/grp_covariate_age')
 data=read.csv('spmT_0001_cluster_0001_modified.csv')
@@ -87,7 +87,7 @@ qplot(factor(Group),mean,data=data,geom=c("boxplot","jitter"),colour=Group,main=
 ```
 
 ## Scatterplot
-```{r,eval=FALSE,tidy=TRUE,tidy.opts=list(width.cutoff=70)}
+```
 library(ggplot2)
 setwd('~/Desktop/spm-part-2/correlation_fsiq')
 data=read.csv('spmT_0001_cluster_0001_modified.csv')
@@ -97,7 +97,7 @@ qplot(WASIIQ,mean,data=data,main="WASI IQ+")+geom_smooth(method=lm,se=FALSE,full
 dev.off()
 ```
 
-```{r,warning=FALSE,echo=FALSE,tidy=TRUE,tidy.opts=list(width.cutoff=70)}
+```
 library(ggplot2)
 setwd('~/Desktop/spm-part-2/correlation_fsiq')
 data=read.csv('spmT_0001_cluster_0001_modified.csv')
@@ -105,10 +105,8 @@ data=merge(data,demographic,by="ID",all.x=TRUE)
 qplot(WASIIQ,mean,data=data,main="WASI IQ+")+geom_smooth(method=lm,se=FALSE,fullrange=T)
 ```
 
-\pagebreak
-
 ## Interaction
-```{r,eval=FALSE,tidy=TRUE,tidy.opts=list(width.cutoff=65)}
+```
 library(ggplot2)
 setwd('~/Desktop/spm-part-2/interaction_fsiq')
 data=read.csv('spmT_0003_cluster_0001_modified.csv')
@@ -118,7 +116,7 @@ qplot(WASIIQ,mean,data=data,main="Norm+ vs. TBI-",colour=Group)+geom_smooth(meth
 dev.off()
 ```
 
-```{r,warning=FALSE,echo=FALSE,tidy=TRUE,tidy.opts=list(width.cutoff=70)}
+```
 library(ggplot2)
 setwd('~/Desktop/spm-part-2/interaction_fsiq')
 data=read.csv('spmT_0003_cluster_0001_modified.csv')
