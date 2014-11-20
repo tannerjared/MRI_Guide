@@ -24,13 +24,13 @@ Lessons
 
 * [Preprocessing T1 Weighted Images](preprocessing_t1_weighted_images)
 
-* [Semi-Automated Hippocampus Tracing](https://bitbucket.org/njhunsaker/byu-mri-guide/downloads/20141001_worksheet.pdf)
+* [Semi-Automated Hippocampus Tracing](semiautomated_hippocampus_tracing)
 
-* [Dice's Coefficient and Label Statistics](https://bitbucket.org/njhunsaker/byu-mri-guide/downloads/20141003_worksheet.pdf)
+* [Dice's Coefficient and Label Statistics](dices_coefficient_and_label_statistics)
 
-* [Morphometry](https://bitbucket.org/njhunsaker/byu-mri-guide/downloads/20141008_worksheet.pdf)
+* [Morphometry](morphometry)
 
-* [Statistical Analyses with SPM8](https://bitbucket.org/njhunsaker/byu-mri-guide/downloads/Statistical%20Analysis%20with%20SPM%20and%20matlab.pdf)
+* [Statistical Analyses with SPM8](statistical_analyses_with_spm8)
 
 * [Morphometry Part 1](https://bitbucket.org/njhunsaker/byu-mri-guide/downloads/20141008_MorphometryPt1.pdf)
 
