@@ -123,7 +123,6 @@ $ sa \
 
 Dice's Coefficient is defined as:
 
-$$\frac{2 \times Volume(Manual \cap Automatic)}{Volume(Manual + Automatic)}$$
 
 To calculate Dice's Coefficient:
 
@@ -137,7 +136,7 @@ $ c3d \
 
 # Extract Total Number of Voxels and Calculate Volume
 
-```bash
+```
 $ fslstats \
 <inputSegmentation>.nii.gz \
 -l <1-targetLabel> \
