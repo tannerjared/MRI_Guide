@@ -32,7 +32,6 @@ cat /usr/local/antsbin/bin/antsRegistrationSynQuick.sh
 
 One of the differences between the two commands is the number of iterations in the last iteration step. For antsRegistrationSynQuick.sh there are 0 iteractions and for antsRegistrationSyn.sh there are 100 iterations. The other difference is the metric used for registration. For antsRegistrationSynQuick.sh, the registration metric is based on mutual information (great for multimodal images). For antsRegistrationSyn.sh, the registration metric is based on cross correlation (great for T1 weighted image registration).
 
-\newpage
 
 # Generate Warped Images
 
