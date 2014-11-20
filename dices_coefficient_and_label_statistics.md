@@ -1,12 +1,12 @@
-*# Other ways to acquire Dice's Coefficient and Label Statistics
+# Other ways to acquire Dice's Coefficient and Label Statistics
 
 Instead of using convert3d or FSL you can also use ANTs, to generate a file per participant. Unsure if you can output to the same file for an entire study. You could always merge files with the following command:
 
-```bash
+```
 cat *.txt > merged.txt
 ```
 
-```bash
+```
 # Dice's Coefficient in c3d
 c3d -verbose <LabelImage1>.nii.gz <LabelImage2>.nii.gz -overlap <labelValue>
 
