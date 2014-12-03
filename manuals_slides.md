@@ -36,6 +36,8 @@ Lessons
 
 * [Morphometry Part 2](https://bitbucket.org/njhunsaker/byu-mri-guide/downloads/20141015_MorphometryPt2.pdf)
 
+* [Using the Supercomputer](supercomputer)
+
 Reference Manuals
 
 * [Unix Tutorial](https://bitbucket.org/njhunsaker/byu-mri-guide/downloads/20140917_Unix_Tutorial.pdf)
