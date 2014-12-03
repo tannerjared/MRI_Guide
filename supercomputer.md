@@ -95,7 +95,6 @@ to the correct ITK libraries:
 
 When you are done editing your file, press the "esc" key. To save the file, press ":wq" and then enter.
 
-\pagebreak
 
 Install SegAdapter:
 
@@ -149,7 +148,6 @@ To sync from your local computer to the supercomputer, use rsync. You can first 
 rsync -rauv --exclude=".*" -e ssh ~/Desktop/supercomputer/ \
 <netid>@ssh.fsl.byu.edu:~/compute --dry-run
 ```
-\pagebreak
 
 If you are comfortable with the files to be synced:
 
@@ -255,7 +253,6 @@ for i in $(seq 0 $max); do
 done
 ```
 
-\pagebreak
 
 When you are ready to submit your jobs:
 
