@@ -55,6 +55,7 @@ Configure ANTs by pressing the "c" key. Continue pressing the "c" key until no n
 ```
 make -j 4
 ```
+And wait awhile.
 
 You will also need to copy all of the scripts into your `antsbin/bin` folder
 
@@ -62,8 +63,7 @@ You will also need to copy all of the scripts into your `antsbin/bin` folder
 cp /fslhome/<netid>/bin/Ants/Scripts/* /fslhome/<netid>/bin/antsbin/bin/
 ````
 
-And wait awhile. Your ANTSPATH will be slightly different and needs to be included in ALL scripts:
-
+Your ANTSPATH will be slightly different and needs to be included in ALL scripts:
 
 ```
 export ANTSPATH=/fslhome/<netid>/bin/antsbin/bin/
