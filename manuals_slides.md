@@ -38,7 +38,7 @@ Lessons
 
 * [Using the Supercomputer](supercomputer)
 
-* [Visualizing Results](visualizing_results)
+* [Visualizing Results](visualizing_result)
 
 Reference Manuals
 
