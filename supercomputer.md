@@ -64,7 +64,8 @@ cp /fslhome/<netid>/bin/Ants/Scripts/* /fslhome/<netid>/bin/antsbin/bin/
 
 and wait awhile. Your ANTSPATH will be slightly different and needs to be included in ALL scripts:
 
-```bash
+
+```
 export ANTSPATH=/fslhome/<netid>/bin/antsbin/bin/
 PATH=${ANTSPATH}:${PATH}
 ```
