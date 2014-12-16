@@ -20,7 +20,7 @@ How to Process MRI Images:
 
 # How to Logon the FSL Supercomputer
 
-```bash
+```
 ssh <netid>@ssh.fsl.byu.edu
 ```
 
@@ -28,7 +28,7 @@ ssh <netid>@ssh.fsl.byu.edu
 
 You will have to create you own apps directory under your home directory:
 
-```bash
+```
 mkdir bin
 cd bin
 ```
@@ -37,7 +37,7 @@ cd bin
 
 Under your bin directory, download the latest version of ANTs:
 
-```bash
+```
 git clone git://github.com/stnava/ANTs.git
 ```
 
@@ -59,7 +59,6 @@ You will also need to copy all of the scripts into your `antsbin/bin` folder
 
 ```
 cp /fslhome/<netid>/bin/Ants/Scripts/* /fslhome/<netid>/bin/antsbin/bin/
-
 ````
 
 and wait awhile. Your ANTSPATH will be slightly different and needs to be included in ALL scripts:
@@ -74,14 +73,14 @@ PATH=${ANTSPATH}:${PATH}
 
 Under your bin directory, download the latest version of ITK:
 
-```bash
+```
 cd ~/bin
 git clone git://itk.org/ITK.git
 ```
 
 Install ITK:
 
-```bash
+```
 mkdir ITK-build
 cd ITK-build
 ccmake ../ITK
@@ -89,7 +88,7 @@ ccmake ../ITK
 
 Configure ITK by pressing the "c" key. In order to speed up the build process, disable the compliation of the unit tests and examples. This is done with the variables `BUILD TESTING=OFF` and `BUILD EXAMPLES=OFF`. Each time you change a set of variables in CMake, it is necessary to proceed to another configuration step by hitting the "c" key. When no new options appear in CMake, you cna proceed to generate Makefiles by hitting the "g" key.
 
-```bash
+```
 make
 ```
 
@@ -97,7 +96,7 @@ make
 
 Under your bin directory, download the latest version of SegAdpater:
 
-```bash
+```
 cd ~/bin
 wget http://www.nitrc.org/frs/download.php/5859/segAdapter_1.9_release.tar.gz
 tar -xzvf segAdapter_1.9.tar.gz
@@ -106,7 +105,7 @@ cd segAdapter_1.9_release/
 
 You will need to edit the CMakeList.txt file:
 
-```bash
+```
 vi CMakeLists.txt
 ```
 
@@ -125,19 +124,19 @@ When you are done editing your file, press the "esc" key. To save the file, pres
 
 Install SegAdapter:
 
-```bash
+```
 ccmake .
 ```
 
 Configure SegAdapter by pressing the "c" key. You need to change the variable `ITK_DIR` to /fslhome/<netid>bin/ITK-build/`. Each time you change a set of variables in CMake, it is necessary to proceed to another configure setp by hitting the "c" key. When no new options appear in CMake, you can proceed to generate Makefiles by hitting the "g" key.
 
-```bash
+```
 make
 ```
 
 You will need to provide the full pathname when you want to run SegAdapter:
 
-```bash
+```
 /fslhome/<netid>/bin/segAdapter_1.9_release/bl
 /fslhome/<netid>/bin/segAdapter_1.9_release/sa
 ```
@@ -146,7 +145,7 @@ You will need to provide the full pathname when you want to run SegAdapter:
 
 Under your bin directory, download the latest version of acpcdetect:
 
-```bash
+```
 cd ~/bin
 mkdir art
 cd art
@@ -156,7 +155,7 @@ tar -xvzf acpcdetect.tar.gz
 
 You need to set your $ARTHOME environment variable in all scripts:
 
-```bash
+```
 ARTHOME=/fslhome/<netid>/bin/art
 export ARTHOME
 ```
@@ -165,20 +164,20 @@ export ARTHOME
 
 Log out of your FSL account if you haven't already:
 
-```bash
+```
 exit
 ```
 
 To sync from your local computer to the supercomputer, use rsync. You can first *verify* the files that are going to sync over using the `--dry-run` option.
 
-```bash
+```
 rsync -rauv --exclude=".*" -e ssh ~/Desktop/supercomputer/ \
 <netid>@ssh.fsl.byu.edu:~/compute --dry-run
 ```
 
 If you are comfortable with the files to be synced:
 
-```bash
+```
 rsync -rauv --exclude=".*" -e ssh ~/Desktop/supercomputer/ \
 <netid>@ssh.fsl.byu.edu:~/compute
 ```
@@ -187,7 +186,7 @@ rsync -rauv --exclude=".*" -e ssh ~/Desktop/supercomputer/ \
 
 Log onto the supercomputer and then create a folder for your logfiles:
 
-```bash
+```
 ssh <netid>@ssh.fsl.byu.edu
 timestamp=$(date '+%Y_%m_%d_%H%M')
 mkdir -p logfiles/${timestamp}
@@ -195,21 +194,21 @@ mkdir -p logfiles/${timestamp}
 
 Create a folder for your scripts:
 
-```bash
+```
 cd
 mkdir -p scripts/acpcdetect
 ```
 
 Generate a new script:
 
-```bash
+```
 cd scripts/acpcdetect/
 vi do_acpcdetect0.sh
 ```
 
 Edit the following text. Press the "a" key to insert text into your new file. Copy and paste into your new script:
 
-```bash
+```
 #!/bin/bash
 
 #SBATCH --time=50:00:00   # walltime
@@ -246,7 +245,7 @@ done
 
 In order to generate a script for each of your participants, you must determine the number of files to be processed:
 
-```bash
+```
 IFS=$'\n'
 array=( $(find ~/compute/practice/ -type f -name "t1.nii") )
 echo ${#array[@]}
@@ -254,7 +253,7 @@ echo ${#array[@]}
 
 To generate the files for each participant:
 
-```bash
+```
 cd ~/scripts/acpcdetect/
 max=$((${#array[@]}-2))
 for i in $(seq 0 $max); do
@@ -271,7 +270,7 @@ done
 
 To generate a script to submit each participant script:
 
-```bash
+```
 cd ~/scripts
 max=$((${#array[@]}-1))
 for i in $(seq 0 $max); do
@@ -283,7 +282,7 @@ done
 
 When you are ready to submit your jobs:
 
-```bash
+```
 sh run_acpcdetect_${timestamp}.sh
 ```
 
@@ -297,14 +296,14 @@ You can check up on your job status several ways:
 
 Make sure you are not logged onto the super computer first. To sync from the supercomputer to your local computer, use rsync. You can *verify* the files that are going to sync over using the `--dry-run` option.
 
-```bash
+```
 rsync -rauv --exclude=".*" -e ssh <netid>@ssh.fsl.byu.edu:~/compute/practice/ \
 ~/Desktop/supercomputer/practice --dry-run
 ```
 
 If you are comfortable with the files to be synced:
 
-```bash
+```
 rsync -rauv --exclude=".*" -e ssh <netid>@ssh.fsl.byu.edu:~/compute/practice/ \
 ~/Desktop/supercomputer/practice
 ```
