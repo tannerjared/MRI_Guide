@@ -208,7 +208,7 @@ vi do_acpcdetect0.sh
 
 Edit the following text. Press the "a" key to insert text into your new file. Copy and paste into your new script:
 
-```
+```bash
 #!/bin/bash
 
 #SBATCH --time=50:00:00   # walltime
