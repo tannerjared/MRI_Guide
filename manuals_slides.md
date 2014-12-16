@@ -38,6 +38,8 @@ Lessons
 
 * [Using the Supercomputer](supercomputer)
 
+* [Visualizing Results](visualizing_results)
+
 Reference Manuals
 
 * [Unix Tutorial](https://bitbucket.org/njhunsaker/byu-mri-guide/downloads/20140917_Unix_Tutorial.pdf)
