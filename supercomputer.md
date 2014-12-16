@@ -61,7 +61,7 @@ You will also need to copy all of the scripts into your `antsbin/bin` folder
 
 ```
 cp /fslhome/<netid>/bin/Ants/Scripts/* /fslhome/<netid>/bin/antsbin/bin/
-````
+```
 
 Your ANTSPATH will be slightly different and needs to be included in ALL scripts
 
