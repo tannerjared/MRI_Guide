@@ -43,7 +43,7 @@ git clone git://github.com/stnava/ANTs.git
 
 Install ANTs:
 
-```bash
+```
 module load cmake/2.8.10.2
 mkdir antsbin
 cd antsbin
@@ -52,12 +52,12 @@ ccmake ../ANTs
 
 Configure ANTs by pressing the "c" key. Continue pressing the "c" key until no new options appear. When no new otpions appear in CMake, you can proceed to generate Makefiles by hitting the "g" key. Once you are back at your regular terminal prompt:
 
-```bash
+```
 make -j 4
 ```
 You will also need to copy all of the scripts into your `antsbin/bin` folder
 
-```bash
+```
 cp /fslhome/<netid>/bin/Ants/Scripts/* /fslhome/<netid>/bin/antsbin/bin/
 
 ````
