@@ -67,7 +67,7 @@ and wait awhile.
 You'll also need to copy the scripts into your new antsbin directory
 
 ```
-cp /fslhome/<netid>/bin/ANTs/Scripts/* /fslhome/<netid>/bin/antsbin/bin/
+cp /fslhome/<username>/bin/ANTs/Scripts/* /fslhome/<username>/bin/antsbin/bin/
 ```
 
 Your ANTSPATH will be slightly different and needs to be included in all scripts:
