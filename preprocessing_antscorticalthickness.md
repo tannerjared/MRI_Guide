@@ -244,6 +244,6 @@ $ for i in $(find ~/preprocessing-t1-example/ -type d -name "antsCorticalThickne
 
 * The templates require the full path to their directory and the <prefix> requires the full path to its desired directory. For example, the templates may need to have `shared/templates/OASIS-30_Atropos_template/desired_template`. If your running command line from where you want the created files to be made then you only need to type in the title you want to prefix each file it outputs.
 
-* Atropos templates can be obtained [here](http://mindboggle.info/data/templates/atropos/OASIS-30_Atropos_template.tar.gz)
+* Atropos templates can be obtained [here](http://www.mindboggle.info/data.html#mindboggle-101-atlases)
 
 * Using this script is super helpful if you ever want to run shape analyses on cortical labels acquired from FreeSurfer. If you have a FreeSurfer dataset and this output from this script, you can run [MindBoggle](http://mindboggle.info/users/README.html).
