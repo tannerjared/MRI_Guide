@@ -246,4 +246,6 @@ $ for i in $(find ~/preprocessing-t1-example/ -type d -name "antsCorticalThickne
 
 * Atropos templates can be obtained [here](http://www.mindboggle.info/data.html#mindboggle-101-atlases)
 
+* [This](https://drive.google.com/folderview?id=0B4SvObeEfaRySUNDOE5DWksyQ0k&usp=sharing) is a good source for other templates with priors
+
 * Using this script is super helpful if you ever want to run shape analyses on cortical labels acquired from FreeSurfer. If you have a FreeSurfer dataset and this output from this script, you can run [MindBoggle](http://mindboggle.info/users/README.html).
