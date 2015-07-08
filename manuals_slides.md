@@ -72,6 +72,12 @@ Further Readings
 
 * [Automatic Detection of AC/PC](http://dx.doi.org/10.1016/j.neuroimage.2009.02.030)
 
+* [Introduction to R (a UCLA seminar)](http://www.ats.ucla.edu/stat/r/seminars/intro.htm)
+
+* [Quick-R: Basic Statistics](http://www.statmethods.net/stATS/index.html)
+
+* [Using R for Statistical Analyses](http://www.gardenersown.co.uk/education/lectures/r/regression.htm)
+
 Examples
 
 * [Hippocampus Protocol](https://bitbucket.org/njhunsaker/byu-mri-guide/downloads/Mango%20Protocol.pptx)
