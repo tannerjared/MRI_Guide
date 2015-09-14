@@ -1,4 +1,5 @@
-`library(ANTsR)
+```
+library(ANTsR)
 setwd("/fslhome/zach8769/compute/rsobik/WASIMatrixReasoning/")
 load("/fslhome/zach8769/compute/rsobik/WASIMatrixReasoning/vardata")
 load("/fslhome/zach8769/compute/rsobik/WASIMatrixReasoning/varmat")
@@ -117,4 +118,5 @@ write.csv(pvaldata.oi.v.mod,file="/fslhome/zach8769/compute/rsobik/WASIMatrixRea
 #OI vs Severe
 #labels.oi.v.sev<-labelImageCentroids(thresh.pval.oi.v.sev)
 pvaldata.oi.v.sev<-labelGeometryMeasures(thresh.pval.oi.v.sev)
-write.csv(pvaldata.oi.v.sev,file="/fslhome/zach8769/compute/rsobik/WASIMatrixReasoning/oi_sev.csv")`
+write.csv(pvaldata.oi.v.sev,file="/fslhome/zach8769/compute/rsobik/WASIMatrixReasoning/oi_sev.csv")
+```
