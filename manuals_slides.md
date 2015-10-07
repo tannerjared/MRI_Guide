@@ -72,6 +72,8 @@ Further Readings
 
 * [Automatic Detection of AC/PC](http://dx.doi.org/10.1016/j.neuroimage.2009.02.030)
 
+* [SPM How-tos](http://brainimaging.waisman.wisc.edu/~oakes/spm/spm_how_tos.html)
+
 * [Introduction to R (a UCLA seminar)](http://www.ats.ucla.edu/stat/r/seminars/intro.htm)
 
 * [Quick-R: Basic Statistics](http://www.statmethods.net/stATS/index.html)
