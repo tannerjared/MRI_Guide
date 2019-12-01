@@ -1,0 +1,12 @@
+#!/usr/bin/env python
+
+# Code modified from: http://www.pallier.org/pdfs/snr-in-mri.pdf
+# First install nipype if it is not already installed: https://nipype.readthedocs.io/en/latest/users/install.html
+# Dependencies are python 2
+
+import sys
+from nipype.algorithms.confounds import TSNR
+tsnr = TSNR()
+tsnr.inputs.in_file = sys.argv[1:]
+tsnr.inputs.regress_poly=10 # detrending
+tsnr.run()
