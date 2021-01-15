@@ -38,7 +38,7 @@ done
 
 ###After bedpostx
 
-###Nonlinear registration to structural and standard using FSL FDT
+###Linear (12 DOF) registration to structural and standard using FSL FDT
 
 for sub in `cat subjects.txt` ; do
     cd /mnt/h/TKA_spinal_FW/TKA${sub}_pre_bedpost/
@@ -48,10 +48,6 @@ for sub in `cat subjects.txt` ; do
     convert_xfm -omat ./TKA${sub}_pre_bedpost.bedpostX/xfms/standard2str.mat -inverse ./TKA${sub}_pre_bedpost.bedpostX/xfms/str2standard.mat
     convert_xfm -omat ./TKA${sub}_pre_bedpost.bedpostX/xfms/diff2standard.mat -concat .t/TKA${sub}_pre_bedpost.bedpostX/xfms/str2standard.mat ./TKA${sub}_pre_bedpost.bedpostX/xfms/diff2str.mat
     convert_xfm -omat ./TKA${sub}_pre_bedpost.bedpostX/xfms/standard2diff.mat -inverse ./TKA${sub}_pre_bedpost.bedpostX/xfms/diff2standard.mat
-    fnirt --in=./sub-*${sub}_ses-pre_T1w_biascorr.nii.gz --aff=./TKA${sub}_pre_bedpost.bedpostX/xfms/str2standard.mat --cout=./TKA${sub}_pre_bedpost.bedpostX/xfms/str2standard_warp --config=T1_2_MNI152_2mm
-    invwarp -w ./TKA${sub}_pre_bedpost.bedpostX/xfms/str2standard_warp -o ./TKA${sub}_pre_bedpost.bedpostX/xfms/standard2str_warp -r ./sub-*${sub}_ses-pre_T1w_biascorr_brain.nii.gz
-    convertwarp -o ./TKA${sub}_pre_bedpost.bedpostX/xfms/diff2standard_warp -r $FSLDIR/data/standard/MNI152_T1_2mm -m ./TKA${sub}_pre_bedpost.bedpostX/xfms/diff2str.mat -w ./TKA${sub}_pre_bedpost.bedpostX/xfms/str2standard_warp
-    convertwarp -o ./TKA${sub}_pre_bedpost.bedpostX/xfms/standard2diff_warp -r ./TKA${sub}_pre_bedpost.bedpostX/nodif_brain_mask -w ./TKA${sub}_pre_bedpost.bedpostX/xfms/standard2str_warp --postmat=./TKA${sub}_pre_bedpost.bedpostX/xfms/str2diff.mat
 done
 
 for sub in `cat subjects.txt` ; do
@@ -62,8 +58,4 @@ for sub in `cat subjects.txt` ; do
     convert_xfm -omat ./TKA${sub}_post_bedpost.bedpostX/xfms/standard2str.mat -inverse ./TKA${sub}_post_bedpost.bedpostX/xfms/str2standard.mat
     convert_xfm -omat ./TKA${sub}_post_bedpost.bedpostX/xfms/diff2standard.mat -concat .t/TKA${sub}_post_bedpost.bedpostX/xfms/str2standard.mat ./TKA${sub}_post_bedpost.bedpostX/xfms/diff2str.mat
     convert_xfm -omat ./TKA${sub}_post_bedpost.bedpostX/xfms/standard2diff.mat -inverse ./TKA${sub}_post_bedpost.bedpostX/xfms/diff2standard.mat
-    fnirt --in=./sub-*${sub}_ses-post_T1w_biascorr.nii.gz --aff=./TKA${sub}_post_bedpost.bedpostX/xfms/str2standard.mat --cout=./TKA${sub}_post_bedpost.bedpostX/xfms/str2standard_warp --config=T1_2_MNI152_2mm
-    invwarp -w ./TKA${sub}_post_bedpost.bedpostX/xfms/str2standard_warp -o ./TKA${sub}_post_bedpost.bedpostX/xfms/standard2str_warp -r ./sub-*${sub}_ses-post_T1w_biascorr_brain.nii.gz
-    convertwarp -o ./TKA${sub}_post_bedpost.bedpostX/xfms/diff2standard_warp -r $FSLDIR/data/standard/MNI152_T1_2mm -m ./TKA${sub}_post_bedpost.bedpostX/xfms/diff2str.mat -w ./TKA${sub}_post_bedpost.bedpostX/xfms/str2standard_warp
-    convertwarp -o ./TKA${sub}_post_bedpost.bedpostX/xfms/standard2diff_warp -r ./TKA${sub}_post_bedpost.bedpostX/nodif_brain_mask -w ./TKA${sub}_post_bedpost.bedpostX/xfms/standard2str_warp --postmat=./TKA${sub}_post_bedpost.bedpostX/xfms/str2diff.mat
 done
