@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#This is a work in progress.
+#This is a work in progress and is specific to a particular project and computer.
 #This requires FSL and MRtrix 3
 
 for sub in `cat subjects.txt` ; do
