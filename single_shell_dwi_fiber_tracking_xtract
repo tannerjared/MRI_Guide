@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #This is a work in progress.
-#It requires FSL and mrtrix 3
+#This requires FSL and MRtrix 3
 
 for sub in `cat subjects.txt` ; do
   mkdir TKA${sub}_{pre,post}
@@ -36,9 +36,9 @@ for sub in `cat subjects.txt` ; do
    cd ..
 done
 
-######Afer bedpostx
+###After bedpostx
 
-#Nonlinear registration to structural and standard using FSL FDT
+###Nonlinear registration to structural and standard using FSL FDT
 
 for sub in `cat subjects.txt` ; do
     cd /mnt/h/TKA_spinal_FW/TKA${sub}_pre_bedpost/
