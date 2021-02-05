@@ -36,6 +36,10 @@ for sub in `cat subjects.txt` ; do
    cd ..
 done
 
+for sub in `cat subjects.txt` ; do
+    bedpostx_gpu TKA${sub}_pre_bedpost
+done
+
 ###After bedpostx
 
 ###Linear (12 DOF) registration to structural and standard using FSL FDT
