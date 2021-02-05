@@ -60,6 +60,6 @@ for sub in `cat subjects.txt` ; do
     convert_xfm -omat ./TKA${sub}_post_bedpost.bedpostX/xfms/str2diff.mat -inverse ./TKA${sub}_post_bedpost.bedpostX/xfms/diff2str.mat
     flirt -in ./sub-*${sub}_ses-post_T1w_biascorr_brain.nii.gz -ref $FSLDIR/data/standard/MNI152_T1_2mm_brain -omat ./TKA${sub}_post_bedpost.bedpostX/xfms/str2standard.mat -searchrx -90 90 -searchry -90 90 -searchrz -90 90 -dof 12 -cost corratio
     convert_xfm -omat ./TKA${sub}_post_bedpost.bedpostX/xfms/standard2str.mat -inverse ./TKA${sub}_post_bedpost.bedpostX/xfms/str2standard.mat
-    convert_xfm -omat ./TKA${sub}_post_bedpost.bedpostX/xfms/diff2standard.mat -concat .t/TKA${sub}_post_bedpost.bedpostX/xfms/str2standard.mat ./TKA${sub}_post_bedpost.bedpostX/xfms/diff2str.mat
+    convert_xfm -omat ./TKA${sub}_post_bedpost.bedpostX/xfms/diff2standard.mat -concat ./TKA${sub}_post_bedpost.bedpostX/xfms/str2standard.mat ./TKA${sub}_post_bedpost.bedpostX/xfms/diff2str.mat
     convert_xfm -omat ./TKA${sub}_post_bedpost.bedpostX/xfms/standard2diff.mat -inverse ./TKA${sub}_post_bedpost.bedpostX/xfms/diff2standard.mat
 done
