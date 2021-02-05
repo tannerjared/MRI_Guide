@@ -54,16 +54,16 @@ for sub in `cat subjects.txt` ; do
     convert_xfm -omat ./TKA${sub}_pre_bedpost.bedpostX/xfms/standard2diff.mat -inverse ./TKA${sub}_pre_bedpost.bedpostX/xfms/diff2standard.mat
 done
 
-#flirt -in /mnt/h/TKA_spinal_FW/TKA011_pre_bedpost/TKA011_pre_bedpost.bedpostX/nodif_brain -ref /mnt/h/TKA_spinal_FW/TKA011_pre_bedpost/sub-sur011_ses-pre_T1w_biascorr_brain.nii.gz -omat /mnt/h/TKA_spinal_FW/TKA011_pre_bedpost/TKA011_pre_bedpost.bedpostX/xfms/diff2str.mat -searchrx -90 90 -searchry -90 90 -searchrz -90 90 -dof 6 -cost corratio
-#convert_xfm -omat /mnt/h/TKA_spinal_FW/TKA011_pre_bedpost/TKA011_pre_bedpost.bedpostX/xfms/str2diff.mat -inverse /mnt/h/TKA_spinal_FW/TKA011_pre_bedpost/TKA011_pre_bedpost.bedpostX/xfms/diff2str.mat
-#flirt -in /mnt/h/TKA_spinal_FW/TKA011_pre_bedpost/sub-sur011_ses-pre_T1w_biascorr_brain.nii.gz -ref /home/jjtanner/neurotools/fsl/data/standard/MNI152_T1_2mm_brain -omat /mnt/h/TKA_spinal_FW/TKA011_pre_bedpost/TKA011_pre_bedpost.bedpostX/xfms/str2standard.mat -searchrx -90 90 -searchry -90 90 -searchrz -90 90 -dof 12 -cost corratio
-#convert_xfm -omat /mnt/h/TKA_spinal_FW/TKA011_pre_bedpost/TKA011_pre_bedpost.bedpostX/xfms/standard2str.mat -inverse /mnt/h/TKA_spinal_FW/TKA011_pre_bedpost/TKA011_pre_bedpost.bedpostX/xfms/str2standard.mat
-#convert_xfm -omat /mnt/h/TKA_spinal_FW/TKA011_pre_bedpost/TKA011_pre_bedpost.bedpostX/xfms/diff2standard.mat -concat /mnt/h/TKA_spinal_FW/TKA011_pre_bedpost/TKA011_pre_bedpost.bedpostX/xfms/str2standard.mat /mnt/h/TKA_spinal_FW/TKA011_pre_bedpost/TKA011_pre_bedpost.bedpostX/xfms/diff2str.mat
-#convert_xfm -omat /mnt/h/TKA_spinal_FW/TKA011_pre_bedpost/TKA011_pre_bedpost.bedpostX/xfms/standard2diff.mat -inverse /mnt/h/TKA_spinal_FW/TKA011_pre_bedpost/TKA011_pre_bedpost.bedpostX/xfms/diff2standard.mat
-#fnirt --in=/mnt/h/TKA_spinal_FW/TKA011_pre_bedpost/sub-sur011_ses-pre_T1w_biascorr.nii.gz --aff=/mnt/h/TKA_spinal_FW/TKA011_pre_bedpost/TKA011_pre_bedpost.bedpostX/xfms/str2standard.mat --cout=/mnt/h/TKA_spinal_FW/TKA011_pre_bedpost/TKA011_pre_bedpost.bedpostX/xfms/str2standard_warp --config=T1_2_MNI152_2mm
-#invwarp -w /mnt/h/TKA_spinal_FW/TKA011_pre_bedpost/TKA011_pre_bedpost.bedpostX/xfms/str2standard_warp -o /mnt/h/TKA_spinal_FW/TKA011_pre_bedpost/TKA011_pre_bedpost.bedpostX/xfms/standard2str_warp -r /mnt/h/TKA_spinal_FW/TKA011_pre_bedpost/sub-sur011_ses-pre_T1w_biascorr_brain.nii.gz
-#convertwarp -o /mnt/h/TKA_spinal_FW/TKA011_pre_bedpost/TKA011_pre_bedpost.bedpostX/xfms/diff2standard_warp -r /home/jjtanner/neurotools/fsl/data/standard/MNI152_T1_2mm -m /mnt/h/TKA_spinal_FW/TKA011_pre_bedpost/TKA011_pre_bedpost.bedpostX/xfms/diff2str.mat -w /mnt/h/TKA_spinal_FW/TKA011_pre_bedpost/TKA011_pre_bedpost.bedpostX/xfms/str2standard_warp
-#convertwarp -o /mnt/h/TKA_spinal_FW/TKA011_pre_bedpost/TKA011_pre_bedpost.bedpostX/xfms/standard2diff_warp -r /mnt/h/TKA_spinal_FW/TKA011_pre_bedpost/TKA011_pre_bedpost.bedpostX/nodif_brain_mask -w /mnt/h/TKA_spinal_FW/TKA011_pre_bedpost/TKA011_pre_bedpost.bedpostX/xfms/standard2str_warp --postmat=/mnt/h/TKA_spinal_FW/TKA011_pre_bedpost/TKA011_pre_bedpost.bedpostX/xfms/str2diff.mat
+#flirt -in ./TKA${sub}_pre_bedpost/nodif_brain -ref ./TKA${sub}_pre_bedpost/*T1*brain.nii.gz -omat ./TKA${sub}_pre_bedpost.bedpostX/xfms/diff2str.mat -searchrx -90 90 -searchry -90 90 -searchrz -90 90 -dof 6 -cost corratio
+#convert_xfm -omat ./TKA${sub}_pre_bedpost.bedpostX/xfms/str2diff.mat -inverse ./TKA${sub}_pre_bedpost.bedpostX/xfms/diff2str.mat
+#flirt -in ./TKA${sub}_pre_bedpost/*T1*brain.nii.gz -ref $FSLDIR/data/standard/MNI152_T1_2mm_brain -omat ./TKA${sub}_pre_bedpost.bedpostX/xfms/str2standard.mat -searchrx -90 90 -searchry -90 90 -searchrz -90 90 -dof 12 -cost corratio
+#convert_xfm -omat ./TKA${sub}_pre_bedpost.bedpostX/xfms/standard2str.mat -inverse ./TKA${sub}_pre_bedpost.bedpostX/xfms/str2standard.mat
+#convert_xfm -omat ./TKA${sub}_pre_bedpost.bedpostX/xfms/diff2standard.mat -concat ./TKA${sub}_pre_bedpost.bedpostX/xfms/str2standard.mat ./TKA${sub}_pre_bedpost.bedpostX/xfms/diff2str.mat
+#convert_xfm -omat ./TKA${sub}_pre_bedpost.bedpostX/xfms/standard2diff.mat -inverse ./TKA${sub}_pre_bedpost.bedpostX/xfms/diff2standard.mat
+#fnirt --in=./TKA${sub}_pre_bedpost/*T1w_biascorr.nii.gz --aff=./TKA${sub}_pre_bedpost.bedpostX/xfms/str2standard.mat --cout=./TKA${sub}_pre_bedpost.bedpostX/xfms/str2standard_warp --config=T1_2_MNI152_2mm
+#invwarp -w ./TKA${sub}_pre_bedpost.bedpostX/xfms/str2standard_warp -o ./TKA${sub}_pre_bedpost.bedpostX/xfms/standard2str_warp -r ./TKA${sub}_pre_bedpost/*T1w_biascorr_brain.nii.gz
+#convertwarp -o ./TKA${sub}_pre_bedpost.bedpostX/xfms/diff2standard_warp -r $FSLDIR/data/standard/MNI152_T1_2mm -m ./TKA${sub}_pre_bedpost.bedpostX/xfms/diff2str.mat -w ./TKA${sub}_pre_bedpost.bedpostX/xfms/str2standard_warp
+#convertwarp -o ./TKA${sub}_pre_bedpost.bedpostX/xfms/standard2diff_warp -r ./TKA${sub}_pre_bedpost.bedpostX/nodif_brain_mask -w ./TKA${sub}_pre_bedpost.bedpostX/xfms/standard2str_warp --postmat=./TKA${sub}_pre_bedpost.bedpostX/xfms/str2diff.mat
 
 
 
