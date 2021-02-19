@@ -82,3 +82,7 @@ for sub in `cat subjects.txt` ; do
     convert_xfm -omat ./TKA${sub}_post_bedpost.bedpostX/xfms/diff2standard.mat -concat ./TKA${sub}_post_bedpost.bedpostX/xfms/str2standard.mat ./TKA${sub}_post_bedpost.bedpostX/xfms/diff2str.mat
     convert_xfm -omat ./TKA${sub}_post_bedpost.bedpostX/xfms/standard2diff.mat -inverse ./TKA${sub}_post_bedpost.bedpostX/xfms/diff2standard.mat
 done
+
+#Rearranging csv files (xtract_stats) to pull out just the FW values
+
+for b in `cat subjects.txt` ; do csvtool transpose ${b}_stats.csv > ${b}_stats_transposed.csv ; csvtool drop 15 ${b}_stats_transposed.csv > ${b}_stats_FW_tmp.csv ; csvtool head 1 ${b}_stats_FW_tmp.csv > ${b}_stats_FW.csv ; csvtool cat ${b}_stats_FW.csv >> UP2_xtract_FW.csv ; csvtool paste subjects.csv UP2_xtract_FW.csv > UP2_xtract_FW_final.csv ; done
