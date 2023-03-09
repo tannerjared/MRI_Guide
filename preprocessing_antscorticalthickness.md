@@ -171,6 +171,10 @@ This process can take hours to run on a typical computer, so make sure you are a
 On a Ryzen 5900X system with 64 GB RAM running WSL2 Ubuntu 22.04.02, processing of a single MPRAGE took 28m 32s.
 
 ```
+antsCorticalThickness.sh -d 3 -a 001.nii.gz -e ~/neurotools/OASIS-30_Atropos_template/T_template0.nii.gz -t ~/neurotools/OASIS-30_Atropos_template/T_template0_BrainCerebellum.nii.gz -m ~/neurotools/OASIS-30_Atropos_template/T_template0_BrainCerebellumProbabilityMask.nii.gz -f ~/neurotools/OASIS-30_Atropos_template/T_template0_BrainCerebellumExtractionMask.nii.gz -p ~/neurotools/OASIS-30_Atropos_template/Priors2/priors%d.nii.gz -q 1 -o antsCorticalThickness/
+```
+
+```
 #!console
 $ cd ~/preprocessing-t1-example/1222_032309/
 $ antsCorticalThickness.sh -d 3 \
