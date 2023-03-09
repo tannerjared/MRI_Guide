@@ -166,7 +166,9 @@ Optional arguments:
 
 # ANTs Cortical Thickness
 
-This process takes hours to run on a typical computer, so make sure you are able to press go and then not touch the computer until it has finished running. You will want to run in test / debug mode first by adding to your command-line `-z 1`.
+This process can take hours to run on a typical computer, so make sure you are able to press go and then not touch the computer until it has finished running. You will want to run in test / debug mode first by adding to your command-line `-z 1`.
+
+On a Ryzen 5900X system with 64 GB RAM running WSL2 Ubuntu 22.04.02, processing of a single MPRAGE took 28m 32s.
 
 ```
 #!console
