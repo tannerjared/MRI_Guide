@@ -1,0 +1,38 @@
+% This will extract BIDS format participant IDs (e.g., sub-001) and save it as a covariate in CONN. This helps with data organization because CONN just lists subjects numerically but does not list the participant IDs.
+
+% Load functional MRI data into CONN
+functional_files = conn_module('get', 'functionals');
+
+% Initialize a cell array to store IDs
+IDs = cell(length(functional_files), 1);
+
+% Loop through each functional file to extract subject ID
+for i = 1:length(functional_files)
+    % If the cell is 1x2, pick the first content
+    if iscell(functional_files{i}) && length(functional_files{i}) == 2
+        file = functional_files{i}{1};
+    else
+        file = functional_files{i};
+    end
+    
+    % Display the current file to debug
+    disp(['Processing file: ', file]);
+    
+    % Extract the subject ID using regular expression
+    ID = regexp(file, '(?<=sub-)\d+', 'match', 'once');
+    if ~isempty(ID)
+        IDs{i} = str2double(ID);
+    else
+        IDs{i} = NaN; % Assign NaN if ID extraction fails
+    end
+end
+
+% Convert the cell array to a numeric array, handling NaNs if necessary
+IDs = cell2mat(IDs);
+
+% Display the extracted subject IDs
+disp('Subject IDs:');
+disp(IDs);
+
+% Save the subject IDs into CONN for safekeeping
+conn_module('set', 'l2covariates', IDs(:), {'ID'}, {'IDs read from filenames'}, true);
